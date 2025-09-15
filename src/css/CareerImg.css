@@ -69,7 +69,7 @@
   line-height: 1.6;
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
   .Career-Container {
     height: 60vh; 
@@ -81,15 +81,15 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .Career-Container {
-    height: 50vh; /* smaller height for phones */
+    height: 50vh; 
     padding: 30px 10px;
   }
 
   .Career-Container h1 {
-    font-size: 1.6rem; /* smaller text */
+    font-size: 1.6rem; 
     line-height: 1.2;
   }
 
