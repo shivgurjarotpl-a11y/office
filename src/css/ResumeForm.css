@@ -92,7 +92,7 @@
   border-color: #3f2b96;
   box-shadow: 0 0 5px rgba(63, 43, 150, 0.3);
 }
-
+/* 
 .resume-form button {
   background: #111;
   color: #fff;
@@ -109,9 +109,7 @@
   background: #3f2b96;
 }
 
-/* ---------------------- */
-/* Responsive - Tablet */
-/* ---------------------- */
+
 @media (max-width: 992px) {
   .resume-section {
     flex-direction: column;
@@ -138,9 +136,7 @@
   }
 }
 
-/* ---------------------- */
-/* Responsive - Mobile */
-/* ---------------------- */
+
 @media (max-width: 600px) {
   .resume-section {
     padding: 30px 15px;
@@ -175,4 +171,4 @@
     flex-direction: column;
     gap: 12px;
   }
-}
+} */
