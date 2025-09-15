@@ -270,7 +270,7 @@
 }
 
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .mission-hero { flex-direction: row; }
   .values-grid { grid-template-columns: repeat(3, 1fr); }
   .impact-grid { grid-template-columns: repeat(4, 1fr); }
@@ -330,5 +330,5 @@
   .cta {
     padding: 4rem 6rem;
   }
-}
+} */
 
