@@ -106,17 +106,15 @@
   color: #fff;
 }
 
-/* ==============================
-   Responsive Design
-   ============================== */
 
-/* Laptop / Small Desktop */
+
+/* 
 @media (max-width: 1024px) {
   .job-header h2 { font-size: 22px; }
   .job-header p { font-size: 15px; }
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
   .job-section { padding: 40px 15px; }
   .job-header h2 { font-size: 20px; }
@@ -126,7 +124,7 @@
   .apply-btn { font-size: 13px; padding: 8px 15px; }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .job-section { padding: 30px 10px; }
   .job-header h2 { font-size: 18px; }
@@ -137,4 +135,4 @@
   .job-card h3 { font-size: 16px; }
   .job-card p { font-size: 12px; }
   .apply-btn { font-size: 12px; padding: 7px 12px; }
-}
+} */
