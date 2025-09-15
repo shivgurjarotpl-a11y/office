@@ -1,0 +1,178 @@
+/* ---------------------- */
+/* Resume Section - Base */
+/* ---------------------- */
+.resume-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #071a3d, #003e7d);
+  color: white;
+  gap: 40px;
+}
+
+/* Left Side */
+.resume-left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.resume-left h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.resume-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Right Side Form */
+.resume-right {
+  flex: 1;
+  min-width: 320px;
+  background: linear-gradient(to bottom right, #2196f3, #0d47a1);
+  color: #111;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.resume-right h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.resume-right .subtext {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* ---------------------- */
+/* Form Styling */
+/* ---------------------- */
+.resume-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.resume-form input,
+.resume-form select,
+.resume-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.resume-form input:focus,
+.resume-form select:focus,
+.resume-form textarea:focus {
+  border-color: #3f2b96;
+  box-shadow: 0 0 5px rgba(63, 43, 150, 0.3);
+}
+
+.resume-form button {
+  background: #111;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.resume-form button:hover {
+  background: #3f2b96;
+}
+
+/* ---------------------- */
+/* Responsive - Tablet */
+/* ---------------------- */
+@media (max-width: 992px) {
+  .resume-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .resume-left,
+  .resume-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .resume-left h2 {
+    font-size: 28px;
+  }
+
+  .resume-right {
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* ---------------------- */
+/* Responsive - Mobile */
+/* ---------------------- */
+@media (max-width: 600px) {
+  .resume-section {
+    padding: 30px 15px;
+  }
+
+  .resume-left h2 {
+    font-size: 24px;
+  }
+
+  .resume-left p {
+    font-size: 14px;
+  }
+
+  .resume-right h3 {
+    font-size: 20px;
+  }
+
+  .resume-right .subtext {
+    font-size: 12px;
+  }
+
+  .resume-form input,
+  .resume-form select,
+  .resume-form textarea,
+  .resume-form button {
+    font-size: 13px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
