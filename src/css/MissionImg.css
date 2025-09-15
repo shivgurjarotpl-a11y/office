@@ -68,7 +68,7 @@
   line-height: 1.6;
 }
 
-/* Tablet */
+/* 
 @media (max-width: 768px) {
   .M-Container {
     height: 60vh; 
@@ -80,19 +80,19 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .M-Container {
-    height: 50vh; /* smaller height for phones */
+    height: 50vh; 
     padding: 30px 10px;
   }
 
   .M-Container h1 {
-    font-size: 1.6rem; /* smaller text */
+    font-size: 1.6rem; 
     line-height: 1.2;
   }
 
   .M-Container h2 {
-    font-size: 0.9rem; /* smaller subtitle */
+    font-size: 0.9rem; 
   }
-}
+} */
