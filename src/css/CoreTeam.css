@@ -6,11 +6,3 @@
   padding-top: calc(80vh)
 }
 
-@media (max-width: 768px) {
-.Core-contanior{
-        position: relative;
-  z-index: 1;
-  padding-top: calc(50vh)
-}
-
-}
