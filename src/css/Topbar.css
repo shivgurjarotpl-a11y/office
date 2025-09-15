@@ -81,23 +81,17 @@
   z-index: 999;
 }
 
-/* Show on hover (desktop) */
-@media (min-width: 769px) {
-  .dropdown:hover .dropdown-content {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-  }
-}
 
-/* Also show when explicitly active (mobile) */
+
+
+
 .dropdown.active .dropdown-content {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
 }
 
-/* ===== Submenu Styling ===== */
+
 .submenu {
   margin-bottom: 0.75rem;
 }
@@ -125,7 +119,7 @@
   padding-left: 0.75rem;
 }
 
-/* Mega menu support (desktop) */
+
 .dropdown.mega .dropdown-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -134,13 +128,13 @@
   padding: 1.25rem 1.5rem;
 }
 
-/* Prevent cut-off on last item */
+
 .dropdown:last-child .dropdown-content {
   left: auto;
   right: 0;
 }
 
-/* Hamburger (button) */
+
 .topbar-toggle {
   display: none;
   font-size: 1.5rem;
@@ -150,79 +144,4 @@
   padding: 6px;
 }
 
-/* ============ Responsive ============ */
-@media (max-width: 1024px) {
-  /* slightly compact spacing for tablets */
-  .topbar-nav {
-    gap: 1rem;
-  }
-}
 
-/* Mobile */
-@media (max-width: 768px) {
-  .topbar-toggle {
-    display: block;
-    z-index: 1100;
-  }
-
-  .topbar-nav {
-    position: fixed;
-    top: 0;
-    right: -110%;
-    height: 100vh;
-    width: 72%;
-    max-width: 340px;
-    background: #ffffff;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem 1.5rem;
-    gap: 1rem;
-    transition: right 0.28s ease;
-    box-shadow: -2px 0 18px rgba(0, 0, 0, 0.08);
-  }
-
-  .topbar-nav.active {
-    right: 0;
-  }
-
-  /* Links full width */
-  .topbar-nav a,
-  .dropbtn {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    text-align: left;
-    border-radius: 6px;
-  }
-
-  /* Dropdown becomes accordion */
-  .dropdown-content {
-    position: static;
-    border: none;
-    box-shadow: none;
-    padding: 0.5rem 1rem;
-    margin-left: 0.5rem;
-    display: none;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .dropdown.active .dropdown-content {
-    display: block;
-  }
-
-  /* a bit more touch-friendly spacing inside accordion */
-  .dropdown-content .submenu a {
-    padding: 0.7rem 0.5rem;
-  }
-}
-
-/* small tweak so dropdown-content doesn't overflow off-screen on very narrow desktops */
-@media (min-width: 769px) and (max-width: 900px) {
-  .dropdown-content {
-    left: 0;
-    right: auto;
-    min-width: 200px;
-  }
-}

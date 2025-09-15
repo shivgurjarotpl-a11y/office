@@ -108,7 +108,7 @@
 
 
 
-/* 
+
 @media (max-width: 1024px) {
   .job-header h2 { font-size: 22px; }
   .job-header p { font-size: 15px; }
@@ -135,4 +135,4 @@
   .job-card h3 { font-size: 16px; }
   .job-card p { font-size: 12px; }
   .apply-btn { font-size: 12px; padding: 7px 12px; }
-} */
+}
