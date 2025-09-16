@@ -1,11 +1,11 @@
 .messeon {
-  position: relative;
-  z-index: 1;
-  padding-top: 80vh;
+  position: relative; 
+  z-index: 2;
+  padding-top: 80vh; 
 }
 
 @media (max-width: 768px) {
-  .messeon {
+  .messeon { 
     padding-top: 50vh;
-  }
+  }  
 }
