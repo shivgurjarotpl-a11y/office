@@ -31,6 +31,6 @@ jobs:
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVETE_KEY }}
           source: "./build/"
           target: "/var/www/html/somesh/office_web"
