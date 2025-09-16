@@ -84,12 +84,12 @@
 
 @media (max-width: 480px) {
   .Career-Container {
-    height: 50vh; 
+    height: 50vh; /* smaller height for phones */
     padding: 30px 10px;
   }
 
   .Career-Container h1 {
-    font-size: 1.6rem; 
+    font-size: 1.6rem; /* smaller text */
     line-height: 1.2;
   }
 
