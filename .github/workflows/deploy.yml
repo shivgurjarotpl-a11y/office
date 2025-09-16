@@ -32,5 +32,6 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVETE_KEY }}
+          port: 22022
           source: "./dist/"
           target: "/var/www/html/somesh/office_web"
