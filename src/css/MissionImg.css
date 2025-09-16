@@ -13,7 +13,7 @@
   text-align: center;
   color: white;
 
-  position: relative; /* changed from fixed → safer on mobile */
+  position: fixed; /* changed from fixed → safer on mobile */
   overflow: hidden;
   z-index: 0;
 }
