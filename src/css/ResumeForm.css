@@ -138,7 +138,9 @@
   }
 }
 
-
+/* ---------------------- */
+/* Responsive - Mobile */
+/* ---------------------- */
 @media (max-width: 600px) {
   .resume-section {
     padding: 30px 15px;

@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div> 
      
-      {/* <Slideshow /> */}
+      <Slideshow />
       <div className="main-content">
         <NewsSection />
         <TechShowcase />

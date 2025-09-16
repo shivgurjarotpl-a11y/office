@@ -1,7 +1,7 @@
 .M-Container {
   height: 80vh; 
   width: 100%;
-  background-image: url("/image/work.jpg"); /* apna image path */
+  background-image: url("/image/work.jpg"); /* Image must be in public/image/work.jpg */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,9 +13,9 @@
   text-align: center;
   color: white;
 
-  position: fixed; 
-  z-index: 0;
+  position: relative; /* changed from fixed → safer on mobile */
   overflow: hidden;
+  z-index: 0;
 }
 
 /* Dark overlay */
@@ -27,7 +27,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 0;
+  z-index: 1; /* overlay above background */
 }
 
 .M-Container h1 {
@@ -36,7 +36,9 @@
   border-bottom: 3px solid white;
   padding-bottom: 5px;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-  z-index: 1;
+
+  position: relative;
+  z-index: 2; /* above overlay */
 
   background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
   -webkit-background-clip: text;
@@ -63,36 +65,11 @@
   font-size: clamp(1rem, 4vw, 1.3rem);
   margin-top: 15px;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+
+  position: relative;
+  z-index: 2; /* above overlay */
+
   animation: fadeInUp 1.2s ease forwards;
   opacity: 0;
   line-height: 1.6;
 }
-
-/* 
-@media (max-width: 768px) {
-  .M-Container {
-    height: 60vh; 
-    padding: 40px 15px;
-  }
-
-  .M-Container h1 {
-    border-bottom: none; 
-  }
-}
-
-
-@media (max-width: 480px) {
-  .M-Container {
-    height: 50vh; 
-    padding: 30px 10px;
-  }
-
-  .M-Container h1 {
-    font-size: 1.6rem; 
-    line-height: 1.2;
-  }
-
-  .M-Container h2 {
-    font-size: 0.9rem; 
-  }
-} */
