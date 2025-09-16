@@ -1,8 +1,7 @@
-
-.Career-Container {
+.CareerImg-Container {
   height: 80vh; 
   width: 100%;
-  background-image: url("/image/work.jpg"); /* apna image path */
+  background-image: url("/image/work.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +19,7 @@
 }
 
 /* Dark overlay */
-.Career-Container::before {
+.CareerImg-Container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -31,7 +30,7 @@
   z-index: 0;
 }
 
-.Career-Container h1 {
+.CareerImg-Container h1 {
   font-weight: bold;
   font-size: clamp(1.8rem, 6vw, 3rem); 
   border-bottom: 3px solid white;
@@ -59,7 +58,7 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
-.Career-Container h2 {
+.CareerImg-Container h2 {
   font-weight: 500;
   font-size: clamp(1rem, 4vw, 1.3rem);
   margin-top: 15px;
@@ -69,34 +68,29 @@
   line-height: 1.6;
 }
 
-
 @media (max-width: 768px) {
-  .Career-Container {
+  .CareerImg-Container {
     height: 60vh; 
     padding: 40px 15px;
   }
 
-  .Career-Container h1 {
+  .CareerImg-Container h1 {
     border-bottom: none; 
   }
 }
 
-
 @media (max-width: 480px) {
-  .Career-Container {
+  .CareerImg-Container {
     height: 50vh; /* smaller height for phones */
     padding: 30px 10px;
   }
 
-  .Career-Container h1 {
+  .CareerImg-Container h1 {
     font-size: 1.6rem; /* smaller text */
     line-height: 1.2;
   }
 
-  .Career-Container h2 {
+  .CareerImg-Container h2 {
     font-size: 0.9rem; /* smaller subtitle */
   }
 }
-
-
-
