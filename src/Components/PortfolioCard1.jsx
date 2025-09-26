@@ -172,7 +172,7 @@ const PortfolioCard1 = () => {
               </svg>
             </button>
 
-            <button className="pc1-link" type="button">Download Spec Sheet →</button>
+            <button className="pc1-link" type="button">Download  Sheet →</button>
           </div>
         </div>
       </div>
