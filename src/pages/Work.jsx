@@ -13,6 +13,18 @@ import Project7 from '../Components/Project7';
 import Project8 from '../Components/Project8';
 import Project9 from '../Components/Project9';
 import Project10 from '../Components/Project10';
+import PortfolioCard1 from '../Components/PortfolioCard1';
+import PortfolioCard2 from '../Components/PortfolioCard2';
+import PortfolioCard3 from '../Components/PortfolioCard3';
+import PortfolioCard4 from '../Components/PortfolioCard4';
+import PortfolioCard5 from '../Components/PortfolioCard5';
+import PortfolioCard6 from '../Components/PortfolioCard6';
+import PortfolioCard7 from '../Components/PortfolioCard7';
+import PortfolioCard8 from '../Components/PortfolioCard8';
+import PortfolioCard9 from '../Components/PortfolioCard9';
+import PortfolioCard10 from '../Components/PortfolioCard10';
+
+
 
 import Footer from '../Components/Footer';
 import FloatingButtons from '../Components/FloatingButtons';
@@ -32,6 +44,18 @@ const Work = () => {
     { id: 8, type: "application", component: <Project8 /> },
     { id: 9, type: "website", component: <Project9 /> },
     { id: 10, type: "website", component: <Project10 /> },
+    { id: 11, type: "Projects", component: <PortfolioCard1 /> },
+    { id: 12, type: "Projects", component: <PortfolioCard2 /> },
+    { id: 13, type: "Projects", component: <PortfolioCard3 /> },
+    { id: 14, type: "Projects", component: <PortfolioCard4 /> },
+    { id: 15, type: "Projects", component: <PortfolioCard5 /> },
+    { id: 16, type: "Projects", component: <PortfolioCard6 /> },
+    { id: 17, type: "Projects", component: <PortfolioCard7 /> },
+    { id: 18, type: "Projects", component: <PortfolioCard8 /> },
+    { id: 19, type: "Projects", component: <PortfolioCard9 /> },
+    { id: 20, type: "Projects", component: <PortfolioCard10 /> },
+    
+
 
   ];
 

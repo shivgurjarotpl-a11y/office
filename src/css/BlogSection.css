@@ -1,0 +1,249 @@
+:root{
+  --bg: #ffffff;
+  --muted: #64748b;
+  --accent: #0c8f74;
+  --card-shadow: 0 6px 18px rgba(8,15,18,0.06);
+  --card-shadow-strong: 0 16px 40px rgba(8,15,18,0.12);
+  --radius: 12px;
+}
+
+/* Wrapper + container */
+.blog-wrapper {
+  background:   #12343b;
+  padding: 56px 24px;
+  position: relative;
+}
+
+.blog-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Label and heading */
+.blog-label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #9aa4b1;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.blog-title {
+  margin: 0 0 22px 0;
+  font-size: 36px;
+  line-height: 1.08;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+}
+
+/* Grid of blog items */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+/* Individual blog item (card) */
+.blog-item {
+  background:   #12343b;
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  box-shadow: var(--card-shadow);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  will-change: transform;
+  transition: all 0.3s ease;
+}
+
+/* Featured card larger appearance */
+.blog-item.blog-item-featured {
+  grid-column: span 2;
+  min-height: 440px;
+}
+
+/* Thumbnail */
+.blog-thumb {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 450ms ease;
+  transform-origin: center;
+}
+
+/* Content area */
+.blog-content {
+  padding: 18px 18px 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transform: translateX(0);
+  transition: transform 300ms ease;
+  flex: 1 1 auto;
+}
+
+/* Meta (date & author) */
+.blog-meta {
+  font-size: 13px;
+  color: #9aa4b1;
+  margin-bottom: 6px;
+   transition: all 0.3s ease;
+}
+.blog-item:hover .blog-meta{
+      color: #78879c;
+}
+
+/* Heading and excerpt */
+.blog-item h3,
+.blog-item .blog-heading {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  transition: all 0.3s ease;
+}
+
+.blog-item:hover h3,
+ .blog-heading {
+color: black;
+}
+
+.blog-excerpt {
+  margin: 0;
+  color: #9aa4b1;
+  font-size: 14px;
+  line-height: 1.5;
+  flex: 1 0 auto;
+  transition: all 0.3s ease;
+}
+.blog-item:hover .blog-excerpt{
+    color: #5b6777;
+}
+
+/* Read more link */
+.blog-link {
+  margin-top: 8px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.blog-item:hover .blog-link{
+    color: rgb(0, 0, 0);
+}
+/* Hover interactions */
+.blog-item:hover {
+  transform: translateY(-20px);
+  box-shadow: var(--card-shadow-strong);
+  background: rgb(242, 245, 240);
+
+}
+
+
+
+.blog-item:hover .blog-content {
+  transform: translateX(6px);
+}
+
+/* Featured hover stronger */
+.blog-item.blog-item-featured:hover {
+  transform: translateY(-16px) scale(1.02);
+  
+}
+
+/* View more button */
+.blog-more-link {
+  display: inline-block;
+  margin-top: 34px;
+  padding: 10px 16px;
+  border: 1px solid rgba(8, 15, 18, 0.12);
+  background: transparent;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #0c3c33;
+  font-weight: 600;
+}
+
+/* Entrance animation utility (you can add classes to use it) */
+.fade-up {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 600ms cubic-bezier(.2,.9,.2,1) forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Small tweaks */
+.blog-item .blog-heading {
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .blog-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .blog-item.blog-item-featured {
+    grid-column: auto;
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .blog-wrapper {
+    padding: 28px 14px;
+  }
+
+  .blog-container {
+    padding: 0;
+  }
+
+  .blog-title {
+    font-size: 28px;
+  }
+
+  .blog-list {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .blog-thumb {
+    height: 200px;
+  }
+
+  .blog-item {
+    min-height: auto;
+  }
+
+  .blog-item.blog-item-featured {
+    min-height: auto;
+    grid-column: auto;
+  }
+}

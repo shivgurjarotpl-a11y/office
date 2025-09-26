@@ -1,0 +1,218 @@
+:root {
+  --bg: #ffffff;
+  --bg-dark: #0f1724;
+  --card: rgba(255, 255, 255, 0.9);
+  --card-dark: rgba(17, 24, 39, 0.9);
+  --muted: #64748b;
+  --teal-50: #ecfeff;
+  --teal-100: #ccfbf1;
+  --teal-600: #0d9488;
+  --teal-700: #0f766e;
+  --teal-900: #064e3b;
+  --glass-blur: 6px;
+  --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.15);
+  --radius: 20px;
+
+  /* sizing controls */
+  --card-height-mobile: 20rem;    /* total card height on mobile */
+  --card-height-desktop: 550px;   /* total card height on desktop */
+  --content-padding: 4rem;
+  --image-padding-mobile: 2.5rem;
+  --image-padding-desktop: 5rem;
+}
+
+/* ROOT CARD */
+.pc1-card {
+  background: var(--bg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  color: #0f1724;
+
+  /* set card height (mobile by default) */
+  height: var(--card-height-mobile);
+}
+
+/* DARK MODE */
+body.dark .pc1-card {
+  background: var(--bg-dark);
+  color: #fff;
+}
+
+/* ---------- MOBILE LAYOUT ---------- */
+/* use flex column and make image & content share height equally */
+.pc1-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* fills .pc1-card height */
+}
+
+/* image area: now flexible (no fixed px height) */
+.pc1-image {
+  position: relative;
+  flex: 1 1 50%;
+  overflow: hidden;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  background: linear-gradient(135deg, var(--teal-50), var(--teal-100));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.dark .pc1-image {
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(3, 105, 100, 0.95));
+}
+
+/* image itself (mobile): fill available height but respect padding */
+.pc1-image img {
+  max-height: 100%;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  padding: var(--image-padding-mobile);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  display: block;
+}
+.pc1-image img:hover {
+  transform: scale(1.02);
+}
+
+/* toggle button */
+.pc1-toggle {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  background: var(--card);
+  border-radius: 999px;
+  padding: 0.5rem;
+  box-shadow: 0 6px 14px rgba(2, 6, 23, 0.12);
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+body.dark .pc1-toggle {
+  background: var(--card-dark);
+}
+
+/* content area: flexible and equal to image height */
+.pc1-content {
+  flex: 1 1 50%;
+  padding: var(--content-padding);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(var(--glass-blur));
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  overflow: auto;
+  box-sizing: border-box;
+}
+body.dark .pc1-content {
+  background: rgba(2, 6, 23, 0.6);
+}
+
+/* badge/title/desc/features/buttons remain same */
+.pc1-badge { display: inline-flex; align-items: center; background: #dffaf6; color: var(--teal-600); padding: 0.25rem 0.6rem; font-size: 1.25rem; font-weight: 700; border-radius: 999px; }
+.pc1-title { font-size: 1.375rem; font-weight: 600; margin: 0.5rem 0 1rem; color: inherit; }
+body.dark .pc1-title { color: #fff; }
+.pc1-desc { color: #475569; line-height: 1.6; margin-bottom: 1.25rem; }
+body.dark .pc1-desc { color: #cbd5e1; }
+.pc1-features { display: block; margin-bottom: 1.25rem; gap: 0.75rem; }
+.pc1-feature { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; color: #334155; }
+body.dark .pc1-feature { color: #cbd5e1; }
+.pc1-iconwrap { min-width: 2rem; min-height: 2rem; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: #dffaf6; }
+
+/* buttons */
+.pc1-btns { display: flex; flex-direction: column; gap: 0.5rem; }
+.pc1-primary { background: var(--teal-600); color: #fff; font-weight: 600; padding: 0.75rem 1.25rem; border-radius: 12px; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; transition: transform 0.2s ease, background 0.15s ease; }
+.pc1-primary:hover { transform: translateY(-2px); background: var(--teal-700); }
+.pc1-link { background: none; border: none; color: var(--teal-600); font-weight: 600; padding: 0.4rem 0; cursor: pointer; text-align: left; }
+body.dark .pc1-link { color: #7dd3fc; }
+
+/* ---------- DESKTOP LAYOUT ---------- */
+.pc1-desktop {
+  display: none; /* activated in media query */
+  height: var(--card-height-desktop); /* total desktop card height */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* left and right are full height of .pc1-desktop */
+.pc1-left, .pc1-right {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* left image column */
+.pc1-left {
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.dark .pc1-left {
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(3, 105, 100, 0.95));
+}
+
+/* image in desktop left: fill available height */
+.pc1-left img {
+  max-height: 100%;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  padding: var(--image-padding-desktop);
+  box-sizing: border-box;
+  display: block;
+  
+}
+
+/* right content column */
+.pc1-right {
+  width: 60%;
+  padding: var(--content-padding);
+  background: rgba(255, 255, 255, 0.84);
+  backdrop-filter: blur(var(--glass-blur));
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+body.dark .pc1-right {
+  background: rgba(2, 6, 23, 0.6);
+}
+.pc1-right .pc1-title { font-size: 1.75rem; }
+.pc1-dfeatures .pc1-feature { margin-bottom: 0.75rem; gap: 1rem; }
+.pc1-dactions { display: flex; gap: 1rem; align-items: center; }
+
+/* responsive breakpoint */
+@media (min-width: 768px) {
+  /* desktop layout: hide mobile block, show desktop block */
+  .pc1-mobile { display: none; }
+  .pc1-desktop { display: flex; }
+
+  /* ensure top-level card height matches desktop var */
+  .pc1-card { height: var(--card-height-desktop); }
+
+  /* image padding switch handled by selectors above (pc1-left img uses desktop padding) */
+}
+
+/* helpers */
+.text-muted { color: var(--muted); }
+.rounded { border-radius: 8px; }
+.shadow-sm { box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08); }
+
+/* focus states */
+.pc1-toggle:focus, .pc1-primary:focus, .pc1-link:focus {
+  outline: 3px solid rgba(13, 148, 136, 0.18);
+  outline-offset: 2px;
+}
