@@ -131,7 +131,7 @@ function BlogSection() {
           ))}
         </div>
 
-        <a className="blog-more-link" href="#">View more articles →</a>
+        <a className="blog-more-link" href="#">View  more articles →</a>
       </div>
     </section>
   );
