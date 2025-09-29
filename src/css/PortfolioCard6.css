@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,27 +5,27 @@
   font-family: "Inter", sans-serif;
 }
 
-.pc1-card {
+.pc6-card {
   width: 100%;
-  background: #f0f4f8;
+  background: #D1C4E9;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
-.pc1-mobile {
+.pc6-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc1-image {
+.pc6-image {
   position: relative;
   text-align: center;
 }
 
-.pc1-image img {
+.pc6-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -34,7 +33,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc1-toggle {
+.pc6-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -45,11 +44,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc1-toggle:hover {
+.pc6-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc1-badge {
+.pc6-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -59,30 +58,29 @@
   border-radius: 999px;
 }
 
-.pc1-title {
+.pc6-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc1-desc {
+.pc6-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-
-.pc1-features,
-.pc1-dfeatures {
+.pc6-features,
+.pc6-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc1-feature {
+.pc6-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -90,7 +88,7 @@
   color: #374151;
 }
 
-.pc1-iconwrap {
+.pc6-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -101,15 +99,14 @@
   color: #2563eb;
 }
 
-
-.pc1-btns,
-.pc1-dactions {
+.pc6-btns,
+.pc6-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc1-primary {
+.pc6-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -123,11 +120,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc1-primary:hover {
+.pc6-primary:hover {
   background: #1d4ed8;
 }
 
-.pc1-link {
+.pc6-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -136,104 +133,90 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc1-link:hover {
+.pc6-link:hover {
   color: #1d4ed8;
 }
 
-
-.pc1-desktop {
+.pc6-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc1-mobile {
+  .pc6-mobile {
     display: none;
   }
 
-  .pc1-desktop {
+  .pc6-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc1-left {
+  .pc6-left {
     flex: 1;
     position: relative;
   }
 
-  .pc1-left img {
+  .pc6-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc1-right {
+  .pc6-right {
     flex: 1;
   }
 
-  .pc1-dfeatures {
+  .pc6-dfeatures {
     margin: 1.5rem 0;
   }
 }
 
-
-
-
-
-.pc1-hidden-left,
-.pc1-hidden-right,
-.pc1-hidden-bottom {
+.pc6-hidden-left,
+.pc6-hidden-right,
+.pc6-hidden-bottom {
   opacity: 0;
-  
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
- 
   transition: transform 3000ms cubic-bezier(.22,.9,.35,1),
               opacity 3000ms cubic-bezier(.22,.9,.35,1);
-
   will-change: transform, opacity;
-
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
 }
 
+.pc6-hidden-left  { --tx: -80px;  --ty: 0;  }
+.pc6-hidden-right { --tx:  80px;  --ty: 0;  }
+.pc6-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
-.pc1-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc1-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc1-hidden-bottom{ --tx:   0px;  --ty: 80px; }
-
-
-.pc1-animate {
+.pc6-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-
-.pc1-hidden-left,
-.pc1-hidden-right,
-.pc1-hidden-bottom {
-  transition-delay: var(--pc1-delay, 0ms);
+.pc6-hidden-left,
+.pc6-hidden-right,
+.pc6-hidden-bottom {
+  transition-delay: var(--pc6-delay, 0ms);
 }
 
-
-.pc1-image img,
-.pc1-left img,
-.pc1-phone-img {
+.pc6-image img,
+.pc6-left img,
+.pc6-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
-
 @media (max-width: 767px) {
-  .pc1-left,
-  .pc1-left.pc1-animate,
-  .pc1-image,
-  .pc1-image.pc1-animate,
-  .pc1-content,
-  .pc1-content.pc1-animate {
+  .pc6-left,
+  .pc6-left.pc6-animate,
+  .pc6-image,
+  .pc6-image.pc6-animate,
+  .pc6-content,
+  .pc6-content.pc6-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;
