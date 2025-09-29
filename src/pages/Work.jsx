@@ -36,13 +36,14 @@ const Work = () => {
   const projects = [
     { id: 1, type: "application", component: <Project1 /> },
     { id: 13, type: "Projects", component: <PortfolioCard3 /> },
-      { id: 5, type: "application", component: <Project5 /> },
+    { id: 5, type: "application", component: <Project5 /> },
     { id: 11, type: "Projects", component: <PortfolioCard1 /> },
     { id: 4, type: "application", component: <Project4 /> },
     { id: 6, type: "website", component: <Project6 /> },
     { id: 7, type: "application", component: <Project7 /> },
      { id: 14, type: "Projects", component: <PortfolioCard4 /> },
     { id: 8, type: "application", component: <Project8 /> },
+    { id: 20, type: "Projects", component: <PortfolioCard10 /> },
     { id: 9, type: "website", component: <Project9 /> },
     { id: 16, type: "Projects", component: <PortfolioCard6 /> },
     { id: 10, type: "website", component: <Project10 /> },
@@ -53,7 +54,7 @@ const Work = () => {
     { id: 15, type: "Projects", component: <PortfolioCard5 /> },
     { id: 17, type: "Projects", component: <PortfolioCard7 /> },
     { id: 19, type: "Projects", component: <PortfolioCard9 /> },
-    { id: 20, type: "Projects", component: <PortfolioCard10 /> },
+    
     
 
 
