@@ -49,7 +49,7 @@ const App = () => {
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<ContactUs />} />
 
-        {/* 404 / fallback */}
+    
        
       </Routes>
     </Router>
