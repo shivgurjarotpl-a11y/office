@@ -35,18 +35,22 @@ const PortfolioCard8 = () => {
   }, []);
 
   return (
-    <div className="pc8-card" role="region" aria-label="Portfolio card - Fall detector">
+    <div
+      className="pc8-card"
+      role="region"
+      aria-label="Portfolio card - Fall detector"
+    >
       {/* Mobile Layout */}
       <div className="pc8-mobile" aria-hidden={false}>
         <div className="pc8-image pc8-hidden-bottom">
           {isIllustrationView ? (
             <img
-              src="/image/fall-detector.png"
+              src="/image/Gemini_Generated_Image_9.png"
               alt="Stylized illustration of fall detector"
             />
           ) : (
             <img
-              src="/image/fall-detector.png"
+              src="/image/Gemini_Generated_Image_9.png"
               alt="Photorealistic product shot of fall detector"
             />
           )}
@@ -58,61 +62,122 @@ const PortfolioCard8 = () => {
             aria-label="Toggle between product photo and illustration view"
             type="button"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
             </svg>
           </button>
         </div>
 
         <div className="pc8-content pc8-hidden-right">
           <div className="mb-3">
-            <span className="pc8-badge">🚨 Fall Detector Device</span>
+            <span className="pc8-badge">EV Speed Controller</span>
           </div>
 
-          <h3 className="pc8-title">Because Safety Matters</h3>
+          <h3 className="pc8-title">Powering the Future of Mobility</h3>
 
           <p className="pc8-desc">
-            A life-saving device powered by Gyro Sensors, GSM, and RF technology. It detects accidental falls and instantly alerts caregivers or emergency contacts. Ideal for elderly care, patients, and workplace safety.
+            A BLDC motor controller designed for electric vehicles. It ensures
+            smooth throttle control, efficient power management, and better
+            safety.
           </p>
 
           <div className="pc8-features">
             <div className="pc8-feature pc8-hidden-right">
               <div className="pc8-iconwrap" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
                 </svg>
               </div>
-              <span>Real-time fall detection</span>
+              <span>Optimized energy use</span>
             </div>
 
             <div className="pc8-feature pc8-hidden-right">
               <div className="pc8-iconwrap" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                  />
                 </svg>
               </div>
-              <span>Instant alerts via GSM/RF</span>
+              <span>Smooth & reliable performance</span>
             </div>
 
             <div className="pc8-feature pc8-hidden-right">
               <div className="pc8-iconwrap" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
                 </svg>
               </div>
-              <span>Peace of mind for families & healthcare providers</span>
+              <span>Supports sustainable EV technology</span>
             </div>
           </div>
 
           <div className="pc8-btns">
             <button className="pc8-primary" type="button">
               View Project
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
               </svg>
             </button>
 
-            <button className="pc8-link" type="button">Download Spec Sheet →</button>
+            <button className="pc8-link" type="button">
+              Download Spec Sheet →
+            </button>
           </div>
         </div>
       </div>
@@ -122,12 +187,12 @@ const PortfolioCard8 = () => {
         <div className="pc8-left pc8-hidden-bottom">
           {isIllustrationView ? (
             <img
-              src="/image/fall-detector.png"
+              src="/image/Gemini_Generated_Image_9.png"
               alt="Stylized illustration of fall detector"
             />
           ) : (
             <img
-              src="/image/fall-detector.png"
+              src="/image/Gemini_Generated_Image_9.png"
               alt="Photorealistic product shot of fall detector"
             />
           )}
@@ -139,61 +204,122 @@ const PortfolioCard8 = () => {
             aria-label="Toggle between product photo and illustration view"
             type="button"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
             </svg>
           </button>
         </div>
 
         <div className="pc8-right pc8-hidden-right">
           <div className="mb-4">
-            <span className="pc8-badge">🚨 Fall Detector Device</span>
+            <span className="pc8-badge">EV Speed Controller</span>
           </div>
 
-          <h3 className="pc8-title">Because Safety Matters</h3>
+          <h3 className="pc8-title">Powering the Future of Mobility</h3>
 
           <p className="pc8-desc">
-            A life-saving device powered by Gyro Sensors, GSM, and RF technology. It detects accidental falls and instantly alerts caregivers or emergency contacts. Ideal for elderly care, patients, and workplace safety.
+            A BLDC motor controller designed for electric vehicles. It ensures
+            smooth throttle control, efficient power management, and better
+            safety.
           </p>
 
           <div className="pc8-dfeatures">
             <div className="pc8-feature">
               <div className="pc8-iconwrap" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
                 </svg>
               </div>
-              <span>Real-time fall detection</span>
+              <span>Optimized energy use</span>
             </div>
 
             <div className="pc8-feature">
               <div className="pc8-iconwrap" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                  />
                 </svg>
               </div>
-              <span>Instant alerts via GSM/RF</span>
+              <span>Smooth & reliable performance</span>
             </div>
 
             <div className="pc8-feature">
               <div className="pc8-iconwrap" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
                 </svg>
               </div>
-              <span>Peace of mind for families & healthcare providers</span>
+              <span>Supports sustainable EV technology</span>
             </div>
           </div>
 
           <div className="pc8-dactions">
             <button className="pc8-primary" type="button">
               View Project
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
               </svg>
             </button>
 
-            <button className="pc8-link" type="button">Download Spec Sheet →</button>
+            <button className="pc8-link" type="button">
+              Download Spec Sheet →
+            </button>
           </div>
         </div>
       </div>

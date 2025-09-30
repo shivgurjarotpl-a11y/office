@@ -41,12 +41,12 @@ const PortfolioCard10 = () => {
         <div className="pc10-image pc10-hidden-bottom">
           {isIllustrationView ? (
             <img
-              src="/image/fall-detector.png"
+              src="/image/Gemini_Generated_Image_11.png"
               alt="Stylized illustration of fall detector"
             />
           ) : (
             <img
-              src="/image/fall-detector.png"
+              src="/image/Gemini_Generated_Image_11.png"
               alt="Photorealistic product shot of fall detector"
             />
           )}
@@ -66,13 +66,13 @@ const PortfolioCard10 = () => {
 
         <div className="pc10-content pc10-hidden-right">
           <div className="mb-3">
-            <span className="pc10-badge">🚨 Fall Detector Device</span>
+            <span className="pc10-badge">⚙️ Smart 3-Phase Motor Controller</span>
           </div>
 
-          <h3 className="pc10-title">Because Safety Matters</h3>
+          <h3 className="pc10-title">Intelligent Industrial Control</h3>
 
           <p className="pc10-desc">
-            A life-saving device powered by Gyro Sensors, GSM, and RF technology. It detects accidental falls and instantly alerts caregivers or emergency contacts. Ideal for elderly care, patients, and workplace safety.
+            A GSM-enabled controller for remote motor management. Start, stop, or monitor motors with just a missed call. Includes voltage monitoring & fault alerts.
           </p>
 
           <div className="pc10-features">
@@ -82,7 +82,7 @@ const PortfolioCard10 = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <span>Real-time fall detection</span>
+              <span> Remote motor control</span>
             </div>
 
             <div className="pc10-feature pc10-hidden-right">
@@ -91,7 +91,7 @@ const PortfolioCard10 = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
               </div>
-              <span>Instant alerts via GSM/RF</span>
+              <span>SMS/missed-call activation</span>
             </div>
 
             <div className="pc10-feature pc10-hidden-right">
@@ -100,7 +100,7 @@ const PortfolioCard10 = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <span>Peace of mind for families & healthcare providers</span>
+              <span>Real-time fault detection</span>
             </div>
           </div>
 
@@ -122,12 +122,12 @@ const PortfolioCard10 = () => {
         <div className="pc10-left pc10-hidden-bottom">
           {isIllustrationView ? (
             <img
-              src="/image/fall-detector.png"
+              src="/image/Gemini_Generated_Image_11.png"
               alt="Stylized illustration of fall detector"
             />
           ) : (
             <img
-              src="/image/fall-detector.png"
+              src="/image/Gemini_Generated_Image_11.png"
               alt="Photorealistic product shot of fall detector"
             />
           )}
@@ -147,13 +147,13 @@ const PortfolioCard10 = () => {
 
         <div className="pc10-right pc10-hidden-right">
           <div className="mb-4">
-            <span className="pc10-badge">🚨 Fall Detector Device</span>
+            <span className="pc10-badge">⚙️ Smart 3-Phase Motor Controller</span>
           </div>
 
-          <h3 className="pc10-title">Because Safety Matters</h3>
+          <h3 className="pc10-title">Intelligent Industrial Control          </h3>
 
           <p className="pc10-desc">
-            A life-saving device powered by Gyro Sensors, GSM, and RF technology. It detects accidental falls and instantly alerts caregivers or emergency contacts. Ideal for elderly care, patients, and workplace safety.
+            A GSM-enabled controller for remote motor management. Start, stop, or monitor motors with just a missed call. Includes voltage monitoring & fault alerts.
           </p>
 
           <div className="pc10-dfeatures">
@@ -163,7 +163,7 @@ const PortfolioCard10 = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <span>Real-time fall detection</span>
+              <span>Remote motor control</span>
             </div>
 
             <div className="pc10-feature">
@@ -172,7 +172,7 @@ const PortfolioCard10 = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
               </div>
-              <span>Instant alerts via GSM/RF</span>
+              <span> SMS/missed-call activation</span>
             </div>
 
             <div className="pc10-feature">
@@ -181,7 +181,7 @@ const PortfolioCard10 = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <span>Peace of mind for families & healthcare providers</span>
+              <span> Real-time fault detection</span>
             </div>
           </div>
 
