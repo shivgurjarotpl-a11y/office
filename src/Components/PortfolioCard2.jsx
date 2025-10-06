@@ -15,7 +15,7 @@ const PortfolioCard2 = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("pc2-animate");
+            entry.target.classList.add("poc2-animate");
           }
         });
       },
@@ -23,7 +23,7 @@ const PortfolioCard2 = () => {
     );
 
     const els = document.querySelectorAll(
-      ".pc2-hidden-left, .pc2-hidden-bottom, .pc2-hidden-right"
+      ".poc2-hidden-left, .poc2-hidden-bottom, .poc2-hidden-right"
     );
 
     els.forEach((el) => observer.observe(el));
@@ -35,10 +35,10 @@ const PortfolioCard2 = () => {
   }, []);
 
   return (
-    <div className="pc2-card" role="region" aria-label="Portfolio card - Fall detector">
+    <div className="poc2-card" role="region" aria-label="Portfolio card - Fall detector">
       {/* Mobile Layout */}
-      <div className="pc2-mobile" aria-hidden={false}>
-        <div className="pc2-image pc2-hidden-bottom">
+      <div className="poc2-mobile" aria-hidden={false}>
+        <div className="poc2-image poc2-hidden-bottom">
           {isIllustrationView ? (
             <img
               src="/image/Gemini_Generated_Image_3.png"
@@ -53,7 +53,7 @@ const PortfolioCard2 = () => {
 
           <button
             onClick={toggleView}
-            className="pc2-toggle"
+            className="poc2-toggle"
             aria-pressed={isIllustrationView}
             aria-label="Toggle between product photo and illustration view"
             type="button"
@@ -64,20 +64,20 @@ const PortfolioCard2 = () => {
           </button>
         </div>
 
-        <div className="pc2-content pc2-hidden-right">
+        <div className="poc2-content poc2-hidden-right">
           <div className="mb-3">
-            <span className="pc2-badge">🔔 Touch-less Temple Bell System</span>
+            <span className="poc2-badge">🔔 Touch-less Temple Bell System</span>
           </div>
 
-          <h3 className="pc2-title">A Modern Solution for Tradition</h3>
+          <h3 className="poc2-title">A Modern Solution for Tradition</h3>
 
-          <p className="pc2-desc">
+          <p className="poc2-desc">
            Powered by Ultrasonic & IR wave technology, this system lets devotees ring the temple bell without physical contact. Promotes hygiene, especially in crowded temples and public spaces.
           </p>
 
-          <div className="pc2-features">
-            <div className="pc2-feature pc2-hidden-right">
-              <div className="pc2-iconwrap" aria-hidden="true">
+          <div className="poc2-features">
+            <div className="poc2-feature poc2-hidden-right">
+              <div className="poc2-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -85,8 +85,8 @@ const PortfolioCard2 = () => {
               <span> Contactless operation</span>
             </div>
 
-            <div className="pc2-feature pc2-hidden-right">
-              <div className="pc2-iconwrap" aria-hidden="true">
+            <div className="poc2-feature poc2-hidden-right">
+              <div className="poc2-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
@@ -94,8 +94,8 @@ const PortfolioCard2 = () => {
               <span> Safe & hygienic</span>
             </div>
 
-            <div className="pc2-feature pc2-hidden-right">
-              <div className="pc2-iconwrap" aria-hidden="true">
+            <div className="poc2-feature poc2-hidden-right">
+              <div className="poc2-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -104,22 +104,22 @@ const PortfolioCard2 = () => {
             </div>
           </div>
 
-          <div className="pc2-btns">
-            <button className="pc2-primary" type="button">
+          <div className="poc2-btns">
+            <button className="poc2-primary" type="button">
               View Project
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
 
-            <button className="pc2-link" type="button">Download Spec Sheet →</button>
+            <button className="poc2-link" type="button">Download Spec Sheet →</button>
           </div>
         </div>
       </div>
 
       {/* Desktop Layout */}
-      <div className="pc2-desktop" aria-hidden={false}>
-        <div className="pc2-left pc2-hidden-bottom">
+      <div className="poc2-desktop" aria-hidden={false}>
+        <div className="poc2-left poc2-hidden-bottom">
           {isIllustrationView ? (
             <img
               src="/image/Gemini_Generated_Image_3.png"
@@ -134,7 +134,7 @@ const PortfolioCard2 = () => {
 
           <button
             onClick={toggleView}
-            className="pc2-toggle"
+            className="poc2-toggle"
             aria-pressed={isIllustrationView}
             aria-label="Toggle between product photo and illustration view"
             type="button"
@@ -145,20 +145,20 @@ const PortfolioCard2 = () => {
           </button>
         </div>
 
-        <div className="pc2-right pc2-hidden-right">
+        <div className="poc2-right poc2-hidden-right">
           <div className="mb-4">
-            <span className="pc2-badge">🔔 Touch-less Temple Bell System</span>
+            <span className="poc2-badge">🔔 Touch-less Temple Bell System</span>
           </div>
 
-          <h3 className="pc2-title">A Modern Solution for Tradition</h3>
+          <h3 className="poc2-title">A Modern Solution for Tradition</h3>
 
-          <p className="pc2-desc">
+          <p className="poc2-desc">
            Powered by Ultrasonic & IR wave technology, this system lets devotees ring the temple bell without physical contact. Promotes hygiene, especially in crowded temples and public spaces.
           </p>
 
-          <div className="pc2-dfeatures">
-            <div className="pc2-feature">
-              <div className="pc2-iconwrap" aria-hidden="true">
+          <div className="poc2-dfeatures">
+            <div className="poc2-feature">
+              <div className="poc2-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -166,8 +166,8 @@ const PortfolioCard2 = () => {
               <span>Contactless operation</span>
             </div>
 
-            <div className="pc2-feature">
-              <div className="pc2-iconwrap" aria-hidden="true">
+            <div className="poc2-feature">
+              <div className="poc2-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
@@ -175,8 +175,8 @@ const PortfolioCard2 = () => {
               <span> Safe & hygienic</span>
             </div>
 
-            <div className="pc2-feature">
-              <div className="pc2-iconwrap" aria-hidden="true">
+            <div className="poc2-feature">
+              <div className="poc2-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -185,15 +185,15 @@ const PortfolioCard2 = () => {
             </div>
           </div>
 
-          <div className="pc2-dactions">
-            <button className="pc2-primary" type="button">
+          <div className="poc2-dactions">
+            <button className="poc2-primary" type="button">
               View Project
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
 
-            <button className="pc2-link" type="button">Download Spec Sheet →</button>
+            <button className="poc2-link" type="button">Download Spec Sheet →</button>
           </div>
         </div>
       </div>

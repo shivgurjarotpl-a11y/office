@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 
-.pc7-card {
+.poc7-card {
   width: 100%;
   background: #FFE0B2;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -13,19 +7,19 @@
   transition: all 0.3s ease;
 }
 
-.pc7-mobile {
+.poc7-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc7-image {
+.poc7-image {
   position: relative;
   text-align: center;
 }
 
-.pc7-image img {
+.poc7-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -33,7 +27,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc7-toggle {
+.poc7-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -44,11 +38,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc7-toggle:hover {
+.poc7-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc7-badge {
+.poc7-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -58,29 +52,29 @@
   border-radius: 999px;
 }
 
-.pc7-title {
+.poc7-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc7-desc {
+.poc7-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.pc7-features,
-.pc7-dfeatures {
+.poc7-features,
+.poc7-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc7-feature {
+.poc7-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -88,7 +82,7 @@
   color: #374151;
 }
 
-.pc7-iconwrap {
+.poc7-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -99,14 +93,14 @@
   color: #2563eb;
 }
 
-.pc7-btns,
-.pc7-dactions {
+.poc7-btns,
+.poc7-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc7-primary {
+.poc7-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -120,11 +114,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc7-primary:hover {
+.poc7-primary:hover {
   background: #1d4ed8;
 }
 
-.pc7-link {
+.poc7-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -133,50 +127,50 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc7-link:hover {
+.poc7-link:hover {
   color: #1d4ed8;
 }
 
-.pc7-desktop {
+.poc7-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc7-mobile {
+  .poc7-mobile {
     display: none;
   }
 
-  .pc7-desktop {
+  .poc7-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc7-left {
+  .poc7-left {
     flex: 1;
     position: relative;
   }
 
-  .pc7-left img {
+  .poc7-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc7-right {
+  .poc7-right {
     flex: 1;
   }
 
-  .pc7-dfeatures {
+  .poc7-dfeatures {
     margin: 1.5rem 0;
   }
 }
 
-.pc7-hidden-left,
-.pc7-hidden-right,
-.pc7-hidden-bottom {
+.poc7-hidden-left,
+.poc7-hidden-right,
+.poc7-hidden-bottom {
   opacity: 0;
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
   transition: transform 3000ms cubic-bezier(.22,.9,.35,1),
@@ -187,36 +181,36 @@
   -webkit-backface-visibility: hidden;
 }
 
-.pc7-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc7-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc7-hidden-bottom{ --tx:   0px;  --ty: 80px; }
+.poc7-hidden-left  { --tx: -80px;  --ty: 0;  }
+.poc7-hidden-right { --tx:  80px;  --ty: 0;  }
+.poc7-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
-.pc7-animate {
+.poc7-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.pc7-hidden-left,
-.pc7-hidden-right,
-.pc7-hidden-bottom {
-  transition-delay: var(--pc7-delay, 0ms);
+.poc7-hidden-left,
+.poc7-hidden-right,
+.poc7-hidden-bottom {
+  transition-delay: var(--poc7-delay, 0ms);
 }
 
-.pc7-image img,
-.pc7-left img,
-.pc7-phone-img {
+.poc7-image img,
+.poc7-left img,
+.poc7-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 767px) {
-  .pc7-left,
-  .pc7-left.pc7-animate,
-  .pc7-image,
-  .pc7-image.pc7-animate,
-  .pc7-content,
-  .pc7-content.pc7-animate {
+  .poc7-left,
+  .poc7-left.poc7-animate,
+  .poc7-image,
+  .poc7-image.poc7-animate,
+  .poc7-content,
+  .poc7-content.poc7-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

@@ -1,0 +1,151 @@
+/* 🌐 Full-width wrapper */
+.info-section {
+  width: 100%;
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  justify-content: center;
+  /* padding: 60px 20px; */
+  box-sizing: border-box;
+}
+
+/* 🧱 Main card container */
+.info-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #e6e6e6; */
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px; 
+  min-height: 400px;
+  gap: 60px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+/* 📝 Text content */
+.info-content {
+  flex: 1 1 400px;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-content.show-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.info-content h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.info-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* 🔘 Button */
+.info-button {
+  padding: 12px 24px;
+  border: none;
+  background: linear-gradient(90deg, #d4145a, #fbb03b);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  align-self: flex-start;
+}
+
+.info-button:hover {
+  transform: scale(1.05);
+}
+
+/* 🖼️ Image/media section */
+.info-media {
+  flex: 1 1 300px;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-media img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+
+.info-media.show-media {
+  opacity: 1;
+  animation: bounceIn 1.5s ease;
+}
+
+/* 💫 Bounce animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* 📱 Responsive Styles */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 40px;
+  }
+
+  .info-content {
+    text-align: center;
+    transform: translateY(50px);
+  }
+
+  .info-content.show-content {
+    transform: translateY(0);
+  }
+
+  .info-button {
+    align-self: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .info-section {
+    padding: 40px 15px;
+  }
+
+  .info-card {
+    padding: 20px;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .info-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .info-content p {
+    font-size: 0.9rem;
+  }
+
+  .info-media img {
+    max-width: 250px;
+  }
+}

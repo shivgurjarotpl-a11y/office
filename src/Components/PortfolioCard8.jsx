@@ -15,7 +15,7 @@ const PortfolioCard8 = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("pc8-animate");
+            entry.target.classList.add("poc8-animate");
           }
         });
       },
@@ -23,7 +23,7 @@ const PortfolioCard8 = () => {
     );
 
     const els = document.querySelectorAll(
-      ".pc8-hidden-left, .pc8-hidden-bottom, .pc8-hidden-right"
+      ".poc8-hidden-left, .poc8-hidden-bottom, .poc8-hidden-right"
     );
 
     els.forEach((el) => observer.observe(el));
@@ -36,13 +36,13 @@ const PortfolioCard8 = () => {
 
   return (
     <div
-      className="pc8-card"
+      className="poc8-card"
       role="region"
       aria-label="Portfolio card - Fall detector"
     >
       {/* Mobile Layout */}
-      <div className="pc8-mobile" aria-hidden={false}>
-        <div className="pc8-image pc8-hidden-bottom">
+      <div className="poc8-mobile" aria-hidden={false}>
+        <div className="poc8-image poc8-hidden-bottom">
           {isIllustrationView ? (
             <img
               src="/image/Gemini_Generated_Image_9.png"
@@ -57,7 +57,7 @@ const PortfolioCard8 = () => {
 
           <button
             onClick={toggleView}
-            className="pc8-toggle"
+            className="poc8-toggle"
             aria-pressed={isIllustrationView}
             aria-label="Toggle between product photo and illustration view"
             type="button"
@@ -80,22 +80,22 @@ const PortfolioCard8 = () => {
           </button>
         </div>
 
-        <div className="pc8-content pc8-hidden-right">
+        <div className="poc8-content poc8-hidden-right">
           <div className="mb-3">
-            <span className="pc8-badge">EV Speed Controller</span>
+            <span className="poc8-badge">EV Speed Controller</span>
           </div>
 
-          <h3 className="pc8-title">Powering the Future of Mobility</h3>
+          <h3 className="poc8-title">Powering the Future of Mobility</h3>
 
-          <p className="pc8-desc">
+          <p className="poc8-desc">
             A BLDC motor controller designed for electric vehicles. It ensures
             smooth throttle control, efficient power management, and better
             safety.
           </p>
 
-          <div className="pc8-features">
-            <div className="pc8-feature pc8-hidden-right">
-              <div className="pc8-iconwrap" aria-hidden="true">
+          <div className="poc8-features">
+            <div className="poc8-feature poc8-hidden-right">
+              <div className="poc8-iconwrap" aria-hidden="true">
                 <svg
                   width="16"
                   height="16"
@@ -114,8 +114,8 @@ const PortfolioCard8 = () => {
               <span>Optimized energy use</span>
             </div>
 
-            <div className="pc8-feature pc8-hidden-right">
-              <div className="pc8-iconwrap" aria-hidden="true">
+            <div className="poc8-feature poc8-hidden-right">
+              <div className="poc8-iconwrap" aria-hidden="true">
                 <svg
                   width="16"
                   height="16"
@@ -134,8 +134,8 @@ const PortfolioCard8 = () => {
               <span>Smooth & reliable performance</span>
             </div>
 
-            <div className="pc8-feature pc8-hidden-right">
-              <div className="pc8-iconwrap" aria-hidden="true">
+            <div className="poc8-feature poc8-hidden-right">
+              <div className="poc8-iconwrap" aria-hidden="true">
                 <svg
                   width="16"
                   height="16"
@@ -155,8 +155,8 @@ const PortfolioCard8 = () => {
             </div>
           </div>
 
-          <div className="pc8-btns">
-            <button className="pc8-primary" type="button">
+          <div className="poc8-btns">
+            <button className="poc8-primary" type="button">
               View Project
               <svg
                 width="16"
@@ -175,7 +175,7 @@ const PortfolioCard8 = () => {
               </svg>
             </button>
 
-            <button className="pc8-link" type="button">
+            <button className="poc8-link" type="button">
               Download Spec Sheet →
             </button>
           </div>
@@ -183,8 +183,8 @@ const PortfolioCard8 = () => {
       </div>
 
       {/* Desktop Layout */}
-      <div className="pc8-desktop" aria-hidden={false}>
-        <div className="pc8-left pc8-hidden-bottom">
+      <div className="poc8-desktop" aria-hidden={false}>
+        <div className="poc8-left poc8-hidden-bottom">
           {isIllustrationView ? (
             <img
               src="/image/Gemini_Generated_Image_9.png"
@@ -199,7 +199,7 @@ const PortfolioCard8 = () => {
 
           <button
             onClick={toggleView}
-            className="pc8-toggle"
+            className="poc8-toggle"
             aria-pressed={isIllustrationView}
             aria-label="Toggle between product photo and illustration view"
             type="button"
@@ -222,22 +222,22 @@ const PortfolioCard8 = () => {
           </button>
         </div>
 
-        <div className="pc8-right pc8-hidden-right">
+        <div className="poc8-right poc8-hidden-right">
           <div className="mb-4">
-            <span className="pc8-badge">EV Speed Controller</span>
+            <span className="poc8-badge">EV Speed Controller</span>
           </div>
 
-          <h3 className="pc8-title">Powering the Future of Mobility</h3>
+          <h3 className="poc8-title">Powering the Future of Mobility</h3>
 
-          <p className="pc8-desc">
+          <p className="poc8-desc">
             A BLDC motor controller designed for electric vehicles. It ensures
             smooth throttle control, efficient power management, and better
             safety.
           </p>
 
-          <div className="pc8-dfeatures">
-            <div className="pc8-feature">
-              <div className="pc8-iconwrap" aria-hidden="true">
+          <div className="poc8-dfeatures">
+            <div className="poc8-feature">
+              <div className="poc8-iconwrap" aria-hidden="true">
                 <svg
                   width="18"
                   height="18"
@@ -256,8 +256,8 @@ const PortfolioCard8 = () => {
               <span>Optimized energy use</span>
             </div>
 
-            <div className="pc8-feature">
-              <div className="pc8-iconwrap" aria-hidden="true">
+            <div className="poc8-feature">
+              <div className="poc8-iconwrap" aria-hidden="true">
                 <svg
                   width="18"
                   height="18"
@@ -276,8 +276,8 @@ const PortfolioCard8 = () => {
               <span>Smooth & reliable performance</span>
             </div>
 
-            <div className="pc8-feature">
-              <div className="pc8-iconwrap" aria-hidden="true">
+            <div className="poc8-feature">
+              <div className="poc8-iconwrap" aria-hidden="true">
                 <svg
                   width="18"
                   height="18"
@@ -297,8 +297,8 @@ const PortfolioCard8 = () => {
             </div>
           </div>
 
-          <div className="pc8-dactions">
-            <button className="pc8-primary" type="button">
+          <div className="poc8-dactions">
+            <button className="poc8-primary" type="button">
               View Project
               <svg
                 width="16"
@@ -317,7 +317,7 @@ const PortfolioCard8 = () => {
               </svg>
             </button>
 
-            <button className="pc8-link" type="button">
+            <button className="poc8-link" type="button">
               Download Spec Sheet →
             </button>
           </div>

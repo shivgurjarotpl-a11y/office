@@ -1,11 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 
-.pc2-card {
+
+.poc2-card {
+
   width: 100%;
   background: #FFF9C4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -13,19 +9,19 @@
   transition: all 0.3s ease;
 }
 
-.pc2-mobile {
+.poc2-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc2-image {
+.poc2-image {
   position: relative;
   text-align: center;
 }
 
-.pc2-image img {
+.poc2-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -33,7 +29,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc2-toggle {
+.poc2-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -44,11 +40,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc2-toggle:hover {
+.poc2-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc2-badge {
+.poc2-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -58,29 +54,29 @@
   border-radius: 999px;
 }
 
-.pc2-title {
+.poc2-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc2-desc {
+.poc2-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.pc2-features,
-.pc2-dfeatures {
+.poc2-features,
+.poc2-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc2-feature {
+.poc2-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -88,7 +84,7 @@
   color: #374151;
 }
 
-.pc2-iconwrap {
+.poc2-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -99,14 +95,14 @@
   color: #2563eb;
 }
 
-.pc2-btns,
-.pc2-dactions {
+.poc2-btns,
+.poc2-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc2-primary {
+.poc2-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -120,11 +116,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc2-primary:hover {
+.poc2-primary:hover {
   background: #1d4ed8;
 }
 
-.pc2-link {
+.poc2-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -133,50 +129,50 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc2-link:hover {
+.poc2-link:hover {
   color: #1d4ed8;
 }
 
-.pc2-desktop {
+.poc2-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc2-mobile {
+  .poc2-mobile {
     display: none;
   }
 
-  .pc2-desktop {
+  .poc2-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc2-left {
+  .poc2-left {
     flex: 1;
     position: relative;
   }
 
-  .pc2-left img {
+  .poc2-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc2-right {
+  .poc2-right {
     flex: 1;
   }
 
-  .pc2-dfeatures {
+  .poc2-dfeatures {
     margin: 1.5rem 0;
   }
 }
 
-.pc2-hidden-left,
-.pc2-hidden-right,
-.pc2-hidden-bottom {
+.poc2-hidden-left,
+.poc2-hidden-right,
+.poc2-hidden-bottom {
   opacity: 0;
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
   transition: transform 3000ms cubic-bezier(.22,.9,.35,1),
@@ -187,36 +183,36 @@
   -webkit-backface-visibility: hidden;
 }
 
-.pc2-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc2-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc2-hidden-bottom{ --tx:   0px;  --ty: 80px; }
+.poc2-hidden-left  { --tx: -80px;  --ty: 0;  }
+.poc2-hidden-right { --tx:  80px;  --ty: 0;  }
+.poc2-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
-.pc2-animate {
+.poc2-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.pc2-hidden-left,
-.pc2-hidden-right,
-.pc2-hidden-bottom {
-  transition-delay: var(--pc2-delay, 0ms);
+.poc2-hidden-left,
+.poc2-hidden-right,
+.poc2-hidden-bottom {
+  transition-delay: var(--poc2-delay, 0ms);
 }
 
-.pc2-image img,
-.pc2-left img,
-.pc2-phone-img {
+.poc2-image img,
+.poc2-left img,
+.poc2-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 767px) {
-  .pc2-left,
-  .pc2-left.pc2-animate,
-  .pc2-image,
-  .pc2-image.pc2-animate,
-  .pc2-content,
-  .pc2-content.pc2-animate {
+  .poc2-left,
+  .poc2-left.poc2-animate,
+  .poc2-image,
+  .poc2-image.poc2-animate,
+  .poc2-content,
+  .poc2-content.poc2-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

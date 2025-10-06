@@ -12,7 +12,7 @@ const Project1 = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("p1-animate");
+            entry.target.classList.add("project1-animate");
           }
         });
       },
@@ -31,10 +31,10 @@ const Project1 = () => {
   }, []);
 
   return (
-    <section className="p1-wrapper">
+    <section className="project1-wrapper">
       {/* Left Text Section */}
-      <div ref={leftRef} className="p1-left p1-hidden-left">
-        <div className="p1-logo-circle">
+      <div ref={leftRef} className="project1-left project1-hidden-left">
+        <div className="project1-logo-circle">
           <img src="image/Homy-logo.png" alt="App Mockup" />
         </div>
         <h2>Homey-Robo</h2>
@@ -46,7 +46,7 @@ const Project1 = () => {
           fans.
         </p>
 
-        <div className="p1-stats">
+        <div className="project1-stats">
           <div>
             <h3>14k</h3>
             <p>Downloads</p>
@@ -61,15 +61,15 @@ const Project1 = () => {
           </div>
         </div>
 
-        <div className="p1-actions">
-          <button className="p1-btn-primary">View Case Study</button>
-          <button className="p1-btn-secondary">Get In Touch</button>
+        <div className="project1-actions">
+          <button className="project1-btn-primary">View Case Study</button>
+          <button className="project1-btn-secondary">Get In Touch</button>
         </div>
       </div>
 
       {/* Right Image Section */}
-      <div ref={rightRef} className="p1-right p1-hidden-bottom">
-        <img src="image/Homy2.png" alt="App Mockup" className="p1-phone-img" />
+      <div ref={rightRef} className="project1-right project1-hidden-bottom">
+        <img src="image/Homy2.png" alt="App Mockup" className="project1-phone-img" />
       </div>
     </section>
   );

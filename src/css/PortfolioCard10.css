@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 
-.pc10-card {
+.poc10-card {
   width: 100%;
   background: #d900ff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -13,19 +7,19 @@
   transition: all 0.3s ease;
 }
 
-.pc10-mobile {
+.poc10-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc10-image {
+.poc10-image {
   position: relative;
   text-align: center;
 }
 
-.pc10-image img {
+.poc10-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -33,7 +27,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc10-toggle {
+.poc10-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -44,11 +38,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc10-toggle:hover {
+.poc10-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc10-badge {
+.poc10-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -58,29 +52,29 @@
   border-radius: 999px;
 }
 
-.pc10-title {
+.poc10-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc10-desc {
+.poc10-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.pc10-features,
-.pc10-dfeatures {
+.poc10-features,
+.poc10-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc10-feature {
+.poc10-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -88,7 +82,7 @@
   color: #374151;
 }
 
-.pc10-iconwrap {
+.poc10-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -99,14 +93,14 @@
   color: #2563eb;
 }
 
-.pc10-btns,
-.pc10-dactions {
+.poc10-btns,
+.poc10-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc10-primary {
+.poc10-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -120,11 +114,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc10-primary:hover {
+.poc10-primary:hover {
   background: #1d4ed8;
 }
 
-.pc10-link {
+.poc10-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -133,50 +127,50 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc10-link:hover {
+.poc10-link:hover {
   color: #1d4ed8;
 }
 
-.pc10-desktop {
+.poc10-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc10-mobile {
+  .poc10-mobile {
     display: none;
   }
 
-  .pc10-desktop {
+  .poc10-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc10-left {
+  .poc10-left {
     flex: 1;
     position: relative;
   }
 
-  .pc10-left img {
+  .poc10-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc10-right {
+  .poc10-right {
     flex: 1;
   }
 
-  .pc10-dfeatures {
+  .poc10-dfeatures {
     margin: 1.5rem 0;
   }
 }
 
-.pc10-hidden-left,
-.pc10-hidden-right,
-.pc10-hidden-bottom {
+.poc10-hidden-left,
+.poc10-hidden-right,
+.poc10-hidden-bottom {
   opacity: 0;
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
   transition: transform 3000ms cubic-bezier(.22,.9,.35,1),
@@ -187,36 +181,36 @@
   -webkit-backface-visibility: hidden;
 }
 
-.pc10-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc10-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc10-hidden-bottom{ --tx:   0px;  --ty: 80px; }
+.poc10-hidden-left  { --tx: -80px;  --ty: 0;  }
+.poc10-hidden-right { --tx:  80px;  --ty: 0;  }
+.poc10-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
-.pc10-animate {
+.poc10-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.pc10-hidden-left,
-.pc10-hidden-right,
-.pc10-hidden-bottom {
-  transition-delay: var(--pc10-delay, 0ms);
+.poc10-hidden-left,
+.poc10-hidden-right,
+.poc10-hidden-bottom {
+  transition-delay: var(--poc10-delay, 0ms);
 }
 
-.pc10-image img,
-.pc10-left img,
-.pc10-phone-img {
+.poc10-image img,
+.poc10-left img,
+.poc10-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 767px) {
-  .pc10-left,
-  .pc10-left.pc10-animate,
-  .pc10-image,
-  .pc10-image.pc10-animate,
-  .pc10-content,
-  .pc10-content.pc10-animate {
+  .poc10-left,
+  .poc10-left.poc10-animate,
+  .poc10-image,
+  .poc10-image.poc10-animate,
+  .poc10-content,
+  .poc10-content.poc10-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

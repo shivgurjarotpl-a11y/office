@@ -1,6 +1,6 @@
-/* Project1 -> updated to p1- prefix */
+/* Project1 -> updated to project1- prefix */
 
-.p1-wrapper {
+.project1-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,57 +10,57 @@
   flex-wrap: wrap;
 }
 
-.p1-left {
+.project1-left {
   flex: 1;
   color: #fff;
   max-width: 500px;
 }
 
-.p1-logo-circle {
+.project1-logo-circle {
   width: 80px;
   height: 80px;
   background: #fff;
   color: #000;
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.p1-left h2 {
+.project1-left h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.p1-left p {
+.project1-left p {
   line-height: 1.6;
   margin-bottom: 30px;
   font-size: 15px;
 }
 
-.p1-stats {
+.project1-stats {
   display: flex;
   gap: 30px;
   margin-bottom: 30px;
 }
 
-.p1-stats h3 {
+.project1-stats h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.p1-stats p {
+.project1-stats p {
   font-size: 14px;
 }
 
-.p1-actions {
+.project1-actions {
   display: flex;
   gap: 15px;
 }
 
-.p1-btn-primary {
+.project1-btn-primary {
   background: #fff;
   color: #f98c3e;
   border: none;
@@ -71,11 +71,11 @@
   transition: 0.3s;
 }
 
-.p1-btn-primary:hover {
+.project1-btn-primary:hover {
   background: #f0f0f0;
 }
 
-.p1-btn-secondary {
+.project1-btn-secondary {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
@@ -85,12 +85,12 @@
   transition: 0.3s;
 }
 
-.p1-btn-secondary:hover {
+.project1-btn-secondary:hover {
   background: #fff;
   color: #f98c3e;
 }
 
-.p1-right {
+.project1-right {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -98,51 +98,51 @@
   min-height: 500px;
 }
 
-.p1-phone-img {
+.project1-phone-img {
   max-width: 300px;
   width: 100%;
 }
 
 /* Animation states */
-.p1-hidden-left {
+.project1-hidden-left {
   opacity: 0;
   transform: translateX(-100px);
   transition: all 2.8s ease;
 }
 
-.p1-hidden-bottom {
+.project1-hidden-bottom {
   opacity: 0;
   transform: translateY(100px);
   transition: all 2.8s ease;
 }
 
-.p1-animate {
+.project1-animate {
   opacity: 1;
   transform: translate(0, 0);
 }
 
 /* ✅ Responsive */
 @media (max-width: 992px) {
-  .p1-wrapper {
+  .project1-wrapper {
     flex-direction: column;
     text-align: center;
   }
 
-  .p1-stats {
+  .project1-stats {
     justify-content: center;
   }
 
-  .p1-actions {
+  .project1-actions {
     justify-content: center;
   }
 }
 
 /* Mobile safeguard: neutralize left/logo animation on small screens */
 @media (max-width: 767px) {
-  .p1-left,
-  .p1-left.p1-animate,
-  .p1-logo-circle,
-  .p1-logo-circle.p1-animate {
+  .project1-left,
+  .project1-left.project1-animate,
+  .project1-logo-circle,
+  .project1-logo-circle.project1-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

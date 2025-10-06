@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 
-.pc5-card {
+.poc5-card {
   width: 100%;
   background: #BBDEFB;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -13,19 +7,19 @@
   transition: all 0.3s ease;
 }
 
-.pc5-mobile {
+.poc5-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc5-image {
+.poc5-image {
   position: relative;
   text-align: center;
 }
 
-.pc5-image img {
+.poc5-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -33,7 +27,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc5-toggle {
+.poc5-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -44,11 +38,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc5-toggle:hover {
+.poc5-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc5-badge {
+.poc5-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -58,29 +52,29 @@
   border-radius: 999px;
 }
 
-.pc5-title {
+.poc5-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc5-desc {
+.poc5-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.pc5-features,
-.pc5-dfeatures {
+.poc5-features,
+.poc5-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc5-feature {
+.poc5-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -88,7 +82,7 @@
   color: #374151;
 }
 
-.pc5-iconwrap {
+.poc5-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -99,14 +93,14 @@
   color: #2563eb;
 }
 
-.pc5-btns,
-.pc5-dactions {
+.poc5-btns,
+.poc5-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc5-primary {
+.poc5-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -120,11 +114,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc5-primary:hover {
+.poc5-primary:hover {
   background: #1d4ed8;
 }
 
-.pc5-link {
+.poc5-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -133,50 +127,50 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc5-link:hover {
+.poc5-link:hover {
   color: #1d4ed8;
 }
 
-.pc5-desktop {
+.poc5-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc5-mobile {
+  .poc5-mobile {
     display: none;
   }
 
-  .pc5-desktop {
+  .poc5-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc5-left {
+  .poc5-left {
     flex: 1;
     position: relative;
   }
 
-  .pc5-left img {
+  .poc5-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc5-right {
+  .poc5-right {
     flex: 1;
   }
 
-  .pc5-dfeatures {
+  .poc5-dfeatures {
     margin: 1.5rem 0;
   }
 }
 
-.pc5-hidden-left,
-.pc5-hidden-right,
-.pc5-hidden-bottom {
+.poc5-hidden-left,
+.poc5-hidden-right,
+.poc5-hidden-bottom {
   opacity: 0;
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
   transition: transform 3000ms cubic-bezier(.22,.9,.35,1),
@@ -187,36 +181,36 @@
   -webkit-backface-visibility: hidden;
 }
 
-.pc5-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc5-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc5-hidden-bottom{ --tx:   0px;  --ty: 80px; }
+.poc5-hidden-left  { --tx: -80px;  --ty: 0;  }
+.poc5-hidden-right { --tx:  80px;  --ty: 0;  }
+.poc5-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
-.pc5-animate {
+.poc5-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.pc5-hidden-left,
-.pc5-hidden-right,
-.pc5-hidden-bottom {
-  transition-delay: var(--pc5-delay, 0ms);
+.poc5-hidden-left,
+.poc5-hidden-right,
+.poc5-hidden-bottom {
+  transition-delay: var(--poc5-delay, 0ms);
 }
 
-.pc5-image img,
-.pc5-left img,
-.pc5-phone-img {
+.poc5-image img,
+.poc5-left img,
+.poc5-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 767px) {
-  .pc5-left,
-  .pc5-left.pc5-animate,
-  .pc5-image,
-  .pc5-image.pc5-animate,
-  .pc5-content,
-  .pc5-content.pc5-animate {
+  .poc5-left,
+  .poc5-left.poc5-animate,
+  .poc5-image,
+  .poc5-image.poc5-animate,
+  .poc5-content,
+  .poc5-content.poc5-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

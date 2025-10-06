@@ -1,11 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 
-.pc8-card {
+
+.poc8-card {
   width: 100%;
  
   background: #B2DFDB;
@@ -14,19 +9,19 @@
   transition: all 0.3s ease;
 }
 
-.pc8-mobile {
+.poc8-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc8-image {
+.poc8-image {
   position: relative;
   text-align: center;
 }
 
-.pc8-image img {
+.poc8-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -34,7 +29,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc8-toggle {
+.poc8-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -45,11 +40,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc8-toggle:hover {
+.poc8-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc8-badge {
+.poc8-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -59,29 +54,29 @@
   border-radius: 999px;
 }
 
-.pc8-title {
+.poc8-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc8-desc {
+.poc8-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.pc8-features,
-.pc8-dfeatures {
+.poc8-features,
+.poc8-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc8-feature {
+.poc8-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -89,7 +84,7 @@
   color: #374151;
 }
 
-.pc8-iconwrap {
+.poc8-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -100,14 +95,14 @@
   color: #2563eb;
 }
 
-.pc8-btns,
-.pc8-dactions {
+.poc8-btns,
+.poc8-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc8-primary {
+.poc8-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -121,11 +116,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc8-primary:hover {
+.poc8-primary:hover {
   background: #1d4ed8;
 }
 
-.pc8-link {
+.poc8-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -134,50 +129,50 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc8-link:hover {
+.poc8-link:hover {
   color: #1d4ed8;
 }
 
-.pc8-desktop {
+.poc8-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc8-mobile {
+  .poc8-mobile {
     display: none;
   }
 
-  .pc8-desktop {
+  .poc8-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc8-left {
+  .poc8-left {
     flex: 1;
     position: relative;
   }
 
-  .pc8-left img {
+  .poc8-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc8-right {
+  .poc8-right {
     flex: 1;
   }
 
-  .pc8-dfeatures {
+  .poc8-dfeatures {
     margin: 1.5rem 0;
   }
 }
 
-.pc8-hidden-left,
-.pc8-hidden-right,
-.pc8-hidden-bottom {
+.poc8-hidden-left,
+.poc8-hidden-right,
+.poc8-hidden-bottom {
   opacity: 0;
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
   transition: transform 3000ms cubic-bezier(.22,.9,.35,1),
@@ -188,36 +183,36 @@
   -webkit-backface-visibility: hidden;
 }
 
-.pc8-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc8-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc8-hidden-bottom{ --tx:   0px;  --ty: 80px; }
+.poc8-hidden-left  { --tx: -80px;  --ty: 0;  }
+.poc8-hidden-right { --tx:  80px;  --ty: 0;  }
+.poc8-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
-.pc8-animate {
+.poc8-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.pc8-hidden-left,
-.pc8-hidden-right,
-.pc8-hidden-bottom {
-  transition-delay: var(--pc8-delay, 0ms);
+.poc8-hidden-left,
+.poc8-hidden-right,
+.poc8-hidden-bottom {
+  transition-delay: var(--poc8-delay, 0ms);
 }
 
-.pc8-image img,
-.pc8-left img,
-.pc8-phone-img {
+.poc8-image img,
+.poc8-left img,
+.poc8-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 767px) {
-  .pc8-left,
-  .pc8-left.pc8-animate,
-  .pc8-image,
-  .pc8-image.pc8-animate,
-  .pc8-content,
-  .pc8-content.pc8-animate {
+  .poc8-left,
+  .poc8-left.poc8-animate,
+  .poc8-image,
+  .poc8-image.poc8-animate,
+  .poc8-content,
+  .poc8-content.poc8-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

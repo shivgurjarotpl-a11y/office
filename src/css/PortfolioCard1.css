@@ -1,12 +1,8 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 
-.pc1-card {
+
+
+.poc1-card {
   width: 100%;
   background: #f0f4f8;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -14,19 +10,19 @@
   transition: all 0.3s ease;
 }
 
-.pc1-mobile {
+.poc1-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc1-image {
+.poc1-image {
   position: relative;
   text-align: center;
 }
 
-.pc1-image img {
+.poc1-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -34,7 +30,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc1-toggle {
+.poc1-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -45,11 +41,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc1-toggle:hover {
+.poc1-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc1-badge {
+.poc1-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -59,14 +55,14 @@
   border-radius: 999px;
 }
 
-.pc1-title {
+.poc1-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc1-desc {
+.poc1-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
@@ -74,15 +70,15 @@
 }
 
 
-.pc1-features,
-.pc1-dfeatures {
+.poc1-features,
+.poc1-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc1-feature {
+.poc1-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -90,7 +86,7 @@
   color: #374151;
 }
 
-.pc1-iconwrap {
+.poc1-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -102,14 +98,14 @@
 }
 
 
-.pc1-btns,
-.pc1-dactions {
+.poc1-btns,
+.poc1-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc1-primary {
+.poc1-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -123,11 +119,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc1-primary:hover {
+.poc1-primary:hover {
   background: #1d4ed8;
 }
 
-.pc1-link {
+.poc1-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -136,44 +132,44 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc1-link:hover {
+.poc1-link:hover {
   color: #1d4ed8;
 }
 
 
-.pc1-desktop {
+.poc1-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc1-mobile {
+  .poc1-mobile {
     display: none;
   }
 
-  .pc1-desktop {
+  .poc1-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc1-left {
+  .poc1-left {
     flex: 1;
     position: relative;
   }
 
-  .pc1-left img {
+  .poc1-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc1-right {
+  .poc1-right {
     flex: 1;
   }
 
-  .pc1-dfeatures {
+  .poc1-dfeatures {
     margin: 1.5rem 0;
   }
 }
@@ -182,9 +178,9 @@
 
 
 
-.pc1-hidden-left,
-.pc1-hidden-right,
-.pc1-hidden-bottom {
+.poc1-hidden-left,
+.poc1-hidden-right,
+.poc1-hidden-bottom {
   opacity: 0;
   
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
@@ -200,27 +196,27 @@
 }
 
 
-.pc1-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc1-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc1-hidden-bottom{ --tx:   0px;  --ty: 80px; }
+.poc1-hidden-left  { --tx: -80px;  --ty: 0;  }
+.poc1-hidden-right { --tx:  80px;  --ty: 0;  }
+.poc1-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
 
-.pc1-animate {
+.poc1-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
 
-.pc1-hidden-left,
-.pc1-hidden-right,
-.pc1-hidden-bottom {
-  transition-delay: var(--pc1-delay, 0ms);
+.poc1-hidden-left,
+.poc1-hidden-right,
+.poc1-hidden-bottom {
+  transition-delay: var(--poc1-delay, 0ms);
 }
 
 
-.pc1-image img,
-.pc1-left img,
-.pc1-phone-img {
+.poc1-image img,
+.poc1-left img,
+.poc1-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -228,12 +224,12 @@
 
 
 @media (max-width: 767px) {
-  .pc1-left,
-  .pc1-left.pc1-animate,
-  .pc1-image,
-  .pc1-image.pc1-animate,
-  .pc1-content,
-  .pc1-content.pc1-animate {
+  .poc1-left,
+  .poc1-left.poc1-animate,
+  .poc1-image,
+  .poc1-image.poc1-animate,
+  .poc1-content,
+  .poc1-content.poc1-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

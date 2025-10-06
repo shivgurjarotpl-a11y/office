@@ -1,11 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 
-.pc3-card {
+
+.poc3-card {
   width: 100%;
   background: #C8E6C9;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -13,19 +8,19 @@
   transition: all 0.3s ease;
 }
 
-.pc3-mobile {
+.poc3-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc3-image {
+.poc3-image {
   position: relative;
   text-align: center;
 }
 
-.pc3-image img {
+.poc3-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -33,7 +28,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc3-toggle {
+.poc3-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -44,11 +39,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc3-toggle:hover {
+.poc3-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc3-badge {
+.poc3-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -58,29 +53,29 @@
   border-radius: 999px;
 }
 
-.pc3-title {
+.poc3-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc3-desc {
+.poc3-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.pc3-features,
-.pc3-dfeatures {
+.poc3-features,
+.poc3-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc3-feature {
+.poc3-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -88,7 +83,7 @@
   color: #374151;
 }
 
-.pc3-iconwrap {
+.poc3-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -99,14 +94,14 @@
   color: #2563eb;
 }
 
-.pc3-btns,
-.pc3-dactions {
+.poc3-btns,
+.poc3-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc3-primary {
+.poc3-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -120,11 +115,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc3-primary:hover {
+.poc3-primary:hover {
   background: #1d4ed8;
 }
 
-.pc3-link {
+.poc3-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -133,50 +128,50 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc3-link:hover {
+.poc3-link:hover {
   color: #1d4ed8;
 }
 
-.pc3-desktop {
+.poc3-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc3-mobile {
+  .poc3-mobile {
     display: none;
   }
 
-  .pc3-desktop {
+  .poc3-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc3-left {
+  .poc3-left {
     flex: 1;
     position: relative;
   }
 
-  .pc3-left img {
+  .poc3-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc3-right {
+  .poc3-right {
     flex: 1;
   }
 
-  .pc3-dfeatures {
+  .poc3-dfeatures {
     margin: 1.5rem 0;
   }
 }
 
-.pc3-hidden-left,
-.pc3-hidden-right,
-.pc3-hidden-bottom {
+.poc3-hidden-left,
+.poc3-hidden-right,
+.poc3-hidden-bottom {
   opacity: 0;
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
   transition: transform 3000ms cubic-bezier(.22,.9,.35,1),
@@ -187,36 +182,36 @@
   -webkit-backface-visibility: hidden;
 }
 
-.pc3-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc3-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc3-hidden-bottom{ --tx:   0px;  --ty: 80px; }
+.poc3-hidden-left  { --tx: -80px;  --ty: 0;  }
+.poc3-hidden-right { --tx:  80px;  --ty: 0;  }
+.poc3-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
-.pc3-animate {
+.poc3-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.pc3-hidden-left,
-.pc3-hidden-right,
-.pc3-hidden-bottom {
-  transition-delay: var(--pc3-delay, 0ms);
+.poc3-hidden-left,
+.poc3-hidden-right,
+.poc3-hidden-bottom {
+  transition-delay: var(--poc3-delay, 0ms);
 }
 
-.pc3-image img,
-.pc3-left img,
-.pc3-phone-img {
+.poc3-image img,
+.poc3-left img,
+.poc3-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 767px) {
-  .pc3-left,
-  .pc3-left.pc3-animate,
-  .pc3-image,
-  .pc3-image.pc3-animate,
-  .pc3-content,
-  .pc3-content.pc3-animate {
+  .poc3-left,
+  .poc3-left.poc3-animate,
+  .poc3-image,
+  .poc3-image.poc3-animate,
+  .poc3-content,
+  .poc3-content.poc3-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

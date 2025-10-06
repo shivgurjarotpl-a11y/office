@@ -15,7 +15,7 @@ const PortfolioCard4 = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("pc4-animate");
+            entry.target.classList.add("poc4-animate");
           }
         });
       },
@@ -23,7 +23,7 @@ const PortfolioCard4 = () => {
     );
 
     const els = document.querySelectorAll(
-      ".pc4-hidden-left, .pc4-hidden-bottom, .pc4-hidden-right"
+      ".poc4-hidden-left, .poc4-hidden-bottom, .poc4-hidden-right"
     );
 
     els.forEach((el) => observer.observe(el));
@@ -35,10 +35,10 @@ const PortfolioCard4 = () => {
   }, []);
 
   return (
-    <div className="pc4-card" role="region" aria-label="Portfolio card - Fall detector">
+    <div className="poc4-card" role="region" aria-label="Portfolio card - Fall detector">
       {/* Mobile Layout */}
-      <div className="pc4-mobile" aria-hidden={false}>
-        <div className="pc4-image pc4-hidden-bottom">
+      <div className="poc4-mobile" aria-hidden={false}>
+        <div className="poc4-image poc4-hidden-bottom">
           {isIllustrationView ? (
             <img
               src="/image/Gemini_Generated_Image_5.png"
@@ -53,7 +53,7 @@ const PortfolioCard4 = () => {
 
           <button
             onClick={toggleView}
-            className="pc4-toggle"
+            className="poc4-toggle"
             aria-pressed={isIllustrationView}
             aria-label="Toggle between product photo and illustration view"
             type="button"
@@ -64,20 +64,20 @@ const PortfolioCard4 = () => {
           </button>
         </div>
 
-        <div className="pc4-content pc4-hidden-right">
+        <div className="poc4-content poc4-hidden-right">
           <div className="mb-3">
-            <span className="pc4-badge">🌬️ Aerodynamic Wind Tunnel</span>
+            <span className="poc4-badge">🌬️ Aerodynamic Wind Tunnel</span>
           </div>
 
-          <h3 className="pc4-title">Bringing Science to Life</h3>
+          <h3 className="poc4-title">Bringing Science to Life</h3>
 
-          <p className="pc4-desc">
+          <p className="poc4-desc">
            An educational and research tool that simulates aerodynamic effects with fan control, fog visualization, and angle variation modules. Perfect for engineering institutes, researchers, and innovators.
           </p>
 
-          <div className="pc4-features">
-            <div className="pc4-feature pc4-hidden-right">
-              <div className="pc4-iconwrap" aria-hidden="true">
+          <div className="poc4-features">
+            <div className="poc4-feature poc4-hidden-right">
+              <div className="poc4-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -85,8 +85,8 @@ const PortfolioCard4 = () => {
               <span>Real-time airflow visualization</span>
             </div>
 
-            <div className="pc4-feature pc4-hidden-right">
-              <div className="pc4-iconwrap" aria-hidden="true">
+            <div className="poc4-feature poc4-hidden-right">
+              <div className="poc4-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
@@ -94,8 +94,8 @@ const PortfolioCard4 = () => {
               <span> Multiple aerodynamic experiments</span>
             </div>
 
-            <div className="pc4-feature pc4-hidden-right">
-              <div className="pc4-iconwrap" aria-hidden="true">
+            <div className="poc4-feature poc4-hidden-right">
+              <div className="poc4-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -104,22 +104,22 @@ const PortfolioCard4 = () => {
             </div>
           </div>
 
-          <div className="pc4-btns">
-            <button className="pc4-primary" type="button">
+          <div className="poc4-btns">
+            <button className="poc4-primary" type="button">
               View Project
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
 
-            <button className="pc4-link" type="button">Download Spec Sheet →</button>
+            <button className="poc4-link" type="button">Download Spec Sheet →</button>
           </div>
         </div>
       </div>
 
       {/* Desktop Layout */}
-      <div className="pc4-desktop" aria-hidden={false}>
-        <div className="pc4-left pc4-hidden-bottom">
+      <div className="poc4-desktop" aria-hidden={false}>
+        <div className="poc4-left poc4-hidden-bottom">
           {isIllustrationView ? (
             <img
               src="/image/Gemini_Generated_Image_5.png"
@@ -134,7 +134,7 @@ const PortfolioCard4 = () => {
 
           <button
             onClick={toggleView}
-            className="pc4-toggle"
+            className="poc4-toggle"
             aria-pressed={isIllustrationView}
             aria-label="Toggle between product photo and illustration view"
             type="button"
@@ -145,20 +145,20 @@ const PortfolioCard4 = () => {
           </button>
         </div>
 
-        <div className="pc4-right pc4-hidden-right">
+        <div className="poc4-right poc4-hidden-right">
           <div className="mb-4">
-            <span className="pc4-badge">🌬️ Aerodynamic Wind Tunnel</span>
+            <span className="poc4-badge">🌬️ Aerodynamic Wind Tunnel</span>
           </div>
 
-          <h3 className="pc4-title">Bringing Science to Life</h3>
+          <h3 className="poc4-title">Bringing Science to Life</h3>
 
-          <p className="pc4-desc">
+          <p className="poc4-desc">
             An educational and research tool that simulates aerodynamic effects with fan control, fog visualization, and angle variation modules. Perfect for engineering institutes, researchers, and innovators.
           </p>
 
-          <div className="pc4-dfeatures">
-            <div className="pc4-feature">
-              <div className="pc4-iconwrap" aria-hidden="true">
+          <div className="poc4-dfeatures">
+            <div className="poc4-feature">
+              <div className="poc4-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -166,8 +166,8 @@ const PortfolioCard4 = () => {
               <span>Real-time airflow visualization</span>
             </div>
 
-            <div className="pc4-feature">
-              <div className="pc4-iconwrap" aria-hidden="true">
+            <div className="poc4-feature">
+              <div className="poc4-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
@@ -175,8 +175,8 @@ const PortfolioCard4 = () => {
               <span> Multiple aerodynamic experiments</span>
             </div>
 
-            <div className="pc4-feature">
-              <div className="pc4-iconwrap" aria-hidden="true">
+            <div className="poc4-feature">
+              <div className="poc4-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -185,15 +185,15 @@ const PortfolioCard4 = () => {
             </div>
           </div>
 
-          <div className="pc4-dactions">
-            <button className="pc4-primary" type="button">
+          <div className="poc4-dactions">
+            <button className="poc4-primary" type="button">
               View Project
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
 
-            <button className="pc4-link" type="button">Download Spec Sheet →</button>
+            <button className="poc4-link" type="button">Download Spec Sheet →</button>
           </div>
         </div>
       </div>

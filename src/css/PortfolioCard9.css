@@ -1,11 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 
-.pc9-card {
+
+.poc9-card {
   width: 100%;
   background: #F0F4C3;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -13,19 +8,19 @@
   transition: all 0.3s ease;
 }
 
-.pc9-mobile {
+.poc9-mobile {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1.2rem;
 }
 
-.pc9-image {
+.poc9-image {
   position: relative;
   text-align: center;
 }
 
-.pc9-image img {
+.poc9-image img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
@@ -33,7 +28,7 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.pc9-toggle {
+.poc9-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -44,11 +39,11 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.pc9-toggle:hover {
+.poc9-toggle:hover {
   background: #f0f0f0;
 }
 
-.pc9-badge {
+.poc9-badge {
   display: inline-block;
   background: #f3f4f6;
   color: #111827;
@@ -58,29 +53,29 @@
   border-radius: 999px;
 }
 
-.pc9-title {
+.poc9-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
 }
 
-.pc9-desc {
+.poc9-desc {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.pc9-features,
-.pc9-dfeatures {
+.poc9-features,
+.poc9-dfeatures {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
 
-.pc9-feature {
+.poc9-feature {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -88,7 +83,7 @@
   color: #374151;
 }
 
-.pc9-iconwrap {
+.poc9-iconwrap {
   width: 28px;
   height: 28px;
   border-radius: 6px;
@@ -99,14 +94,14 @@
   color: #2563eb;
 }
 
-.pc9-btns,
-.pc9-dactions {
+.poc9-btns,
+.poc9-dactions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
 }
 
-.pc9-primary {
+.poc9-primary {
   background: #2563eb;
   color: white;
   font-size: 0.95rem;
@@ -120,11 +115,11 @@
   gap: 0.5rem;
   transition: background 0.3s ease;
 }
-.pc9-primary:hover {
+.poc9-primary:hover {
   background: #1d4ed8;
 }
 
-.pc9-link {
+.poc9-link {
   background: transparent;
   border: none;
   font-size: 0.95rem;
@@ -133,50 +128,50 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.pc9-link:hover {
+.poc9-link:hover {
   color: #1d4ed8;
 }
 
-.pc9-desktop {
+.poc9-desktop {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .pc9-mobile {
+  .poc9-mobile {
     display: none;
   }
 
-  .pc9-desktop {
+  .poc9-desktop {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     align-items: center;
   }
 
-  .pc9-left {
+  .poc9-left {
     flex: 1;
     position: relative;
   }
 
-  .pc9-left img {
+  .poc9-left img {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
     border-radius: 0.75rem;
   }
 
-  .pc9-right {
+  .poc9-right {
     flex: 1;
   }
 
-  .pc9-dfeatures {
+  .poc9-dfeatures {
     margin: 1.5rem 0;
   }
 }
 
-.pc9-hidden-left,
-.pc9-hidden-right,
-.pc9-hidden-bottom {
+.poc9-hidden-left,
+.poc9-hidden-right,
+.poc9-hidden-bottom {
   opacity: 0;
   transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
   transition: transform 3000ms cubic-bezier(.22,.9,.35,1),
@@ -187,36 +182,36 @@
   -webkit-backface-visibility: hidden;
 }
 
-.pc9-hidden-left  { --tx: -80px;  --ty: 0;  }
-.pc9-hidden-right { --tx:  80px;  --ty: 0;  }
-.pc9-hidden-bottom{ --tx:   0px;  --ty: 80px; }
+.poc9-hidden-left  { --tx: -80px;  --ty: 0;  }
+.poc9-hidden-right { --tx:  80px;  --ty: 0;  }
+.poc9-hidden-bottom{ --tx:   0px;  --ty: 80px; }
 
-.pc9-animate {
+.poc9-animate {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.pc9-hidden-left,
-.pc9-hidden-right,
-.pc9-hidden-bottom {
-  transition-delay: var(--pc9-delay, 0ms);
+.poc9-hidden-left,
+.poc9-hidden-right,
+.poc9-hidden-bottom {
+  transition-delay: var(--poc9-delay, 0ms);
 }
 
-.pc9-image img,
-.pc9-left img,
-.pc9-phone-img {
+.poc9-image img,
+.poc9-left img,
+.poc9-phone-img {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 767px) {
-  .pc9-left,
-  .pc9-left.pc9-animate,
-  .pc9-image,
-  .pc9-image.pc9-animate,
-  .pc9-content,
-  .pc9-content.pc9-animate {
+  .poc9-left,
+  .poc9-left.poc9-animate,
+  .poc9-image,
+  .poc9-image.poc9-animate,
+  .poc9-content,
+  .poc9-content.poc9-animate {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;

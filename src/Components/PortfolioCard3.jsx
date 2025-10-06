@@ -15,7 +15,7 @@ const PortfolioCard3 = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("pc3-animate");
+            entry.target.classList.add("poc3-animate");
           }
         });
       },
@@ -23,7 +23,7 @@ const PortfolioCard3 = () => {
     );
 
     const els = document.querySelectorAll(
-      ".pc3-hidden-left, .pc3-hidden-bottom, .pc3-hidden-right"
+      ".poc3-hidden-left, .poc3-hidden-bottom, .poc3-hidden-right"
     );
 
     els.forEach((el) => observer.observe(el));
@@ -35,10 +35,10 @@ const PortfolioCard3 = () => {
   }, []);
 
   return (
-    <div className="pc3-card" role="region" aria-label="Portfolio card - Fall detector">
+    <div className="poc3-card" role="region" aria-label="Portfolio card - Fall detector">
       {/* Mobile Layout */}
-      <div className="pc3-mobile" aria-hidden={false}>
-        <div className="pc3-image pc3-hidden-bottom">
+      <div className="poc3-mobile" aria-hidden={false}>
+        <div className="poc3-image poc3-hidden-bottom">
           {isIllustrationView ? (
             <img
               src="/image/Gemini_Generated_Image_4.png"
@@ -53,7 +53,7 @@ const PortfolioCard3 = () => {
 
           <button
             onClick={toggleView}
-            className="pc3-toggle"
+            className="poc3-toggle"
             aria-pressed={isIllustrationView}
             aria-label="Toggle between product photo and illustration view"
             type="button"
@@ -64,20 +64,20 @@ const PortfolioCard3 = () => {
           </button>
         </div>
 
-        <div className="pc3-content pc3-hidden-right">
+        <div className="poc3-content poc3-hidden-right">
           <div className="mb-3">
-            <span className="pc3-badge">📏 Distance & Area Calculator Device</span>
+            <span className="poc3-badge">📏 Distance & Area Calculator Device</span>
           </div>
 
-          <h3 className="pc3-title">Smart Measurement Made Easy</h3>
+          <h3 className="poc3-title">Smart Measurement Made Easy</h3>
 
-          <p className="pc3-desc">
+          <p className="poc3-desc">
           Using GSM, GPRS, GPS with AI & ML, this device calculates the area of land or geometric figures at the press of a button. Perfect for surveyors, architects, and construction projects.
           </p>
 
-          <div className="pc3-features">
-            <div className="pc3-feature pc3-hidden-right">
-              <div className="pc3-iconwrap" aria-hidden="true">
+          <div className="poc3-features">
+            <div className="poc3-feature poc3-hidden-right">
+              <div className="poc3-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -85,8 +85,8 @@ const PortfolioCard3 = () => {
               <span>Cloud-connected measurements</span>
             </div>
 
-            <div className="pc3-feature pc3-hidden-right">
-              <div className="pc3-iconwrap" aria-hidden="true">
+            <div className="poc3-feature poc3-hidden-right">
+              <div className="poc3-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
@@ -94,8 +94,8 @@ const PortfolioCard3 = () => {
               <span> Accurate AI/ML-based calculations</span>
             </div>
 
-            <div className="pc3-feature pc3-hidden-right">
-              <div className="pc3-iconwrap" aria-hidden="true">
+            <div className="poc3-feature poc3-hidden-right">
+              <div className="poc3-iconwrap" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -104,22 +104,22 @@ const PortfolioCard3 = () => {
             </div>
           </div>
 
-          <div className="pc3-btns">
-            <button className="pc3-primary" type="button">
+          <div className="poc3-btns">
+            <button className="poc3-primary" type="button">
               View Project
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
 
-            <button className="pc3-link" type="button">Download Spec Sheet →</button>
+            <button className="poc3-link" type="button">Download Spec Sheet →</button>
           </div>
         </div>
       </div>
 
       {/* Desktop Layout */}
-      <div className="pc3-desktop" aria-hidden={false}>
-        <div className="pc3-left pc3-hidden-bottom">
+      <div className="poc3-desktop" aria-hidden={false}>
+        <div className="poc3-left poc3-hidden-bottom">
           {isIllustrationView ? (
             <img
               src="/image/Gemini_Generated_Image_4.png"
@@ -134,7 +134,7 @@ const PortfolioCard3 = () => {
 
           <button
             onClick={toggleView}
-            className="pc3-toggle"
+            className="poc3-toggle"
             aria-pressed={isIllustrationView}
             aria-label="Toggle between product photo and illustration view"
             type="button"
@@ -145,20 +145,20 @@ const PortfolioCard3 = () => {
           </button>
         </div>
 
-        <div className="pc3-right pc3-hidden-right">
+        <div className="poc3-right poc3-hidden-right">
           <div className="mb-4">
-            <span className="pc3-badge">📏 Distance & Area Calculator Device</span>
+            <span className="poc3-badge">📏 Distance & Area Calculator Device</span>
           </div>
 
-          <h3 className="pc3-title">Smart Measurement Made Easy</h3>
+          <h3 className="poc3-title">Smart Measurement Made Easy</h3>
 
-          <p className="pc3-desc">
+          <p className="poc3-desc">
            Using GSM, GPRS, GPS with AI & ML, this device calculates the area of land or geometric figures at the press of a button. Perfect for surveyors, architects, and construction projects.
           </p>
 
-          <div className="pc3-dfeatures">
-            <div className="pc3-feature">
-              <div className="pc3-iconwrap" aria-hidden="true">
+          <div className="poc3-dfeatures">
+            <div className="poc3-feature">
+              <div className="poc3-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -166,8 +166,8 @@ const PortfolioCard3 = () => {
               <span>Cloud-connected measurements</span>
             </div>
 
-            <div className="pc3-feature">
-              <div className="pc3-iconwrap" aria-hidden="true">
+            <div className="poc3-feature">
+              <div className="poc3-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
@@ -175,8 +175,8 @@ const PortfolioCard3 = () => {
               <span> Accurate AI/ML-based calculations</span>
             </div>
 
-            <div className="pc3-feature">
-              <div className="pc3-iconwrap" aria-hidden="true">
+            <div className="poc3-feature">
+              <div className="poc3-iconwrap" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -185,15 +185,15 @@ const PortfolioCard3 = () => {
             </div>
           </div>
 
-          <div className="pc3-dactions">
-            <button className="pc3-primary" type="button">
+          <div className="poc3-dactions">
+            <button className="poc3-primary" type="button">
               View Project
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
 
-            <button className="pc3-link" type="button">Download Spec Sheet →</button>
+            <button className="poc3-link" type="button">Download Spec Sheet →</button>
           </div>
         </div>
       </div>
