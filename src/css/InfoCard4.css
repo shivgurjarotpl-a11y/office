@@ -1,31 +1,31 @@
-/* 🔹 Outer Wrapper (Full width background) */
-.feature-section {
+/* 🌐 Full-width wrapper */
+.info4-section {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(217, 217, 217);
   display: flex;
   justify-content: center;
-  padding: 0px 20px;
+  /* padding: 60px 20px; */
   box-sizing: border-box;
 }
 
-
-.feature-card {
+/* 🧱 Main card container */
+.info4-card {
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  /* background: #e6e6e6; */
   border-radius: 16px;
-  padding: 10px;
+  padding: 30px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; 
   min-height: 400px;
-  gap: 70px;
+  gap: 60px;
   box-sizing: border-box;
   flex-wrap: wrap;
 }
 
-/* 🔹 Text Content */
-.feature-content {
+/* 📝 Text content */
+.info4-content {
   flex: 1 1 400px;
   max-width: 500px;
   opacity: 0;
@@ -37,24 +37,25 @@
   justify-content: center;
 }
 
-.feature-content.animate-content {
+.info4-content.info4-show-content {
   opacity: 1;
   transform: translateX(0);
 }
 
-.feature-content h3 {
+.info4-content h3 {
   font-weight: bold;
   margin-bottom: 15px;
   font-size: 1.8rem;
 }
 
-.feature-content p {
+.info4-content p {
   line-height: 1.6;
   margin-bottom: 20px;
   font-size: 1rem;
 }
 
-.feature-button {
+/* 🔘 Button */
+.info4-button {
   padding: 12px 24px;
   border: none;
   background: linear-gradient(90deg, #d4145a, #fbb03b);
@@ -66,12 +67,12 @@
   align-self: flex-start;
 }
 
-.feature-button:hover {
+.info4-button:hover {
   transform: scale(1.05);
 }
 
-/* 🔹 Media (Image Section) */
-.feature-media {
+/* 🖼️ Image/media section */
+.info4-media {
   flex: 1 1 300px;
   text-align: center;
   opacity: 0;
@@ -80,72 +81,71 @@
   align-items: center;
 }
 
-.feature-media img {
+.info4-media img {
   max-width: 250px;
   width: 100%;
   height: auto;
 }
 
-.feature-media.animate-media {
+.info4-media.info4-show-media {
   opacity: 1;
-  animation: bounceIn 1.5s ease;
+  animation: info4-bounceIn 1.5s ease;
 }
 
-/* 🔹 Animation */
-@keyframes bounceIn {
+/* 💫 Bounce animation */
+@keyframes info4-bounceIn {
   0% {
     transform: scale(0.5);
     opacity: 0;
   }
-
 }
 
-/* 🔹 Responsive Design */
+/* 📱 Responsive Styles */
 
 /* Tablet */
 @media (max-width: 992px) {
-  .feature-card {
+  .info4-card {
     flex-direction: column;
     text-align: center;
     padding: 30px;
     gap: 40px;
   }
 
-  .feature-content {
+  .info4-content {
     text-align: center;
     transform: translateY(50px);
   }
 
-  .feature-content.animate-content {
+  .info4-content.info4-show-content {
     transform: translateY(0);
   }
 
-  .feature-button {
+  .info4-button {
     align-self: center;
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-  .feature-section {
+  .info4-section {
     padding: 40px 15px;
   }
 
-  .feature-card {
+  .info4-card {
     padding: 20px;
     min-height: auto;
     gap: 30px;
   }
 
-  .feature-content h3 {
+  .info4-content h3 {
     font-size: 1.4rem;
   }
 
-  .feature-content p {
+  .info4-content p {
     font-size: 0.9rem;
   }
 
-  .feature-media img {
+  .info4-media img {
     max-width: 250px;
   }
 }
