@@ -1,5 +1,5 @@
 :root{
-  --bg: #ffffff;
+  --bg: #rgb(255, 255, 255);
   --muted: #64748b;
   --accent: #0c8f74;
   --card-shadow: 0 6px 18px rgba(8,15,18,0.06);
@@ -9,7 +9,7 @@
 
 /* Wrapper + container */
 .blog-wrapper {
-  background:   #12343b;
+  background:   rgb(255, 255, 255);
   padding: 56px 24px;
   position: relative;
 }
@@ -26,7 +26,7 @@
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
-  color: #9aa4b1;
+  color: #19191a;
   letter-spacing: 0.06em;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -36,7 +36,7 @@
   margin: 0 0 22px 0;
   font-size: 36px;
   line-height: 1.08;
-  color: #ffffff;
+  color: #000000;
   font-family: "Playfair Display", serif;
 }
 
@@ -50,7 +50,7 @@
 
 /* Individual blog item (card) */
 .blog-item {
-  background:   #12343b;
+  background:    rgb(66, 66, 66);
   border-radius: var(--radius);
   overflow: hidden;
   display: flex;

@@ -1,5 +1,5 @@
 .custom-card-page{
-    background-color: #eeeeee;
+    background-color: rgb(255, 255, 255);
 }
 
 .custom-card-container {
@@ -8,16 +8,16 @@
   display: flex;
   flex-direction: column;
   /* gap: 30px; */
-  background-color: #eeeeee;
+  background-color: rgb(255, 255, 255);
   
 }
 
 .custom-card {
   display: flex;
-  background: #eeeeee;
+  background: rgb(255, 255, 255);
   /* border-radius: 15px; */
   overflow: hidden;
-  box-shadow: 0 8px 20px #eeeeee;
+  box-shadow: 0 8px 20px rgb(255, 255, 255);
   min-height: 400px;
   margin-top: 20px;
   margin-left: 40px;
@@ -77,10 +77,10 @@
 .custom-card-popup {
   /* margin-top: 10px;  */
   padding: 20px;
-  background: #eeeeee;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   color: #000000;
-  box-shadow: 0 8px 15px #eeeeee;
+  box-shadow: 0 8px 15px rgb(255, 255, 255);
   animation: fadeIn 1s ease forwards;
 }
 

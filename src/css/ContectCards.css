@@ -1,16 +1,16 @@
 /* ------------------ Heading Section ------------------ */
 .contact-heading {
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0 auto;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to right, #071a3d, #003e7d);
+  background: rgb(255, 255, 255);
 }
 
 .contact-heading h2 {
   margin-bottom: 30px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 600; 
   line-height: 1.5;
 }
 
@@ -20,18 +20,18 @@
   gap: 20px;
   justify-content: center;
   padding: 30px;
-  background: linear-gradient(to right, #071a3d, #003e7d);
+  background: rgb(255, 255, 255);
   flex-wrap: nowrap;
 }
 
 .contact-card {
-  background: linear-gradient(to bottom right, #2196f3, #0d47a1);
+  background:  rgb(217, 217, 217);
   padding: 20px;
   width: 100%;
   max-width: 390px;
   height: 220px;
   border-radius: 12px;
-  color: white;
+  color: rgb(0, 0, 0);
   position: relative;
   transition: all 0.4s ease;
   overflow: hidden;
@@ -64,14 +64,14 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(255, 255, 255);
   transition: transform 0.3s ease, background 0.3s ease;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 18px;
 }
 
 .contact-card .contact-go-to:hover {
-  background: rgba(255, 255, 255, 0.4);
+  /* background: rgba(255, 255, 255, 0.4); */
   transform: scale(1.1);
 }
 
@@ -97,7 +97,7 @@
 /* ------------------ Expanded Form Section ------------------ */
 .contact-form-container {
   width: 100%;
-  background: linear-gradient(to right, #071a3d, #003e7d);
+  background: rgb(217, 217, 217);
   padding: 30px;
   box-shadow: 10px 10px 20px rgb(160, 138, 138);
   animation: slideDown 0.6s ease;
@@ -105,7 +105,7 @@
 
 .contact-form-container h2 {
   margin-bottom: 20px;
-  color: #f4f6f8;
+  color: #000000;
   font-size: 22px;
   font-weight: bold;
   text-align: center;
@@ -113,7 +113,7 @@
 
 .contact-form-container .contact-form-p {
   margin-bottom: 20px;
-  color: #f4f6f8;
+  color: #000000;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -141,14 +141,14 @@
 .contact-form-group label {
   margin-bottom: 6px;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
 }
 
 .contact-form-group input,
 .contact-form-group select,
 .contact-form-group textarea {
   padding: 12px;
-  border: 1px solid #2196f3;
+  border: 1px solid #000000;
   border-radius: 8px;
   outline: none;
   font-size: 15px;
@@ -160,8 +160,8 @@
 .contact-form-group input:focus,
 .contact-form-group select:focus,
 .contact-form-group textarea:focus {
-  border-color: #0d47a1;
-  box-shadow: 0 0 6px rgba(13, 71, 161, 0.3);
+  border-color: #000000;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .contact-form-group textarea {
@@ -171,8 +171,8 @@
 
 .contact-submit-btn {
   padding: 12px 20px;
-  background: linear-gradient(to right, #2196f3, #0d47a1);
-  color: white;
+  background: white;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -184,6 +184,7 @@
 .contact-submit-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background: rgb(138, 138, 138);
 }
 
 /* ------------------ Team Section ------------------ */
@@ -196,8 +197,8 @@
 }
 
 .contact-team-card {
-  background: linear-gradient(to bottom right, #2196f3, #0d47a1);
-  color: #ffffff;
+  background:rgb(217, 217, 217);
+  color: #000000;
   border-radius: 12px;
   padding: 15px;
   text-align: center;
@@ -207,7 +208,7 @@
 .contact-team-card img {
   width: 100px;
   height: 100px;
-  margin-left: 42%;
+  /* margin-left: 42%; */
   border-radius: 50%;
   margin-bottom: 10px;
   transition: all 0.3s ease;

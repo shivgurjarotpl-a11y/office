@@ -57,8 +57,8 @@
 .fusion-btn {
   padding: 12px 24px;
   border: none;
-  background: linear-gradient(90deg, #d4145a, #fbb03b);
-  color: white;
+  background: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;

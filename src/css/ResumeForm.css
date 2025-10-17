@@ -7,8 +7,8 @@
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background: linear-gradient(to right, #071a3d, #003e7d);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   gap: 40px;
 }
 
@@ -29,18 +29,17 @@
 .resume-left p {
   font-size: 16px;
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Right Side Form */
 .resume-right {
   flex: 1;
   min-width: 320px;
-  background: linear-gradient(to bottom right, #2196f3, #0d47a1);
+  background: rgb(217, 217, 217);
   color: #111;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   text-align: left;
 }
 
@@ -52,7 +51,7 @@
 
 .resume-right .subtext {
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -89,13 +88,12 @@
 .resume-form input:focus,
 .resume-form select:focus,
 .resume-form textarea:focus {
-  border-color: #3f2b96;
-  box-shadow: 0 0 5px rgba(63, 43, 150, 0.3);
+  border-color: #000000;
 }
 
 .resume-form button {
-  background: #111;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
   padding: 12px;
   border: none;
   border-radius: 6px;
@@ -106,7 +104,7 @@
 }
 
 .resume-form button:hover {
-  background: #3f2b96;
+  background: #555555;
 }
 
 /* ---------------------- */

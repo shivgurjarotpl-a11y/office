@@ -3,8 +3,8 @@
    ============================== */
 .job-section {
   padding: 60px 20px;
-  background: linear-gradient(to right, #071a3d, #003e7d);
-  color: #fff;
+  background: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .job-header {
@@ -18,11 +18,11 @@
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .job-header p {
-  color: #ffffff;
+  color: #000000;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -39,12 +39,12 @@
 }
 
 .job-card {
-  background: linear-gradient(to bottom right, #2196f3, #0d47a1);
+  background:  rgb(217, 217, 217);
   border-radius: 10px;
   padding: 25px;
   text-align: center;
   border: 1px solid #e0e0e0;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+
 
   /* Scroll animation */
   opacity: 0;
@@ -79,12 +79,12 @@
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .job-card p {
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 5px;
 }
 

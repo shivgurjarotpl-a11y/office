@@ -3,8 +3,8 @@
   width: 100%;
   margin: 0 auto;
   padding: 3rem 1.5rem;
-  background: #f9fafb;
-  color: #374151;
+  background: rgb(255, 255, 255);
+  color: #000000;
   font-family: "Funnel Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -31,7 +31,7 @@
 .mission-hero {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: rgb(217, 217, 217);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -40,7 +40,7 @@
 
 .hero-image {
   flex: 1;
-  background: linear-gradient(to bottom right, #c7d2fe, #dbeafe);
+  background: rgb(217, 217, 217);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,8 +84,8 @@
 }
 
 .hero-text button {
-  background: #141414;
-  color: #fff;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 0.9rem 2rem;
   border-radius: 9999px;
   font-weight: 600;
@@ -96,7 +96,7 @@
 
 .hero-text button:hover {
   transform: scale(1.05);
-  background: #1f1f1fff;
+  background: rgb(255, 255, 255);
 }
 
 /* Core Values */
@@ -119,7 +119,7 @@
 }
 
 .value-card {
-  background: #fff;
+  background: rgb(217, 217, 217);
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
@@ -136,7 +136,7 @@
 .value-card .icon {
   width: 64px;
   height: 64px;
-  background: #e0e7ff;
+  background: rgb(217, 217, 217);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -154,7 +154,7 @@
 
 /* Approach */
 .approach {
-  background: #fff;
+  background: rgb(217, 217, 217);
   border-radius: 15px;
   padding: 2.5rem;
   margin-bottom: 5rem;
@@ -219,7 +219,7 @@
 }
 
 .testimonials blockquote {
-  background: #fff;
+  background: rgb(217, 217, 217);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
@@ -235,8 +235,8 @@
 
 /* Call to Action */
 .cta {
-  background: #323235;
-  color: #fff;
+  background: rgb(217, 217, 217);
+  color: #000000;
   border-radius: 15px;
   padding: 3rem;
   text-align: center;
@@ -254,7 +254,7 @@
 }
 
 .cta button {
-  background: #fff;
+  background: rgb(255, 255, 255);
   color: #141414;
   padding: 0.9rem 2rem;
   border-radius: 9999px;
@@ -266,7 +266,7 @@
 
 .cta button:hover {
   transform: scale(1.05);
-  background: #f3f4f6;
+
 }
 
 

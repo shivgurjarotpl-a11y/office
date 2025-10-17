@@ -1,14 +1,15 @@
 .career-section {
   padding: 60px 20px;
   text-align: center;
-  background:#F9FAFB;
+  background:rgb(255, 255, 255);
+  
 }
 
 .career-heading {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: linear-gradient(to bottom right, #2196f3, #0d47a1);
+  color:#000000 ;
 }
 
 .career-subtext {
@@ -29,7 +30,7 @@
 }
 
 .career-card {
-    background: linear-gradient(to bottom right, #2196f3, #0d47a1);
+    background: rgb(217, 217, 217);
   border-radius: 12px;
   padding: 25px;
   transition: 0.3s ease;
@@ -77,11 +78,11 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .career-card p {
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
   line-height: 1.5;
 }

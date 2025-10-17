@@ -55,8 +55,8 @@
 .fc3-button {
   padding: 12px 24px;
   border: none;
-  background: linear-gradient(90deg, #d4145a, #fbb03b);
-  color: white;
+  background: rgb(217, 217, 217);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;

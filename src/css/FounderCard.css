@@ -1,7 +1,7 @@
 .founder-card {
   width: 100%;
   padding: 20px;
-  background: linear-gradient(to right, #071a3d, #003e7d);
+  background: rgb(255, 255, 255);
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   color: white;
 
@@ -21,7 +21,7 @@
   font-size: 22px;
   font-weight: bold;
   color: #b22222;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #313131;
   padding-bottom: 8px;
   margin-bottom: 20px;
 }
@@ -45,20 +45,20 @@
 
 .founder-name {
   font-size: 24px;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 5px;
 }
 
 .founder-position {
   font-weight: 600;
-  color: #ffffff;
+  color: #1f1f1f;
   margin-bottom: 15px;
   line-height: 1.4;
 }
 
 .founder-desc {
   font-size: 15px;
-  color: #b9b7b7;
+  color: #1f1f1f;
   margin-bottom: 12px;
   line-height: 1.6;
 }

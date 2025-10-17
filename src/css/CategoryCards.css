@@ -1,6 +1,6 @@
 .category-section-container {
   padding: 20px;
-  background: linear-gradient(to right, #071a3d, #003e7d);
+  background: rgb(255, 255, 255);
  
 }
 
@@ -8,7 +8,7 @@
   font-size: 2rem;
   margin: 20px 0;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .category-cards-grid {
