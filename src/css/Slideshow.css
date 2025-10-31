@@ -1,13 +1,4 @@
-/* ---------------------------
-   Full responsive Slideshow CSS
-   - preserves fadeIn & bounceUp animations
-   - responsive overlay + touch-friendly button
-   - supports two overlay modes:
-       1) Centered mode (default)
-       2) Bottom mode (add data-overlay="bottom" to .custom-slideshow)
-   --------------------------- */
 
-/* Root variables (adjust easily) */
 :root{
   --slideshow-height: 80vh;
   --overlay-max-width: 1100px;

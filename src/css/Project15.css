@@ -1,0 +1,144 @@
+.project15-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  gap: 40px;
+  background: #30081f;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== Left Section ===== */
+.project15-left {
+  flex: 1;
+  color: #fff;
+  max-width: 520px;
+}
+.project15-left h2 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.project15-left p {
+  line-height: 1.7;
+  margin-bottom: 32px;
+  font-size: 15px;
+  color: #eaeaea;
+}
+
+
+
+/* ===== Buttons ===== */
+.project15-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.project15-btn-primary {
+  background: #fff;
+  color: #f98c3e;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project15-btn-primary:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.project15-btn-secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project15-btn-secondary:hover {
+  background: #fff;
+  color: #f98c3e;
+  transform: translateY(-2px);
+}
+
+/* ===== Right Section ===== */
+.project15-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 480px;
+}
+
+.project15-phone-img {
+  max-width: 450px;
+  width: 110%;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+
+
+/* ===== Animation States ===== */
+.project15-hidden-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1.6s ease;
+}
+
+.project15-hidden-bottom {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1.6s ease;
+}
+
+.project15-animate {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .project15-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 6%;
+  }
+
+  .project15-stats {
+    justify-content: center;
+  }
+
+  .project15-buttons {
+    justify-content: center;
+  }
+
+  .project15-right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project15-left,
+  .project15-logo-circle {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+
+  .project15-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .project15-phone-img {
+    max-width: 380px;
+  }
+}

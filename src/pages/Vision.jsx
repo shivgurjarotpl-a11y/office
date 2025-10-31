@@ -4,6 +4,7 @@ import VisionSection from '../Components/VisionSection'
 import "../css/Vision.css";
 import Footer from '../Components/Footer';
 import FloatingButtons from '../Components/FloatingButtons';
+import VisionPage from '../Components/VisionPage';
 
 
 const Vision = () => {
@@ -11,7 +12,7 @@ const Vision = () => {
     <div>
       <VisionImg/>
       <div className='viision-Contanior'>
-          <VisionSection/>
+          <VisionPage/>
           <Footer/>
           <FloatingButtons/>
       </div>
