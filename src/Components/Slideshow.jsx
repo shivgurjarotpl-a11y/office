@@ -106,7 +106,7 @@ import "../css/Slideshow.css";
 
 const videos = [
   {
-    src: "/videos/video6.mov",
+    src: "/videos/video6.mp4",
     text: "Technology for Smart Living",
     button: "More",
   },
