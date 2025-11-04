@@ -106,7 +106,7 @@ import "../css/Slideshow.css";
 
 const videos = [
   {
-    src: "/videos/video6.mp4",
+    src: "/videos/video3.mp4",
     text: "Technology for Smart Living",
     button: "More",
   },
@@ -116,7 +116,7 @@ const videos = [
     button: "Discover",
   },
   {
-    src: "/videos/video7.mp4",
+    src: "/videos/video3.mp4",
     text: "Smart Solutions, Better Future",
     button: "Explore",
   },
