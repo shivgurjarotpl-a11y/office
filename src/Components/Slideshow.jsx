@@ -128,31 +128,38 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % videos.length);
-    }, 6000); 
+    }, 6000);
+
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="slideshow-container">
-      {videos.map((video, index) => (
-        <div
-          key={index}
-          className={`slide ${index === currentIndex ? "active" : ""}`}
-        >
-          <video
-            src={video.src}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="video-bg"
-          />
-          <div className="overlay">
-            <h2>{video.text}</h2>
-            <button className="slide-btn">{video.button} →</button>
-          </div>
+      {/* 🔹 Background GIF layer */}
+      <div className="background-gif">
+        <img src="/gif/home1.gif" alt="background" />
+      </div>
+
+      {/* 🔹 Active Slide Only */}
+      <div className="slide active">
+        <video
+          key={videos[currentIndex].src}
+          src={videos[currentIndex].src}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="video-bg"
+        />
+        <div className="overlay">
+          <h2>{videos[currentIndex].text}</h2>
+          <button className="slide-btn">
+            {videos[currentIndex].button} →
+          </button>
         </div>
-      ))}
+      </div>
+
+      {/* 🔹 Dots Navigation */}
       <div className="dots">
         {videos.map((_, i) => (
           <span
@@ -167,4 +174,6 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
+
+
 
