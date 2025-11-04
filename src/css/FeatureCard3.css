@@ -1,7 +1,7 @@
 /* 🔹 Outer Wrapper (Full width background) */
 .fc3-section {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #000;
   display: flex;
   justify-content: center;
   padding: 0px 20px;
@@ -44,12 +44,16 @@
   font-weight: bold;
   margin-bottom: 15px;
   font-size: 1.8rem;
+  color: white;
+
 }
 
 .fc3-content p {
   line-height: 1.6;
   margin-bottom: 20px;
   font-size: 1rem;
+  color: white;
+
 }
 
 .fc3-button {

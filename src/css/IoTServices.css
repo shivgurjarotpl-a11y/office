@@ -1,0 +1,121 @@
+.iot-heading {
+  text-align: center;
+  margin: 60px 0 40px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.iot-heading h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.iot-heading p {
+  max-width: 750px;
+  margin: 15px auto 0;
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+
+
+
+.ito-services {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+
+.ito-service-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 0 10%;
+}
+
+
+.ito-service-section.ito-reverse {
+  flex-direction: row-reverse;
+}
+
+
+.ito-service-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ito-service-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.ito-service-content {
+  flex: 1;
+}
+
+.ito-service-content h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ito-service-content p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 992px) {
+  .ito-service-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ito-service-section.ito-reverse {
+    flex-direction: column;
+  }
+
+  .ito-service-image img {
+    max-width: 400px;
+  }
+
+  .ito-service-content h2 {
+    font-size: 2rem;
+  }
+
+  .ito-service-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ito-services {
+    padding: 40px 20px;
+    gap: 60px;
+  }
+
+  .ito-service-image img {
+    max-width: 300px;
+  }
+
+  .ito-service-content h2 {
+    font-size: 1.6rem;
+  }
+}

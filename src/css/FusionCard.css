@@ -1,7 +1,7 @@
 /* 🔹 Wrapper: full width background area */
 .fusion-wrapper {
   width: 100%;
-  background-color: rgb(255, 255, 255); /* optional background */
+  background-color:#000; /* optional background */
   display: flex;
   justify-content: center; /* card ko center me laya */
   padding: 30px 20px; /* top-bottom padding */

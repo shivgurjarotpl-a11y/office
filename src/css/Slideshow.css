@@ -1,30 +1,30 @@
-
+/* 
 :root{
   --slideshow-height: 80vh;
   --overlay-max-width: 1100px;
   --overlay-gap-min: 0.5rem;
   --overlay-gap-max: 1.5rem;
-  --overlay-translateY-desktop: -15%; /* how high above center */
+  --overlay-translateY-desktop: -15%; 
   --overlay-translateY-tablet: -12%;
   --overlay-translateY-mobile: -8%;
-  --overlay-bottom-offset: 30%; /* used for bottom mode */
+  --overlay-bottom-offset: 30%;
   --button-min-touch: 44px;
 }
 
-/* General Slideshow Container */
+
 .custom-slideshow {
   margin: 0;
   padding: 0;
   width: 100%;
   height: var(--slideshow-height);
   overflow: hidden;
-  position: fixed; /* change to relative if you want slideshow to scroll with page */
+  position: fixed; 
   top: 0;
   left: 0;
   z-index: 0;
 }
 
-/* Slide wrapper - helps positioning children */
+
 .custom-slide {
   position: relative;
   width: 100%;
@@ -32,7 +32,6 @@
   overflow: hidden;
 }
 
-/* Slide Media (image/video) */
 .custom-slide img,
 .custom-slide video {
   margin: 0;
@@ -43,7 +42,7 @@
   display: block;
 }
 
-/* Ensure video sits behind overlays */
+
 .custom-background-video {
   position: absolute;
   top: 0;
@@ -52,12 +51,10 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  pointer-events: none; /* allow clicks to pass to overlays if needed */
+  pointer-events: none; 
 }
 
-/* ---------------------------
-   Overlay: responsive and centered by default
-   --------------------------- */
+
 .custom-overlay {
   position: absolute;
   left: 50%;
@@ -81,14 +78,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Bottom-mode: to use it, set: <div class="custom-slideshow" data-overlay="bottom"> */
+
 .custom-slideshow[data-overlay="bottom"] .custom-overlay {
   top: auto;
   bottom: var(--overlay-bottom-offset);
-  transform: translateX(-50%); /* center horizontally, keep bottom placement */
+  transform: translateX(-50%); 
 }
 
-/* ensure animated text wraps nicely and is readable */
+
 .custom-overlay .custom-animated-text {
   display: inline-block;
   max-width: 100%;
@@ -98,37 +95,33 @@
   white-space: normal;
 }
 
-/* characters keep their animation but inherit responsive sizing */
 .custom-fade-char {
   display: inline-block;
   opacity: 0;
-  animation: fadeIn 0.5s forwards; /* preserved */
-  font-size: inherit;
+  animation: fadeIn 0.5s forwards; 
   line-height: inherit;
 }
 
-/* ---------------------------------------------------------
-   MORE Button: responsive, accessible touch target & focus
-   --------------------------------------------------------- */
+
 .custom-more-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: clamp(0.45rem, 0.9vw, 0.95rem) clamp(0.9rem, 2vw, 1.2rem);
   font-size: clamp(0.85rem, 1.2vw, 1.05rem);
-  min-height: var(--button-min-touch);       /* accessible touch target */
+  min-height: var(--button-min-touch);       
   color: #003366;
   background-color: #e0ecff;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.25s ease, transform 0.18s ease, box-shadow 0.18s ease;
-  z-index: 3;                                /* ensure above video */
+  z-index: 3;                     
   position: relative;
   overflow: hidden;
 }
 
-/* hover & active affordances */
+
 .custom-more-btn:hover { transform: translateY(-2px); background-color: #c1d8ff; }
 .custom-more-btn:active { transform: translateY(0); }
 .custom-more-btn:focus {
@@ -137,7 +130,7 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* subtle sheen on hover (preserved) */
+
 .custom-more-btn::before {
   content: "";
   position: absolute;
@@ -152,12 +145,10 @@
 }
 .custom-more-btn:hover::before { left: 130%; }
 
-/* arrow icon scales with text */
+
 .custom-arrow-icon { display: inline-block; font-size: 0.95em; }
 
-/* ---------------------------
-   Slide Indicators
-   --------------------------- */
+
 .custom-slide-indicators {
   position: absolute;
   bottom: 20px;
@@ -179,9 +170,7 @@
 .custom-dot:hover { transform: scale(1.2); }
 .custom-dot.active { background: rgba(255,255,255,1); }
 
-/* ---------------------------
-   Navigation Buttons (prev/next)
-   --------------------------- */
+
 .custom-nav-btn {
   position: absolute;
   top: 50%;
@@ -207,15 +196,13 @@
 .custom-nav-btn.left { left: 20px; }
 .custom-nav-btn.right { right: 20px; }
 
-/* smaller nav buttons on small screens for better fit */
+
 .custom-nav-btn:focus {
   outline: 3px solid rgba(255,255,255,0.15);
   outline-offset: 3px;
 }
 
-/* ---------------------------
-   Keyframes (preserved)
-   --------------------------- */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(15px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -231,11 +218,8 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* ---------------------------
-   Responsive Breakpoints
-   --------------------------- */
 @media (max-width: 1200px) {
-  /* reduce overlay translate a little on large tablets/desktop narrow */
+
   .custom-overlay { font-size: clamp(1rem, 2.3vw + 0.4rem, 3rem); }
   .custom-overlay { transform: translate(-50%, var(--overlay-translateY, -12%)); }
 }
@@ -251,7 +235,6 @@
   .custom-more-btn { font-size: 14px; padding: 8px 16px; min-height: 44px; }
 }
 
-/* mobile portrait */
 @media (max-width: 480px) {
   .custom-overlay {
     font-size: clamp(0.95rem, 4.2vw, 1.6rem);
@@ -270,22 +253,100 @@
   .custom-slide-indicators { bottom: 14px; }
 }
 
-/* very small screens */
+
 @media (max-width: 360px) {
   .custom-overlay { top: 45%; transform: translate(-50%, var(--overlay-translateY, -6%)); font-size: 1.05rem; }
   .custom-more-btn { min-height: 40px; padding: 6px 10px; }
 }
 
-/* ---------------------------
-   Accessibility / small polish
-   --------------------------- */
-/* make sure focusable elements are visible */
+
 .custom-more-btn, .custom-nav-btn, .custom-dot {
   -webkit-tap-highlight-color: rgba(0,0,0,0.08);
 }
 
-/* if you use outline: none anywhere else, avoid losing keyboard focus cues */
+
 button:focus { outline-offset: 3px; }
 
-/* end */
- 
+
+  */
+
+
+
+  .slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.overlay h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.slide-btn {
+  padding: 10px 25px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slide-btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.active-dot {
+  background-color: white;
+}

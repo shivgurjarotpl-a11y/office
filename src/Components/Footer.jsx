@@ -5,7 +5,6 @@ import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn, FaYoutube } from 'r
 const Footer = () => {
   return (
     <>
-    <hr />
     <footer className="footer">
        
       <div className="footer-top">

@@ -103,7 +103,7 @@ const Topbar = () => {
             Blog
           </Link>
           <Link to="/work" onClick={handleLinkClick}>
-            Work
+            Portfolio
           </Link>
           <Link to="/career" onClick={handleLinkClick}>
             Career

@@ -1,4 +1,4 @@
-.services-wrapper {
+/* .services-wrapper {
   padding: 60px 20px;
   width: 100%;
   margin: auto;
@@ -28,7 +28,7 @@
   color: #000000;
 }
 
-/* ✅ Scope styles to only inside .category-title */
+
 .category-title .category-id {
   font-size: 2.8rem;
   font-weight: 800;
@@ -49,7 +49,7 @@
   color: #000000;
 }
 
-/* ----------- Cards ----------- */
+
 .subcategory-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -95,7 +95,7 @@
   margin-bottom: 15px;
 }
 
-/* Button */
+
 .read-more-btn {
   padding: 10px 20px;
   font-size: 16px;
@@ -134,7 +134,7 @@
   left: 130%;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .services-heading {
     font-size: 2rem;
@@ -147,7 +147,7 @@
   }
 }
 
-/* Fade-up animation */
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -174,4 +174,176 @@
 }
 .subcategory-card.show:nth-child(4) {
   animation-delay: 0.7s;
+} */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #000;
+  color: #fff;
+  padding: 80px;
+  min-height: 100vh;
+}
+
+.services-left {
+  flex: 1;
+}
+
+.services-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.services-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-left li {
+  font-size: 1.7rem;
+  color: #a0a0a0;
+  margin-bottom: 12px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.services-left li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 8px;
+  height: 8px;
+  background-color: #003082;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+}
+
+.services-left li:hover::before,
+.services-left li.active::before {
+  transform: translateY(-50%) scale(1);
+  opacity: 1;
+}
+
+.services-left li:hover,
+.services-left li.active {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transform: translateX(4px);
+}
+
+
+/* ===== Right Section with Smooth Fade ===== */
+.services-right {
+  flex: 1;
+  padding-left: 5%;
+ transform 0.6s ease;
+  transform: translateY(0);
+}
+
+.services-right.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+/* Heading */
+.services-right h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.services-right h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #003082, #00b4d8);
+  margin-top: 8px;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.services-right h3:hover::after {
+  width: 70px;
+}
+
+/* Paragraph */
+.services-right p {
+  font-size: 1.05rem;
+  color: #c0c0c0;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  transition: color 0.3s ease;
+}
+
+.services-right p:hover {
+  color: #e0e0e0;
+}
+
+/* Image Container */
+.services-image {
+  position: relative;
+  overflow: hidden;
+    width: 80%;  
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.services-image img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  filter: brightness(0.9) contrast(1.05);
+  transition: transform 0.5s ease, filter 0.5s ease;
+  transform: scale(0.9);  
+}
+
+.services-image:hover img {
+  transform: scale(1);     /* hover pe full size */
+}
+
+
+/* Hover Effects */
+.services-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+.services-image:hover img {
+  transform: scale(1.05);
+  filter: brightness(1) contrast(1.1);
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .services-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .services-left,
+  .services-right {
+    width: 100%;
+  }
+  .services-right {
+    padding-left: 0;
+  }
+  .services-image img {
+    max-width: 300px;
+  }
 }

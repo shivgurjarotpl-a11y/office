@@ -18,6 +18,16 @@ import GalleryPage from "./Components/GalleryPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import Blog from "./pages/Blog";
 
+import ServicesSection from "./Components/ServicesSection";
+import IoTServices from "./Components/IoTServices";
+import EmbeddedServices from "./Components/EmbeddedServices";
+import Design from "./Components/Design";
+import Software from "./Components/Software";
+import Cloud from "./Components/Cloud";
+import Consulting from "./Components/Consulting";
+
+
+
 
 const App = () => {
   return (
@@ -48,6 +58,18 @@ const App = () => {
         <Route path="/work" element={<Work />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<ContactUs />} />
+        
+        <Route path="/" element={<ServicesSection />} />
+        <Route path="/iot" element={<IoTServices />} /> 
+        <Route path="/embedded" element={<EmbeddedServices />} /> 
+        <Route path="/design" element={<Design />} /> 
+        <Route path="/software & application" element={<Software />} /> 
+        <Route path="/cloud" element={<Cloud />} /> 
+        <Route path="/Consulting & Support" element={<Consulting />} /> 
+
+
+
+
 
     
        

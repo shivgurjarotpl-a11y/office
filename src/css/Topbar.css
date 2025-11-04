@@ -1,8 +1,8 @@
 /* Topbar Base */
 .topbar {
   width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background: #000000;
+  /* border-bottom: 1px solid #000000; */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,7 +20,9 @@
 
 /* Logo */
 .topbar-logo img {
-  height: 42px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 /* Nav Desktop */
@@ -32,7 +34,7 @@
 
 .topbar-nav a,
 .dropbtn {
-  color: #374151;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;

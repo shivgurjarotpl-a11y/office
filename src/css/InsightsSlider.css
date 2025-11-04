@@ -1,0 +1,194 @@
+/* Base Section */
+.InsightsSlider {
+  background: #000;
+  color: #fff;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.InsightsSlider-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Slider Wrapper */
+.InsightsSlider-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Container */
+.InsightsSlider-container {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  gap: 20px;
+}
+
+/* Card Design */
+.InsightsSlider-card {
+  flex: 0 0 100%;
+  background: #111;
+  border-radius: 18px;
+  overflow: hidden;
+  animation: fadeIn 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Image */
+.InsightsSlider-image {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.InsightsSlider-card:hover .InsightsSlider-image {
+  transform: scale(1.05);
+}
+
+/* Content */
+.InsightsSlider-content {
+  padding: 20px;
+}
+
+.InsightsSlider-tag {
+  color: #bbb;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.InsightsSlider-heading {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.InsightsSlider-desc {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.InsightsSlider-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.InsightsSlider-btn:hover {
+  color: #aaa;
+}
+
+/* Navigation Buttons */
+.InsightsSlider-nav {
+  position: static; /* 👈 Now it will come below the slider */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px; /* 👈 Distance between slider & buttons */
+}
+
+.InsightsSlider-arrow {
+  background: #1d1d1d;
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.InsightsSlider-arrow:hover {
+  background: #333;
+  transform: scale(1.08);
+}
+
+
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------- Responsive Styles -------------------- */
+
+/* Tablets: 768px and above */
+@media (min-width: 768px) {
+  .InsightsSlider-card {
+    flex: 0 0 48%;
+  }
+
+  .InsightsSlider-image {
+    height: 260px;
+  }
+
+  .InsightsSlider-container {
+    gap: 24px;
+  }
+
+  .InsightsSlider-nav {
+    bottom: 15px;
+  }
+}
+
+/* Desktops: 1024px and above */
+@media (min-width: 1024px) {
+  .InsightsSlider-card {
+    flex: 0 0 23%;
+  }
+
+  .InsightsSlider-image {
+    height: 280px;
+  }
+
+  .InsightsSlider-content {
+    padding: 25px;
+  }
+
+  .InsightsSlider-nav {
+    bottom: 20px;
+  }
+}
+
+/* Large screens: 1440px and above */
+@media (min-width: 1440px) {
+  .InsightsSlider {
+    padding: 80px 80px;
+  }
+
+  .InsightsSlider-card {
+    border-radius: 24px;
+  }
+
+  .InsightsSlider-image {
+    height: 320px;
+  }
+
+  .InsightsSlider-heading {
+    font-size: 1.3rem;
+  }
+
+  .InsightsSlider-desc {
+    font-size: 1rem;
+  }
+}
