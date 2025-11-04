@@ -128,7 +128,7 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % videos.length);
-    }, 6000); // change every 6 sec
+    }, 6000); 
     return () => clearInterval(interval);
   }, []);
 
