@@ -106,17 +106,17 @@ import "../css/Slideshow.css";
 
 const videos = [
   {
-    src: "/videos/video3.mp4",
+    // src: "/videos/video1.mp4",
     text: "Technology for Smart Living",
     button: "More",
   },
   {
-    src: "/videos/video3.mp4",
+    // src: "/videos/video2.mp4",
     text: "Innovating for Tomorrow",
     button: "Discover",
   },
   {
-    src: "/videos/video3.mp4",
+    // src: "/videos/video3.mp4",
     text: "Smart Solutions, Better Future",
     button: "Explore",
   },
@@ -135,12 +135,6 @@ const Slideshow = () => {
 
   return (
     <div className="slideshow-container">
-      {/* 🔹 Background GIF layer */}
-      <div className="background-gif">
-        <img src="/gif/home1.gif" alt="background" />
-      </div>
-
-      {/* 🔹 Active Slide Only */}
       <div className="slide active">
         <video
           key={videos[currentIndex].src}

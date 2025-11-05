@@ -1,6 +1,6 @@
-/* ---------------- WRAPPER ---------------- */
+
 .news-wrapper {
-  background: linear-gradient(to right, #071a3d, #003e7d);
+  background: black;
   padding: 40px 20px;
   color: white;
 
@@ -32,9 +32,8 @@
 }
 
 .news-tabs-container .news-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
-  font-family: "Funnel Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   margin: 0;
   white-space: nowrap;
@@ -44,7 +43,7 @@
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 500;
-  color: #003366;
+  color: #000000;
   background-color: #e0ecff;
   border: none;
   border-radius: 8px;

@@ -269,35 +269,24 @@ button:focus { outline-offset: 3px; }
 
 
   */
-
-
 .slideshow-container {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
   z-index: 0;
 }
 
-/* 🔹 Background GIF */
-.background-gif {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.background-gif img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.7); /* slightly dark for better text visibility */
-}
-
-/* 🔹 Slide */
 .slide {
   position: absolute;
   inset: 0;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1.5s ease-in-out; /* Smooth fade effect */
+}
+
+.slide.active {
+  opacity: 1;
   z-index: 1;
 }
 
@@ -305,9 +294,13 @@ button:focus { outline-offset: 3px; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 2s ease; /* Optional: smooth zoom/pan effect */
 }
 
-/* 🔹 Overlay (Text + Button) */
+.slide.active .video-bg {
+  transform: scale(1.05); /* Slight zoom for smooth motion feel */
+}
+
 .overlay {
   position: absolute;
   top: 50%;
@@ -315,6 +308,13 @@ button:focus { outline-offset: 3px; }
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+}
+
+.slide.active .overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .overlay h2 {
@@ -340,7 +340,6 @@ button:focus { outline-offset: 3px; }
   color: #fff;
 }
 
-/* 🔹 Dots Navigation */
 .dots {
   position: absolute;
   bottom: 30px;
