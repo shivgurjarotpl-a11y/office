@@ -30,10 +30,10 @@ const HorizontalScrollCards = () => {
         {[...Array(2)].map((_, i) => (
           <div className="slider-track" key={i}>
             {[
-              { title: 'Event Calendar', img: '/image/img1.jpg' },
-              { title: 'YouTube', img: '/image/img2.jpg' },
-              { title: 'Smart CityGPT',img: '/image/img3.jpg' },
-              { title: 'Meeting', img: '/image/img1.jpg'}
+              { title: 'Event Calendar', img: 'https://cspv.in/image/oxymora_imgs/image/img1.jpg' },
+              { title: 'YouTube', img: 'https://cspv.in/image/oxymora_imgs/image/img2.jpg' },
+              { title: 'Smart CityGPT',img: 'https://cspv.in/image/oxymora_imgs/image/img3.jpg' },
+              { title: 'Meeting', img: 'https://cspv.in/image/oxymora_imgs/image/img1.jpg'}
             ].map((card, index) => (
               <div className="slider-card" key={index}>
                 <img src={card.img} alt={card.title} />

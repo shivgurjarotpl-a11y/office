@@ -145,7 +145,7 @@ const ContactCard = () => {
                     email: "ashu@example.com",
                     phone: "+91-9876543210",
                     linkedin: "https://linkedin.com/in/johndoe",
-                    photo: "/image/img1.jpg",
+                    photo: "https://cspv.in/image/oxymora_imgs/image/img1.jpg",
                   },
                   {
                     name: "Prashant Singh",
@@ -153,7 +153,7 @@ const ContactCard = () => {
                     email: "jane@example.com",
                     phone: "+91-8765432109",
                     linkedin: "https://linkedin.com/in/janesmith",
-                    photo: "/image/img2.jpg",
+                    photo: "https://cspv.in/image/oxymora_imgs/image/img2.jpg",
                   },
                   {
                     name: "Gorav Kumar",
@@ -161,7 +161,7 @@ const ContactCard = () => {
                     email: "gorav@example.com",
                     phone: "+91-7654321098",
                     linkedin: "https://linkedin.com/in/davidjohnson",
-                    photo: "/image/img3.jpg",
+                    photo: "https://cspv.in/image/oxymora_imgs/image/img3.jpg",
                   },
                   {
                     name: "Krishna Shrama",
@@ -169,7 +169,7 @@ const ContactCard = () => {
                     email: "krishna@example.com",
                     phone: "+91-6543210987",
                     linkedin: "https://linkedin.com/in/emmawilliams",
-                    photo: "/image/img4.jpeg",
+                    photo: "https://cspv.in/image/oxymora_imgs/image/img4.jpeg",
                   },
                 ].map((member, i) => (
                   <div

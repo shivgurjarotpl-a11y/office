@@ -32,7 +32,7 @@ const InfoCard4 = () => {
         </div>
 
         <div className={`info4-media ${isVisible ? "info4-show-media" : ""}`}>
-          <img src="/image/img13.jpg" alt="SIM Management" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/img13.jpg" alt="SIM Management" />
         </div>
       </div>
     </section>

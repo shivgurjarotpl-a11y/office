@@ -41,12 +41,12 @@ const PortfolioCard7 = () => {
         <div className="poc7-image poc7-hidden-bottom">
           {isIllustrationView ? (
             <img
-              src="/image/Gemini_Generated_Image_8.png"
+              src="https://cspv.in/image/oxymora_imgs/image/Gemini_Generated_Image_8.png"
               alt="Stylized illustration of fall detector"
             />
           ) : (
             <img
-              src="/image/Gemini_Generated_Image_8.png"
+              src="https://cspv.in/image/oxymora_imgs/image/Gemini_Generated_Image_8.png"
               alt="Photorealistic product shot of fall detector"
             />
           )}
@@ -122,12 +122,12 @@ const PortfolioCard7 = () => {
         <div className="poc7-left poc7-hidden-bottom">
           {isIllustrationView ? (
             <img
-              src="/image/Gemini_Generated_Image_8.png"
+              src="https://cspv.in/image/oxymora_imgs/image/Gemini_Generated_Image_8.png"
               alt="Stylized illustration of fall detector"
             />
           ) : (
             <img
-              src="/image/Gemini_Generated_Image_8.png"
+              src="https://cspv.in/image/oxymora_imgs/image/Gemini_Generated_Image_8.png"
               alt="Photorealistic product shot of fall detector"
             />
           )}

@@ -40,7 +40,7 @@ const FusionCard = () => {
         </div>
 
         <div className={`fusion-image ${isVisible ? "animate-image" : ""}`}>
-          <img src="/image/oxymora-fusion1.png" alt="myFUSION" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/oxymora-fusion1.png" alt="myFUSION" />
         </div>
       </div>
     </div>

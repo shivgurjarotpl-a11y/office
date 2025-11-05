@@ -7,21 +7,21 @@ const servicesData = [
     title: "UI/UX Design",
     description:
       "Mobile and web interface design focuses on creating visually appealing and user-friendly layouts for digital platforms. Usability testing ensures that these designs are easy to navigate and meet user needs effectively. User experience optimization enhances overall satisfaction by improving accessibility, performance, and interaction flow across devices.",
-    image: "/image/uiux.png",
+    image: "https://cspv.in/image/oxymora_imgs/image/uiux.png",
   },
   {
     id: 2,
     title: "Website Development",
     description:
       "Company websites, landing pages, and e-commerce portals help businesses build a strong online presence. Company websites showcase brand identity and services, landing pages focus on specific campaigns or products to drive conversions, and e-commerce portals enable online sales with smooth shopping experiences for customers.",
-    image: "/image/web.png",
+    image: "https://cspv.in/image/oxymora_imgs/image/web.png",
   },
   {
     id: 3,
     title: "Mobile Application Development",
     description:
       "iOS, Android, and cross-platform apps enable businesses to reach users across different devices and operating systems. iOS apps are optimized for Apple devices, Android apps cater to a wide range of smartphones, and cross-platform apps provide a unified solution that works seamlessly on both, ensuring broader accessibility and consistent performance.",
-    image: "/image/app.png",
+    image: "https://cspv.in/image/oxymora_imgs/image/app.png",
   },
 ];
 

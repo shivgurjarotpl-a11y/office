@@ -6,32 +6,32 @@ const InsightsSlider = () => {
     {
       title: "Trying to scale AI? You're going to need to think big. And act bigger.",
       tag: "RESEARCH REPORT",
-      image: "/image/img11.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img11.jpg",
     },
     {
       title: "4 critical actions to take now to strengthen your cyber defenses.",
       tag: "RESEARCH REPORT",
-      image: "/image/img12.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img12.jpg",
     },
     {
       title: "Creating adaptive digital systems ready for future innovation and growth.",
       tag: "RESEARCH REPORT",
-      image: "/image/img13.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img13.jpg",
     },
     {
       title: "Strengthening enterprises with a smart, connected, and flexible digital core.",
       tag: "RESEARCH REPORT",
-      image: "/image/img14.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img14.jpg",
     },
     {
       title: "Strengthening enterprises with a smart, connected, and flexible digital core.",
       tag: "RESEARCH REPORT",
-      image: "/image/img15.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img15.jpg",
     },
     {
       title: "Strengthening enterprises with a smart, connected, and flexible digital core.",
       tag: "RESEARCH REPORT",
-      image: "/image/img16.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img16.jpg",
     },
   ];
 

@@ -8,7 +8,7 @@ const FounderList = () => {
       name: "Terry Gou",
       position: "Founder",
       company: "Hon Hai Technology Group (Foxconn)",
-      image: "/image/img1.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img1.jpg",
       description: [
         "Mr. Terry Gou is the Founder and former Chief Executive Officer of Hon Hai Technology Group (Foxconn). Since its establishment in 1974, the company has become the world’s largest electronics manufacturer and the leading global science and technology solutions provider.",
         "Under Mr. Gou’s leadership, Foxconn has committed to creating an AI 8K+5G global ecosystem which will be a catalyst in promoting next-generation technological solutions...",
@@ -20,7 +20,7 @@ const FounderList = () => {
       name: "Another Founder",
       position: "Co-Founder",
       company: "TechVision Ltd.",
-      image: "/image/img1.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img1.jpg",
       description: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "Donec tincidunt, massa ut volutpat commodo, purus mi suscipit nibh.",
@@ -32,7 +32,7 @@ const FounderList = () => {
       name: "Another Founder",
       position: "Co-Founder",
       company: "TechVision Ltd.",
-      image: "/image/img1.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img1.jpg",
       description: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "Donec tincidunt, massa ut volutpat commodo, purus mi suscipit nibh.",
@@ -44,7 +44,7 @@ const FounderList = () => {
       name: "Another Founder",
       position: "Co-Founder",
       company: "TechVision Ltd.",
-      image: "/image/img1.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/img1.jpg",
       description: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "Donec tincidunt, massa ut volutpat commodo, purus mi suscipit nibh.",

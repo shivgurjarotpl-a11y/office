@@ -8,7 +8,7 @@ const MissionPage = () => {
       {/* Mission Hero */}
       <section className="mission-hero animate">
         <div className="hero-image">
-          <img src="/image/img1.jpg" alt="Mission Illustration" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/img1.jpg" alt="Mission Illustration" />
         </div>
         <div className="hero-text">
           <h1>Our Mission</h1>

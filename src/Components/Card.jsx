@@ -4,19 +4,19 @@ import '../css/Card.css';
 const Card = () => {
   const newsData = [
     {
-      image: "/image/software design.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/software design.jpg",
       title: "Hardware Design",
     },
     {
-      image: "/image/Embedded Software.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/Embedded Software.jpg",
       title: "Embedded Software",
     },
     {
-      image: "/image/Iot.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/Iot.jpg",
       title: "Apps/Web/Iot",
     },
     {
-      image: "/image/Iot.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/image/Iot.jpg",
       title: "Apps/Web/Iot",
     },
   ];

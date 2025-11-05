@@ -1,7 +1,7 @@
 .M-Container {
   height: 80vh; 
   width: 100%;
-  background-image: url("/image/work.jpg"); /* Image must be in public/image/work.jpg */
+  background-image: url("https://cspv.in/image/oxymora_imgs/image/work.jpg"); /* Image must be in public/image/work.jpg */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -7,21 +7,21 @@ const servicesData = [
     title: "IoT Cloud Platforms",
     description:
       "Cloud-based device management, storage, and analytics enable efficient control, secure data handling, and real-time insights. These solutions allow seamless monitoring of connected devices, reliable data storage, and advanced analytics to optimize performance and decision-making..",
-    image: "/image/frm.png",
+    image: "https://cspv.in/image/oxymora_imgs/image/frm.png",
   },
   {
     id: 2,
     title: "Big Data & Analytics",
     description:
       "Sensor data processing, visualization, and reporting transform raw data into meaningful insights. Data from sensors is analyzed in real time, visualized through interactive dashboards, and compiled into reports that help monitor performance, detect patterns, and support informed decision-making.",
-    image: "/image/hrd.png",
+    image: "https://cspv.in/image/oxymora_imgs/image/hrd.png",
   },
   {
     id: 3,
     title: "AI & Machine Learning for IoT",
     description:
       "Predictive maintenance, anomaly detection, and smart automation enhance system efficiency and reliability. Predictive maintenance anticipates issues before they occur, anomaly detection identifies unusual patterns or faults, and smart automation optimizes operations by enabling intelligent, data-driven decision-making.",
-    image: "/image/prt.png",
+    image: "https://cspv.in/image/oxymora_imgs/image/prt.png",
   },
 ];
 

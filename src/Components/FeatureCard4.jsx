@@ -27,7 +27,7 @@ const FeatureCard4 = () => {
     <div className="fc4-section">
       <div ref={ref} className="fc4-card">
         <div className={`fc4-media ${isVisible ? "fc4-media-animate" : ""}`}>
-          <img src="/image/img12.jpg" alt="Feature" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/img12.jpg" alt="Feature" />
         </div>
 
         <div className={`fc4-content ${isVisible ? "fc4-content-animate" : ""}`}>

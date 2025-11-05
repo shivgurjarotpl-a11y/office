@@ -32,10 +32,10 @@ const Project2 = () => {
 
   return (
     <section className="project2-wrapper">
-      {/* Right Image Section */}
+      {/* Right https://cspv.in/image/oxymora_imgs/image Section */}
       <div ref={rightRef} className="project2-right project2-hidden-bottom">
         <img
-          src="image/neo.png"
+          src="https://cspv.in/image/oxymora_imgs/image/neo.png"
           alt="App Mockup"
           className="project2-phone-img"
         />
@@ -44,7 +44,7 @@ const Project2 = () => {
       {/* Left Text Section */}
       <div ref={leftRef} className="project2-left project2-hidden-left">
         <div className="project2-logo-circle">
-          <img src="image/neo-logo.png" alt="App Mockup" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/neo-logo.png" alt="App Mockup" />
         </div>
         <h2>Neon Attack</h2>
         <p>
