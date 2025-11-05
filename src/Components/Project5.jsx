@@ -35,7 +35,7 @@ const Project5 = () => {
       {/* Left Text Section */}
       <div ref={leftRef} className="project5-left project5-hidden-left">
         <div className="project5-logo-circle">
-           <img src="image/gyro-logo.png" alt="App Mockup" />
+           <img src="https://cspv.in/image/oxymora_imgs/image/gyro-logo.png" alt="App Mockup" />
         </div>
         <h2>Gyro</h2>
         <p>
@@ -68,7 +68,7 @@ Whether you're managing stock, installing medical devices, or providing after-sa
       {/* Right Image Section */}
       <div ref={rightRef} className="project5-right project5-hidden-bottom">
         <img
-          src="image/gyro.png"
+          src="https://cspv.in/image/oxymora_imgs/image/gyro.png"
           alt="App Mockup"
           className="project5-phone-img"
         />

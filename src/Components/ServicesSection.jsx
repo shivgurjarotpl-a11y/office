@@ -210,42 +210,42 @@ const ServicesSection = () => {
       title: "Intelligent IoT Solutions",
       description:
         "Combining AI and IoT, we create connected ecosystems that think, learn, and respond — enabling smarter products and better user experiences.",
-      img: "/image/iot.webp",
+      img: "https://cspv.in/image/oxymora_imgs/image/iot.webp",
     },
     {
       name: "Embedded Software Development",
       title: "Smarter decisions with AI",
       description:
         "Data and AI empower organizations to turn insights into actions and deliver intelligent solutions that transform industries.",
-      img: "/image/iot2.webp",
+      img: "https://cspv.in/image/oxymora_imgs/image/iot2.webp",
     },
     {
       name: "Digital & User Experience Design",
       title: "Protect what matters most",
       description:
         "Our cybersecurity solutions safeguard your business from evolving digital threats with proactive and adaptive protection.",
-      img: "/image/img18.jpg",
+      img: "https://cspv.in/image/oxymora_imgs/image/img18.jpg",
     },
     {
       name: "Software & Application Development",
       title: "Modernize your applications",
       description:
         "Transform legacy applications into agile, cloud-native experiences that accelerate innovation and scalability.",
-      img: "/image/manufactur.jpg",
+      img: "https://cspv.in/image/oxymora_imgs/image/manufactur.jpg",
     },
     {
       name: "Data & Cloud Services",
       title: "Take the world by cloud",
       description:
         "Every day, cloud computing becomes more integral in driving reinvention and meeting the ever-changing needs of people around the world.",
-      img: "/image/mb.webp",
+      img: "https://cspv.in/image/oxymora_imgs/image/mb.webp",
     },
     {
       name: "Consulting & Support",
       title: "Reimagine technology for the future",
       description:
         "Harness cutting-edge technologies to reinvent business models and stay ahead in a digital-first world.",
-      img: "/image/img17.jpg",
+      img: "https://cspv.in/image/oxymora_imgs/image/img17.jpg",
     },
   ];
 

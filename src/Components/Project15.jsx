@@ -55,7 +55,7 @@ IoT-powered insights anywhere
       {/* Right Image Section */}
       <div ref={rightRef} className="project15-right project15-hidden-bottom">
         <img
-          src="/image/Gemini_Generated_Image_6.png"
+          src="https://cspv.in/image/oxymora_imgs/image/Gemini_Generated_Image_6.png"
            alt="Stylized illustration of fall detector"
           className="project15-phone-img"
         />

@@ -35,7 +35,7 @@ const Project4 = () => {
       {/* Right Image Section */}
       <div ref={rightRef} className="project4-right project4-hidden-bottom">
         <img
-          src="image/metallicz.png"
+          src="https://cspv.in/image/oxymora_imgs/image/metallicz.png"
           alt="App Mockup"
           className="project4-phone-img"
         />

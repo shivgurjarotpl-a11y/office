@@ -106,17 +106,17 @@ import "../css/Slideshow.css";
 
 const videos = [
   {
-    // src: "/videos/video1.mp4",
+    src: "https://cspv.in/image/oxymora_imgs/videos/video1.mp4",
     text: "Technology for Smart Living",
     button: "More",
   },
   {
-    // src: "/videos/video2.mp4",
+    src: "https://cspv.in/image/oxymora_imgs/videos/video2.mp4",
     text: "Innovating for Tomorrow",
     button: "Discover",
   },
   {
-    // src: "/videos/video3.mp4",
+    src: "https://cspv.in/image/oxymora_imgs/videos/video3.mp4",
     text: "Smart Solutions, Better Future",
     button: "Explore",
   },

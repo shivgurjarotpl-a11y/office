@@ -35,7 +35,7 @@ const Project6 = () => {
       {/* Right Image Section */}
       <div ref={rightRef} className="project6-right project6-hidden-bottom">
         <img
-          src="image/Envioronmental Dashboard-front.png"
+          src="https://cspv.in/image/oxymora_imgs/image/Envioronmental Dashboard-front.png"
           alt="App Mockup"
           className="project6-phone-img"
         />
@@ -44,7 +44,7 @@ const Project6 = () => {
       {/* Left Text Section */}
       <div ref={leftRef} className="project6-left project6-hidden-left">
         <div className="project6-logo-circle">
-          <img src="image/Temperature-humidity-datalogger-logo.png" alt="App Mockup" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/Temperature-humidity-datalogger-logo.png" alt="App Mockup" />
         </div>
         <h2>Temperature-humidity-datalogger </h2>
         <p>

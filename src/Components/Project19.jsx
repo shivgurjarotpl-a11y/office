@@ -35,7 +35,7 @@ const Project19 = () => {
       {/* Right Image Section */}
       <div ref={rightRef} className="project19-right project19-hidden-bottom">
         <img
-          src="/image/Gemini_Generated_Image_10.png"
+          src="https://cspv.in/image/oxymora_imgs/image/Gemini_Generated_Image_10.png"
           alt="Stylized illustration of fall detector"
           className="project19-phone-img"
         />

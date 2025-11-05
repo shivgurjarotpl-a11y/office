@@ -35,7 +35,7 @@ const Project8 = () => {
       {/* Right Image Section */}
       <div ref={rightRef} className="project8-right project8-hidden-bottom">
         <img
-          src="image/metallicz.png"
+          src="https://cspv.in/image/oxymora_imgs/image/metallicz.png"
           alt="App Mockup"
           className="project8-phone-img"
         />
@@ -44,7 +44,7 @@ const Project8 = () => {
       {/* Left Text Section */}
       <div ref={leftRef} className="project8-left project8-hidden-left">
         <div className="project8-logo-circle">
-          <img src="image/metallicz-logo.png" alt="App Mockup" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/metallicz-logo.png" alt="App Mockup" />
         </div>
         <h2>Metallicz Media</h2>
         <p>

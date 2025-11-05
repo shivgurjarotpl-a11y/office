@@ -7,22 +7,22 @@ const ProjectList = () => {
     {
       title: "E-Commerce Website",
       desc: "A modern e-commerce platform with shopping cart and payment integration.",
-      image: "/images/project1.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/images/project1.jpg",
     },
     {
       title: "Portfolio Website",
       desc: "A responsive portfolio with animations and interactive design.",
-      image: "/images/project2.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/images/project2.jpg",
     },
     {
       title: "Dashboard UI",
       desc: "Analytics dashboard with real-time data visualization.",
-      image: "/images/project3.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/images/project3.jpg",
     },
     {
       title: "Mobile App Design",
       desc: "Cross-platform mobile app design for booking services.",
-      image: "/images/project4.jpg",
+      image: "https://cspv.in/image/oxymora_imgs/images/project4.jpg",
     },
   ];
 

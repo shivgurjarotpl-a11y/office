@@ -35,7 +35,7 @@ const Project9 = () => {
       {/* Left Text Section */}
       <div ref={leftRef} className="project9-left project9-hidden-left">
         <div className="project9-logo-circle">
-          <img src="image/gyro-logo.png" alt="App Mockup" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/gyro-logo.png" alt="App Mockup" />
         </div>
         <h2>Gyro</h2>
         <p>
@@ -69,7 +69,7 @@ From real-time stock tracking to seamless device deployment and efficient after-
       {/* Right Image Section */}
       <div ref={rightRef} className="project9-right project9-hidden-bottom">
         <img
-          src="image/gyro deshboard-front.png"
+          src="https://cspv.in/image/oxymora_imgs/image/gyro deshboard-front.png"
           alt="App Mockup"
           className="project9-phone-img"
         />

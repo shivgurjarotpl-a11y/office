@@ -55,7 +55,7 @@ Cost-effective & energy-saving
       {/* Right Image Section */}
       <div ref={rightRef} className="project16-right project16-hidden-bottom">
         <img
-         src="/image/Gemini_Generated_Image_7.png"
+         src="https://cspv.in/image/oxymora_imgs/image/Gemini_Generated_Image_7.png"
            alt="Photorealistic product shot of fall detector"
           className="project16-phone-img"
         />

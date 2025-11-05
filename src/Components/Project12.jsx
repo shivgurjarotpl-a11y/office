@@ -54,7 +54,7 @@ Preserves cultural practices with modern tech
       {/* Right Image Section */}
       <div ref={rightRef} className="project12-right project12-hidden-bottom">
         <img
-          src="/image/Gemini_Generated_Image_3.png"
+          src="https://cspv.in/image/oxymora_imgs/image/Gemini_Generated_Image_3.png"
           alt="Stylized illustration of fall detector"
           className="project12-phone-img"
         />

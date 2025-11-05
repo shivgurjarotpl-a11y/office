@@ -51,7 +51,7 @@ Reduces manual effort
       {/* Right Image Section */}
       <div ref={rightRef} className="project11-right project11-hidden-bottom">
         <img
-          src="/image/fall-detector.png"
+          src="https://cspv.in/image/oxymora_imgs/image/fall-detector.png"
            alt="Stylized illustration of fall detector"
           className="project11-phone-img"
         />
