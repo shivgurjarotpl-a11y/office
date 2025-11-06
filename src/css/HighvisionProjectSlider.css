@@ -1,0 +1,176 @@
+.highvision-project-slider {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.highvision-project-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  width: 100%;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 1;
+}
+
+.highvision-project-slide-next {
+  animation: slideInNext 0.8s ease both;
+}
+
+.highvision-project-slide-prev {
+  animation: slideInPrev 0.8s ease both;
+}
+
+@keyframes slideInNext {
+  0% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInPrev {
+  0% {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.highvision-project-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highvision-project-image img {
+  width: 500px;        /* 🔹 fixed width */
+  height: 320px;       /* 🔹 fixed height */
+  border-radius: 12px;
+  object-fit: cover;   /* keeps image proportion by cropping */
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+  transition: transform 0.4s ease;
+}
+
+/* Optional: add hover zoom */
+.highvision-project-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive adjustment */
+@media (max-width: 900px) {
+  .highvision-project-image img {
+    width: 90%;
+    height: 240px;
+  }
+}
+
+.highvision-project-content {
+  flex: 1;
+}
+
+.highvision-project-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.highvision-project-content p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.highvision-project-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.highvision-project-link span {
+  background: #a8a8a8;
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.highvision-project-link:hover span {
+  background: #c7c7c7;
+}
+
+.highvision-project-navigation {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;   /* 🔹 changed from left:50px to right:50px */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.highvision-project-navigation button {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.highvision-project-navigation button:hover {
+  background: #c7c7c7;
+  transform: scale(1.05);
+}
+
+.highvision-project-navigation span {
+  font-weight: 500;
+  color: #aaa;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .highvision-project-slide {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .highvision-project-content {
+    text-align: center;
+  }
+
+  .highvision-project-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .highvision-project-content p {
+    font-size: 1rem;
+  }
+
+  .highvision-project-navigation {
+    left: 20px;
+    bottom: 20px;
+  }
+}

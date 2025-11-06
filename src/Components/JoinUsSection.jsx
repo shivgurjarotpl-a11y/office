@@ -32,7 +32,7 @@ const JoinUsSection = () => {
   return (
     <section className="join-us-section">
       <video className="background-video" autoPlay muted loop playsInline>
-        <source src="/videos/video5.mp4" type="video/mp4" />
+        <source src="https://cspv.in/image/oxymora_imgs/videos/video5.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

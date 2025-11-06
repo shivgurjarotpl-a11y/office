@@ -8,6 +8,8 @@ import Footer from '../Components/Footer';
 import "../css/Home.css";
 
 import FloatingButtons from '../Components/FloatingButtons';
+import HighvisionProjectSlider from '../Components/HighvisionProjectSlider';
+
 
 
 const Home = () => {
@@ -17,8 +19,9 @@ const Home = () => {
       <Slideshow />
       <div className="main-content">
         <NewsSection />
-        <TechShowcase />
-        <HorizontalScrollCards />
+        <HighvisionProjectSlider/>
+        {/* <TechShowcase />
+        <HorizontalScrollCards /> */}
         <JoinUsSection />
         <Footer />
         <FloatingButtons/>
