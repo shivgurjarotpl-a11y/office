@@ -44,7 +44,7 @@ const Topbar = () => {
     <header className="topbar">
       <div className="topbar-container">
         <div className="topbar-logo">
-          <img src="/oxymora_logo (1).png" alt="Logo" className="logo" />
+          <img src="/oxymora_logo.png" alt="Logo" className="logo" />
         </div>
 
         <button

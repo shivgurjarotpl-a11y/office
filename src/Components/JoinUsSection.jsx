@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../css/JoinUsSection.css';
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 
 const JoinUsSection = () => {
   const contentRef = useRef(null);
   const [inView, setInView] = useState(false);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -46,7 +49,7 @@ const JoinUsSection = () => {
           We welcome talented individuals with passion and vision to join us.
           Let’s create value and realize dreams together.
         </p>
-        <button className="join-btn">
+        <button className="join-btn" onClick={() => navigate("/career")} >
           More <span className="arrow-icon"><FaArrowRight /></span>
         </button>
       </div>

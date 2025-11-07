@@ -1,0 +1,83 @@
+.highscroll-section {
+  position: relative;
+  height: 220vh;
+  background: #000;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.highscroll-image-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(200px) scale(1);
+  transition: transform 0.5s ease-out;
+}
+
+.highscroll-image {
+  width: 80%;
+  height: auto;
+  border-radius: 14px;
+  opacity: 0;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TEXT */
+.highscroll-text {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  max-width: 420px;
+  opacity: 0;
+  transition: all 0.6s ease-out;
+}
+
+.highscroll-text h3 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #aaa;
+}
+
+.highscroll-text h1 {
+  font-size: 2.2rem;
+  margin: 10px 0;
+  line-height: 1.3;
+}
+
+.highscroll-text p {
+  color: #ccc;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.highscroll-text button {
+  margin-top: 15px;
+  background: #a020f0;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.highscroll-text button:hover {
+  background: #8b00d6;
+}

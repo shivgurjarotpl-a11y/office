@@ -103,33 +103,38 @@
 
 import React, { useState, useEffect } from "react";
 import "../css/Slideshow.css";
+import { useNavigate } from "react-router-dom";
 
 const videos = [
   {
     src: "https://cspv.in/image/oxymora_imgs/videos/video1.mp4",
     text: "Technology for Smart Living",
     button: "More",
+    link: "/services", 
   },
   {
     src: "https://cspv.in/image/oxymora_imgs/videos/video2.mp4",
     text: "Innovating for Tomorrow",
     button: "Discover",
+    link: "/work", 
   },
   {
     src: "https://cspv.in/image/oxymora_imgs/videos/video3.mp4",
     text: "Smart Solutions, Better Future",
     button: "Explore",
+    link: "/products",
   },
 ];
 
+
 const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % videos.length);
     }, 6000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -147,13 +152,15 @@ const Slideshow = () => {
         />
         <div className="overlay">
           <h2>{videos[currentIndex].text}</h2>
-          <button className="slide-btn">
+          <button
+            className="slide-btn"
+            onClick={() => navigate(videos[currentIndex].link)}
+          >
             {videos[currentIndex].button} →
           </button>
         </div>
       </div>
 
-      {/* 🔹 Dots Navigation */}
       <div className="dots">
         {videos.map((_, i) => (
           <span
@@ -168,6 +175,4 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
-
-
 

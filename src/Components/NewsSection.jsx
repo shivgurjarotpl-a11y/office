@@ -41,7 +41,7 @@
 
 import React, { useState } from "react";
 import "../css/NewsSection.css";
-
+import { useNavigate } from "react-router-dom";
 const cardsData = [
   {
     id: 1,
@@ -103,7 +103,7 @@ const cardsData = [
 
 const NewsSection = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
-
+  const navigate = useNavigate();
   return (
     <div className="high-container">
       {cardsData.map((card) => (
@@ -123,8 +123,10 @@ const NewsSection = () => {
             {hoveredCard === card.id && (
               <>
                 <p className="high-desc">{card.desc}</p>
-                {card.category === "CASE STUDY" && (
-                  <button className="high-expand-btn">
+                {card.category === "Hardware" && (
+                  <button className="high-expand-btn"
+                  onClick={() => navigate()}
+                  >
                     Expand <span>›</span>
                   </button>
                 )}
@@ -153,7 +155,7 @@ const NewsSection = () => {
             nurture growth that benefits both people and the planet.
           </p>
           <blockquote>"Envisioning a brighter, empowered tomorrow."</blockquote>
-          <button className="highvision-btn">Join Our Vision</button>
+          <button className="highvision-btn"  onClick={() => navigate("/career")}>Join Our Vision</button>
         </div>
       </section>
 
@@ -163,7 +165,7 @@ const NewsSection = () => {
     Discover cutting-edge solutions designed to enhance performance, boost productivity, 
     and deliver unmatched quality for your business.
   </p>
-  <a href="#" class="highvision-product-link">
+  <a href="/products" class="highvision-product-link">
     Explore Products <span>→</span>
   </a>
 </div>
