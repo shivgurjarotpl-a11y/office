@@ -11,6 +11,7 @@
 }
 
 .high-card {
+  height: 450px;
   position: relative;
   flex: 1 1 clamp(100px, 20%, 300px); 
   aspect-ratio: 3 / 4;
@@ -20,7 +21,6 @@
   background-position: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
-  /* border-radius: 20px; */
 }
 
 
