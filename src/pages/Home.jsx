@@ -10,6 +10,9 @@ import "../css/Home.css";
 import FloatingButtons from '../Components/FloatingButtons';
 import HighvisionProjectSlider from '../Components/HighvisionProjectSlider';
 import ScrollSection from '../Components/ScrollSection';
+import ThreeDCarousel from '../Components/ThreeDCarousel';
+
+
 
 
 
@@ -20,6 +23,7 @@ const Home = () => {
       <Slideshow />
       <div className="main-content">
         <HighvisionProjectSlider/>
+        <ThreeDCarousel/>
          <NewsSection />
         {/* <ScrollSection/> */}
         {/* <TechShowcase />

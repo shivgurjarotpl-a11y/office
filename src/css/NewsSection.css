@@ -1,152 +1,19 @@
-.high-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  padding: 85px 80px;
-  background: #000;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.high-card {
-  height: 450px;
-  position: relative;
-  flex: 1 1 clamp(100px, 20%, 300px); 
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  cursor: pointer;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease;
-}
-
-
-.high-card:hover {
-  transform: scale(1.05);
-  background: rgb(0, 0, 0);
-  box-shadow: 0 20px 25px rgba(253, 253, 253, 0.1);
-}
-
-
-.high-overlay {
-  position: absolute;
-  inset: 0;
-  /* background: rgba(0, 0, 0, 0.45); */
-  transition: all 0.4s ease;
-  z-index: 1;
-}
-
-.high-content {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  padding: 25px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.high-category {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #ffffff;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.high-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.4;
-}
-
-/* Description hidden by default */
-.high-desc {
-  margin-top: 15px;
-  font-size: 1rem;
-  color: #f0f0f0;
-  opacity: 0;
-  transform: translateY(15px);
-  transition: all 0.5s ease;
-}
-
-/* Expand button */
-.high-expand-btn {
-  margin-top: 20px;
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.5s ease;
-}
-
-.high-expand-btn:hover {
-  background: #fff;
-  color: #000;
-}
-
-/* Hover effects */
-.high-card.hovered .high-overlay {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(6px); /* 🔥 blur background image */
-}
-
-.high-card.hovered .high-desc {
-  opacity: 1;
-  transform: translateY(0);
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-.high-card.hovered .high-expand-btn {
-  opacity: 1;
-  transform: translateY(0);
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-/* FadeInUp animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
+/* 🌍 Base Styles (Desktop First) */
 .highvision-hero {
   width: 90%;
-  background: rgb(0, 0, 0);
+  background: #000;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  flex-wrap: wrap;
   margin: 5rem auto;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15); /* more even glow around full box */
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+  animation: fadeInUp 1.2s ease both;
 }
-
 
 .highvision-hero-image {
   flex: 1;
-  background: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,6 +30,8 @@
 .highvision-hero-text {
   flex: 1;
   padding: 2.5rem;
+  background-color: #000;
+  color: #fff;
 }
 
 .highvision-hero-text h1 {
@@ -178,7 +47,7 @@
   font-size: 1.1rem;
   margin-bottom: 1rem;
   line-height: 1.7;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .highvision-hero-text blockquote {
@@ -190,9 +59,9 @@
   margin: 1.5rem 0;
 }
 
-.highvision-hero-text .highvision-btn {
+.highvision-btn {
   background: #5f5f5f;
-  color: rgb(255, 255, 255);
+  color: #fff;
   padding: 0.9rem 2rem;
   border-radius: 9999px;
   font-weight: 600;
@@ -201,27 +70,61 @@
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.highvision-hero-text .highvision-btn:hover {
+.highvision-btn:hover {
   transform: scale(1.05);
-  background: rgb(0, 0, 0);
+  background: #000;
   box-shadow: 0 10px 25px rgba(253, 253, 253, 0.1);
 }
 
-.highvision-animate {
-  animation: fadeInUp 1.2s ease both;
-}
-/* 
+/* ✨ Animation */
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .highvision-hero {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    padding: 1.5rem 1rem;
+    margin: 3rem auto;
+  }
+
+  .highvision-hero-image {
+    padding: 1rem 0;
+  }
+
+  .highvision-hero-text {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .highvision-hero-text h1 {
+    font-size: 2.2rem;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .highvision-hero-text p {
+    font-size: 1rem;
+  }
+
+  .highvision-hero-text blockquote {
+    font-size: 1.1rem;
+  }
+
+  .highvision-btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.8rem;
+  }
+}
 
 
 .highvision-product-section {
@@ -280,7 +183,12 @@
   color: #ffffff;
 }
 
+
 @media (max-width: 768px) {
+  .highvision-product-section {
+    padding: 3rem 1.5rem;
+  }
+
   .highvision-product-section h1 {
     font-size: 3rem;
   }
@@ -289,5 +197,35 @@
     font-size: 1.1rem;
   }
 }
+
+
+@media (max-width: 480px) {
+  .highvision-product-section {
+    padding: 2.5rem 1rem;
+    min-height: 50vh;
+  }
+
+  .highvision-product-section h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .highvision-product-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .highvision-product-link {
+    font-size: 0.95rem;
+  }
+
+  .highvision-product-link span {
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
 
 

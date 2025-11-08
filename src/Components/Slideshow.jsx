@@ -101,72 +101,154 @@
 // export default Slideshow;
 
 
+// import React, { useState, useEffect } from "react";
+// import "../css/Slideshow.css";
+// import { useNavigate } from "react-router-dom";
+
+// const videos = [
+//   {
+//     src: "https://cspv.in/image/oxymora_imgs/videos/video1.mp4",
+//     text: "Technology for Smart Living",
+//     button: "More",
+//     link: "/services", 
+//   },
+//   {
+//     src: "https://cspv.in/image/oxymora_imgs/videos/video2.mp4",
+//     text: "Innovating for Tomorrow",
+//     button: "Discover",
+//     link: "/work", 
+//   },
+//   {
+//     src: "https://cspv.in/image/oxymora_imgs/videos/video3.mp4",
+//     text: "Smart Solutions, Better Future",
+//     button: "Explore",
+//     link: "/products",
+//   },
+// ];
+
+
+// const Slideshow = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   const navigate = useNavigate();
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentIndex((prev) => (prev + 1) % videos.length);
+//     }, 6000);
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   return (
+//     <div className="slideshow-container">
+//       <div className="slide active">
+//         <video
+//           key={videos[currentIndex].src}
+//           src={videos[currentIndex].src}
+//           autoPlay
+//           muted
+//           loop
+//           playsInline
+//           className="video-bg"
+//         />
+//         <div className="overlay">
+//           <h2>{videos[currentIndex].text}</h2>
+//           <button
+//             className="slide-btn"
+//             onClick={() => navigate(videos[currentIndex].link)}
+//           >
+//             {videos[currentIndex].button} →
+//           </button>
+//         </div>
+//       </div>
+
+//       <div className="dots">
+//         {videos.map((_, i) => (
+//           <span
+//             key={i}
+//             className={`dot ${i === currentIndex ? "active-dot" : ""}`}
+//             onClick={() => setCurrentIndex(i)}
+//           ></span>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Slideshow;
+
+
+
+
 import React, { useState, useEffect } from "react";
 import "../css/Slideshow.css";
 import { useNavigate } from "react-router-dom";
 
-const videos = [
+const texts = [
   {
-    src: "https://cspv.in/image/oxymora_imgs/videos/video1.mp4",
-    text: "Technology for Smart Living",
+    title: "Technology for Smart Living",
     button: "More",
-    link: "/services", 
+    link: "/services",
   },
   {
-    src: "https://cspv.in/image/oxymora_imgs/videos/video2.mp4",
-    text: "Innovating for Tomorrow",
+    title: "Innovating for Tomorrow",
     button: "Discover",
-    link: "/work", 
+    link: "/work",
   },
   {
-    src: "https://cspv.in/image/oxymora_imgs/videos/video3.mp4",
-    text: "Smart Solutions, Better Future",
+    title: "Smart Solutions, Better Future",
     button: "Explore",
     link: "/products",
   },
 ];
 
-
 const Slideshow = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentText, setCurrentText] = useState(0);
   const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % videos.length);
-    }, 6000);
+      setCurrentText((prev) => (prev + 1) % texts.length);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="slideshow-container">
-      <div className="slide active">
-        <video
-          key={videos[currentIndex].src}
-          src={videos[currentIndex].src}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="video-bg"
-        />
-        <div className="overlay">
-          <h2>{videos[currentIndex].text}</h2>
-          <button
-            className="slide-btn"
-            onClick={() => navigate(videos[currentIndex].link)}
+      {/* Background video */}
+      <video
+        src="https://cspv.in/image/oxymora_imgs/videos/video7.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="video-bg"
+      />
+
+      {/* Text overlay */}
+      <div className="overlay">
+        {texts.map((item, index) => (
+          <div
+            key={index}
+            className={`text-slide ${index === currentText ? "active" : ""}`}
           >
-            {videos[currentIndex].button} →
-          </button>
-        </div>
+            <h2>{item.title}</h2>
+            <button
+              className="slide-btn"
+              onClick={() => navigate(item.link)}
+            >
+              {item.button} →
+            </button>
+          </div>
+        ))}
       </div>
 
+      {/* Optional navigation dots */}
       <div className="dots">
-        {videos.map((_, i) => (
+        {texts.map((_, i) => (
           <span
             key={i}
-            className={`dot ${i === currentIndex ? "active-dot" : ""}`}
-            onClick={() => setCurrentIndex(i)}
+            className={`dot ${i === currentText ? "active-dot" : ""}`}
+            onClick={() => setCurrentText(i)}
           ></span>
         ))}
       </div>
@@ -175,4 +257,3 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
-
