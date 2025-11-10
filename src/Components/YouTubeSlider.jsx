@@ -90,8 +90,8 @@ const YouTubeSlider = () => {
       </div>
 
       {/* Buttons */}
-      <button className="yt-btn prev" onClick={handlePrev}>❮</button>
-      <button className="yt-btn next" onClick={handleNext}>❯</button>
+      {/* <button className="yt-btn prev" onClick={handlePrev}>❮</button>
+      <button className="yt-btn next" onClick={handleNext}>❯</button> */}
 
       {/* Thumbnails (Dots) */}
       <div className="yt-thumbnails">
