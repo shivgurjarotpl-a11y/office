@@ -12,6 +12,7 @@ import HighvisionProjectSlider from '../Components/HighvisionProjectSlider';
 import ScrollSection from '../Components/ScrollSection';
 import ThreeDCarousel from '../Components/ThreeDCarousel';
 import YouTubeSlider from '../Components/YouTubeSlider';
+import HighBlogSection from '../Components/HighBlogSection';
 
 
 
@@ -25,7 +26,10 @@ const Home = () => {
       <div className="main-content">
         <HighvisionProjectSlider/>
         <ThreeDCarousel/>
+       
          <NewsSection />
+          <HighBlogSection/>
+
         {/* <ScrollSection/> */}
         {/* <TechShowcase />
         <HorizontalScrollCards /> */}

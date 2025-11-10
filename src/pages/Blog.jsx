@@ -3,15 +3,16 @@ import BlogImg from '../Components/BlogImg'
 import BlogSection from '../Components/BlogSection'
 import "../css/Blog.css";
 import Footer from '../Components/Footer';
+import BlogPage from '../Components/BlogPage';
 
 
 const Blog = () => {
   return (
     <div>
-    <BlogImg/>
-    <div className='Blog-Contanior'></div>
-    <BlogSection/>
-    <Footer/>
+    {/* <BlogImg/> */}
+    {/* <BlogSection/>
+    <Footer/> */}
+    <BlogPage/>
     </div>
   )
 }
