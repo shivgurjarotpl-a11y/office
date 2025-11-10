@@ -77,17 +77,17 @@ const YouTubeSlider = () => {
               allowFullScreen
             ></iframe>
 
-            <div className="yt-overlay">
+            {/* <div className="yt-overlay">
               <h2>{video.title}</h2>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
 
       {/* Progress Bar */}
-      <div className="yt-progress-bar">
+      {/* <div className="yt-progress-bar">
         <div className="yt-progress" style={{ width: `${progress}%` }}></div>
-      </div>
+      </div> */}
 
       {/* Buttons */}
       {/* <button className="yt-btn prev" onClick={handlePrev}>❮</button>
