@@ -11,6 +11,7 @@ import FloatingButtons from '../Components/FloatingButtons';
 import HighvisionProjectSlider from '../Components/HighvisionProjectSlider';
 import ScrollSection from '../Components/ScrollSection';
 import ThreeDCarousel from '../Components/ThreeDCarousel';
+import YouTubeSlider from '../Components/YouTubeSlider';
 
 
 
@@ -28,6 +29,7 @@ const Home = () => {
         {/* <ScrollSection/> */}
         {/* <TechShowcase />
         <HorizontalScrollCards /> */}
+        <YouTubeSlider/>
         <JoinUsSection />
         <Footer />
         <FloatingButtons/>
