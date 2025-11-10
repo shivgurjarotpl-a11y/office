@@ -5,33 +5,36 @@
   max-width: 960px;
   margin: 50px auto;
   overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  border-radius: 18px;
   background: #000;
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .yt-slider-container:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
 }
 
 /* === SLIDER === */
 .yt-slider {
   position: relative;
   width: 100%;
-  height: 0;
-  padding-top: 56.25%;
+  aspect-ratio: 16 / 9;
+  background: #000;
 }
 
 .yt-slide {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transform: scale(1.05);
+  transition: opacity 0.8s ease, transform 1s ease;
 }
 
 .yt-slide.active {
   opacity: 1;
+  transform: scale(1);
   z-index: 2;
 }
 
@@ -40,24 +43,27 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 18px;
+  border: none;
 }
 
 /* === OVERLAY === */
 .yt-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 60%);
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
-  padding: 20px;
+  padding: 24px;
+  border-radius: 18px;
+  pointer-events: none;
 }
 
 .yt-overlay h2 {
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* === BUTTONS === */
@@ -65,69 +71,68 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
-  color: white;
-  font-size: 26px;
-  padding: 8px 14px;
-  cursor: pointer;
+  color: #fff;
+  font-size: 28px;
+  padding: 10px 15px;
   border-radius: 50%;
+  cursor: pointer;
   z-index: 10;
+  backdrop-filter: blur(4px);
   transition: all 0.3s ease;
 }
 
 .yt-btn:hover {
   background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%) scale(1.1);
 }
 
 .yt-btn.prev {
-  left: 12px;
+  left: 15px;
 }
 
 .yt-btn.next {
-  right: 12px;
+  right: 15px;
 }
-
-/* === PROGRESS BAR === */
-/* .yt-progress-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-} */
-
-/* .yt-progress {
-    margin-top: 7px;
-  height: 100%;
-  background: #ff0000;
-  transition: width 0.2s linear;
-} */
 
 /* === THUMBNAILS === */
 .yt-thumbnails {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 12px;
+  margin-top: 14px;
   flex-wrap: wrap;
+  padding: 0 10px;
 }
 
 .yt-thumb {
-  width: 80px;
-  height: 45px;
-  border-radius: 8px;
+  width: 90px;
+  height: 50px;
+  border-radius: 10px;
   overflow: hidden;
   opacity: 0.6;
   cursor: pointer;
-  transition: all 0.3s ease;
   border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.yt-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.yt-thumb:hover::after {
+  background: rgba(0, 0, 0, 0);
 }
 
 .yt-thumb:hover {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
 .yt-thumb.active {
@@ -139,13 +144,35 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* === RESPONSIVE === */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .yt-slider-container {
+    margin: 20px auto;
+    border-radius: 12px;
+  }
+
+  .yt-overlay h2 {
+    font-size: 1.1rem;
+  }
+
   .yt-thumb {
-    width: 60px;
-    height: 34px;
+    width: 70px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .yt-btn {
+    font-size: 22px;
+    padding: 6px 10px;
+  }
+
+  .yt-thumb {
+    width: 55px;
+    height: 32px;
   }
 
   .yt-overlay h2 {

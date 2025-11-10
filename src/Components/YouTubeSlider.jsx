@@ -6,6 +6,10 @@ const YouTubeSlider = () => {
     { id: "N6PCgluoLSQ", title: "Never Gonna Give You Up" },
     { id: "yI4nvEXh_dY", title: "Gangnam Style" },
     { id: "DGbiPXC1LBM", title: "Counting Stars" },
+    { id: "3P8mK1Qh8Xk", title: "Counting Stars" },
+    { id: "T317DjizjCg", title: "Counting Stars" },
+    { id: "jllDeBd_loY", title: "Counting Stars" },
+
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
