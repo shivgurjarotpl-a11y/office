@@ -1,4 +1,4 @@
-/* ===== Base Styles ===== */
+/* 
 .slide-carousel-wrapper {
   width: 100%;
   overflow: hidden;
@@ -16,11 +16,11 @@
   transition: transform 0.3s ease;
 }
 
-/* ===== Cards ===== */
+
 .slide-card,
 .high-card {
-  width: 320px;
-  height: 450px;
+  width: 300px;
+  height: 400px;
   position: relative;
   flex: 1 1 clamp(220px, 25%, 320px);
   aspect-ratio: 3 / 4;
@@ -42,7 +42,7 @@
   box-shadow: 0 0 30px rgba(0, 200, 255, 0.5);
 }
 
-/* ===== Slide Content ===== */
+
 .slide-card img {
   width: 100%;
   height: 180px;
@@ -74,7 +74,7 @@
   line-height: 1.4;
 }
 
-/* ===== Highlight Cards ===== */
+
 .high-overlay {
   position: absolute;
   inset: 0;
@@ -178,7 +178,7 @@
   }
 }
 
-/* ===== Carousel Controls ===== */
+
 .high-dots-container {
   position: absolute;       
   bottom: 20px;             
@@ -203,9 +203,7 @@
   transform: scale(1.5);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 
-/* Tablets (portrait + landscape) */
 @media (max-width: 1024px) {
   .slide-carousel-wrapper {
     padding: 40px 0;
@@ -229,7 +227,7 @@
   }
 }
 
-/* Mobile (phones) */
+
 @media (max-width: 768px) {
   .slide-carousel-wrapper {
     flex-direction: column;
@@ -286,7 +284,7 @@
   }
 }
 
-/* Small Phones */
+
 @media (max-width: 480px) {
   .slide-card, .high-card {
     width: 90%;
@@ -304,3 +302,182 @@
     font-size: 0.8rem;
   }
 }
+
+
+.smooth-scroll {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scrollLoop 30s linear infinite;
+}
+
+@keyframes scrollLoop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.smooth-scroll:hover {
+  animation-play-state: paused;
+}
+ */
+
+
+
+
+.infinite-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  padding: 60px 0;
+  position: relative;
+}
+
+.infinite-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scrollLoop 45s linear infinite;
+}
+
+
+.infinite-wrapper:hover .infinite-track {
+  animation-play-state: paused;
+}
+
+
+@keyframes scrollLoop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.high-card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  flex: 0 0 auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 200, 255, 0.3);
+  color: #fff;
+}
+
+.high-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.5);
+}
+
+
+.high-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.high-card:hover .high-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.high-content {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.high-category {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.high-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.high-desc {
+  margin-top: 25px;
+  font-size: 1rem;
+  color: #f0f0f0;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.5s ease;
+  line-height: 1.6;
+}
+
+.high-expand-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: transparent;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+}
+
+.high-card:hover .high-desc {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.high-card:hover .high-expand-btn {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .slide-track {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+}
+

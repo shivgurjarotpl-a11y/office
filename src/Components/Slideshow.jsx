@@ -35,7 +35,7 @@ const Slideshow = () => {
 
   return (
     <div className="slideshow-container">
-      {/* Background video */}
+     
       <video
         src="https://cspv.in/image/oxymora_imgs/videos/video7.mp4"
         autoPlay
@@ -45,7 +45,7 @@ const Slideshow = () => {
         className="video-bg"
       />
 
-      {/* Text overlay */}
+   
       <div className="overlay">
         {texts.map((item, index) => (
           <div
@@ -63,7 +63,7 @@ const Slideshow = () => {
         ))}
       </div>
 
-      {/* Optional navigation dots */}
+   
       <div className="dots">
         {texts.map((_, i) => (
           <span
