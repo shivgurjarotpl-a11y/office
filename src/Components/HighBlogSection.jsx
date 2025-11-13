@@ -10,7 +10,7 @@ const cardsData = [
     title:
       "How to Select Microcontrollers for IoT Projects: Evaluating ESP32, STM32, nRF52, and RP2040 Platforms",
     excerpt:
-      "Smartphones are handheld computing devices that connect to cellular networks, first introduced by IBM in 1994 and later revolutionized by major technology companies such as Apple and Samsung.",
+      "Smartphones are handheld computing devices that connect to cellular networks, first introduced by IBM in 1994 .",
     author: "BY admin",
     date: "2023-10-01T10:00:00Z",
     imageUrl: "https://cspv.in/image/oxymora_imgs/image/mcc.jpg",
@@ -22,7 +22,7 @@ const cardsData = [
     title:
       "Securing IoT: The Essential Role of ISO 27001 in Safeguarding Connected Devices, Networks, and Data Across Smart Systems",
     excerpt:
-      "ISO 27001 provides a globally recognized framework for managing information security, helping IoT companies secure devices, networks, and data while ensuring compliance, resilience, and trust in their connected ecosystems.",
+      "ISO 27001 provides a globally recognized framework for managing information security, helping IoT companies secure devices, networks, and data while ensuring compliance,.",
     author: "BY admin",
     date: "2023-09-15T14:30:00Z",
     imageUrl: "https://cspv.in/image/oxymora_imgs/image/sec.jpg",
@@ -34,7 +34,7 @@ const cardsData = [
     title:
       "Apple’s Embedded Swift programming language supports ESP32-C6, Raspberry Pi RP2040, STM32F7, nRF52840",
     excerpt:
-      "Apple has released a beta version of Embedded Swift that works with Espressif ESP32-C6 wireless RISC-V microcontroller and other popular platforms like STM32 and Raspberry Pi RP2040.",
+      "Apple has released a beta version of Embedded Swift that works with Espressif ESP32-C6 wireless RISC-V microcontroller and other popular platforms",
     author: "BY admin",
     date: "2023-08-20T09:15:00Z",
     imageUrl: "https://cspv.in/image/oxymora_imgs/image/app.jpg",

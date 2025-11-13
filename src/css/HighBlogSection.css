@@ -72,7 +72,7 @@
 .highblog-tag {
   display: inline-block;
   background: #222;
-  color: #aaa;
+  color: #ffffff;
   padding: 5px 12px;
   margin-right: 8px;
   border-radius: 12px;
@@ -82,14 +82,14 @@
 .highblog-read-more {
   display: inline-block;
   margin: 0 20px 20px;
-  color: #00bfff;
+  color: #ffffff;
   font-weight: 600;
   font-size: 0.9rem;
   transition: color 0.3s;
 }
 
 .highblog-read-more:hover {
-  color: #1ec8ff;
+  color: #b6b6b6;
 }
 
 /* ==== VIEW ALL BUTTON ==== */
@@ -99,17 +99,18 @@
 
 .highblog-button {
   display: inline-block;
-  background: #00bfff;
-  color: #000;
+  background: #555555;
+  color: #ffffff;
   padding: 12px 28px;
   border-radius: 25px;
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .highblog-button:hover {
-  background: #1ec8ff;
+  background: #707070;
 }
 
 /* ==== SKELETON LOADER ==== */
