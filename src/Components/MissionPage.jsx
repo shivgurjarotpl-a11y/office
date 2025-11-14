@@ -6,11 +6,14 @@ const MissionPage = () => {
   return (
     <main className="mission-container">
       {/* Mission Hero */}
-      <section className="mission-hero animate">
-        <div className="hero-image">
-          <img src="https://cspv.in/image/oxymora_imgs/image/img1.jpg" alt="Mission Illustration" />
+      <section className="mission-hero mission-animate">
+        <div className="mission-hero-image">
+          <img
+            src="https://cspv.in/image/oxymora_imgs/image/companyvision.jpg"
+            alt="Mission Illustration"
+          />
         </div>
-        <div className="hero-text">
+        <div className="mission-hero-text">
           <h1>Our Mission</h1>
           <p>
             At EmpowerOrg, we are dedicated to empowering individuals and
@@ -29,12 +32,12 @@ const MissionPage = () => {
       </section>
 
       {/* Core Values */}
-      <section className="core-values animate">
+      <section className="mission-core-values mission-animate">
         <h2>Our Core Values</h2>
-        <div className="values-grid">
-          <div className="value-card">
-            <div className="icon">
-              <FaBalanceScale size={32} color="#1d1d1dff" />
+        <div className="mission-values-grid">
+          <div className="mission-value-card">
+            <div className="mission-icon">
+              <FaBalanceScale size={32} color="#ffffffff" />
             </div>
             <h3>Integrity</h3>
             <p>
@@ -43,9 +46,9 @@ const MissionPage = () => {
             </p>
           </div>
 
-          <div className="value-card">
-            <div className="icon">
-              <FaHandsHelping size={32} color="#1d1d1dff" />
+          <div className="mission-value-card">
+            <div className="mission-icon">
+              <FaHandsHelping size={32} color="#ffffffff" />
             </div>
             <h3>Collaboration</h3>
             <p>
@@ -54,9 +57,9 @@ const MissionPage = () => {
             </p>
           </div>
 
-          <div className="value-card">
-            <div className="icon">
-              <FaStar size={32} color="#1d1d1dff" />
+          <div className="mission-value-card">
+            <div className="mission-icon">
+              <FaStar size={32} color="#ffffffff" />
             </div>
             <h3>Excellence</h3>
             <p>
@@ -68,11 +71,11 @@ const MissionPage = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="approach animate">
+      <section className="mission-approach mission-animate">
         <h2>Our Approach</h2>
-        <div className="approach-text">
+        <div className="mission-approach-text">
           <p>
-            i believe that meaningful change happens through a thoughtful,
+            We believe that meaningful change happens through a thoughtful,
             inclusive approach. Our process includes:
           </p>
           <ul>
@@ -98,30 +101,30 @@ const MissionPage = () => {
       </section>
 
       {/* Impact Statistics */}
-      <section className="impact animate">
+      <section className="mission-impact mission-animate">
         <h2>Our Impact</h2>
-        <div className="impact-grid">
+        <div className="mission-impact-grid">
           <div>
-            <div className="impact-number">5M+</div>
+            <div className="mission-impact-number">5M+</div>
             <p>Individuals Empowered</p>
           </div>
           <div>
-            <div className="impact-number">200+</div>
+            <div className="mission-impact-number">200+</div>
             <p>Partner Organizations</p>
           </div>
           <div>
-            <div className="impact-number">50+</div>
+            <div className="mission-impact-number">50+</div>
             <p>Countries Reached</p>
           </div>
           <div>
-            <div className="impact-number">100+</div>
+            <div className="mission-impact-number">100+</div>
             <p>Projects Completed</p>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="testimonials animate">
+      <section className="mission-testimonials mission-animate">
         <h2>What People Say</h2>
         <blockquote>
           EmpowerOrg's programs transformed our community. Their commitment to
@@ -136,7 +139,7 @@ const MissionPage = () => {
       </section>
 
       {/* Call to Action Banner */}
-      <section className="cta animate">
+      <section className="mission-cta mission-animate">
         <h2>Ready to Make a Difference?</h2>
         <p>
           Join us in empowering communities and creating lasting impact

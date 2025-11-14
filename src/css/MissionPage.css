@@ -1,11 +1,14 @@
+/* ---------------------------------
+   DARK THEME + ALL mission- PREFIX
+---------------------------------- */
+
 /* General Container */
 .mission-container {
   width: 100%;
   margin: 0 auto;
   padding: 3rem 1.5rem;
-  background: rgb(255, 255, 255);
-  color: #000000;
-
+  background: #000;
+  color: #fff;
 }
 
 /* Keyframes */
@@ -14,78 +17,78 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Scroll-like animation using CSS only */
-.animate {
+/* Scroll Animation */
+.mission-animate {
   opacity: 0;
   transform: translateY(30px);
 }
 
-.mission-hero.animate { animation: fadeUp 1s ease forwards 0.2s; }
-.core-values.animate { animation: fadeUp 1s ease forwards 0.4s; }
-.approach.animate { animation: fadeUp 1s ease forwards 0.6s; }
-.impact.animate { animation: fadeUp 1s ease forwards 0.8s; }
-.testimonials.animate { animation: fadeUp 1s ease forwards 1s; }
-.cta.animate { animation: fadeUp 1s ease forwards 1.2s; }
+.mission-hero.mission-animate { animation: fadeUp 1s ease forwards 0.2s; }
+.mission-core-values.mission-animate { animation: fadeUp 1s ease forwards 0.4s; }
+.mission-approach.mission-animate { animation: fadeUp 1s ease forwards 0.6s; }
+.mission-impact.mission-animate { animation: fadeUp 1s ease forwards 0.8s; }
+.mission-testimonials.mission-animate { animation: fadeUp 1s ease forwards 1s; }
+.mission-cta.mission-animate { animation: fadeUp 1s ease forwards 1.2s; }
 
-/* Mission Hero */
+/* Mission Hero Section */
 .mission-hero {
   display: flex;
   flex-direction: column;
-  background: rgb(217, 217, 217);
+  background: #111;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(255,255,255,0.08);
   margin-bottom: 5rem;
 }
 
-.hero-image {
+.mission-hero-image {
   flex: 1;
-  background: rgb(217, 217, 217);
+  background: #111;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
 }
 
-.hero-image img {
+.mission-hero-image img {
   border-radius: 12px;
   max-width: 100%;
   height: auto;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(255,255,255,0.1);
 }
 
-.hero-text {
+.mission-hero-text {
   flex: 1;
   padding: 2.5rem;
 }
 
-.hero-text h1 {
+.mission-hero-text h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #141414;
+  color: #fff;
   margin-bottom: 1.5rem;
-  border-left: 8px solid #141414;
+  border-left: 8px solid #fff;
   padding-left: 1rem;
 }
 
-.hero-text p {
+.mission-hero-text p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   line-height: 1.7;
 }
 
-.hero-text blockquote {
+.mission-hero-text blockquote {
   font-style: italic;
   font-size: 1.3rem;
-  color: #141414;
-  border-left: 4px solid #141414;
+  color: #fff;
+  border-left: 4px solid #fff;
   padding-left: 1rem;
   margin: 1.5rem 0;
 }
 
-.hero-text button {
-  background: #ffffff;
-  color: rgb(0, 0, 0);
+.mission-hero-text button {
+  background: #fff;
+  color: #000;
   padding: 0.9rem 2rem;
   border-radius: 9999px;
   font-weight: 600;
@@ -94,49 +97,49 @@
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.hero-text button:hover {
+.mission-hero-text button:hover {
   transform: scale(1.05);
-  background: rgb(255, 255, 255);
+  background: #e5e5e5;
 }
 
 /* Core Values */
-.core-values {
+.mission-core-values {
   text-align: center;
   margin-bottom: 5rem;
 }
 
-.core-values h2 {
+.mission-core-values h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #141414;
+  color: #fff;
   margin-bottom: 3rem;
 }
 
-.values-grid {
+.mission-values-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
 }
 
-.value-card {
-  background: rgb(217, 217, 217);
+.mission-value-card {
+  background: #111;
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 15px rgba(255,255,255,0.05);
   text-align: center;
   transition: transform 0.4s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.value-card:hover {
+.mission-value-card:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 30px rgba(255,255,255,0.15);
 }
 
-.value-card .icon {
+.mission-value-icon {
   width: 64px;
   height: 64px;
-  background: rgb(217, 217, 217);
+  background: #222;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -145,117 +148,117 @@
   margin: 0 auto 1rem;
 }
 
-.value-card h3 {
+.mission-value-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #141414;
+  color: #fff;
   margin-bottom: 0.8rem;
 }
 
 /* Approach */
-.approach {
-  background: rgb(217, 217, 217);
+.mission-approach {
+  background: #111;
   border-radius: 15px;
   padding: 2.5rem;
   margin-bottom: 5rem;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 15px rgba(255,255,255,0.05);
 }
 
-.approach h2 {
+.mission-approach h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #141414;
+  color: #fff;
   margin-bottom: 2rem;
 }
 
-.approach ul {
+.mission-approach ul {
   margin: 1rem 0;
   padding-left: 1.5rem;
 }
 
-.approach ul li {
+.mission-approach ul li {
   margin-bottom: 1rem;
   line-height: 1.7;
 }
 
 /* Impact */
-.impact {
+.mission-impact {
   text-align: center;
   margin-bottom: 5rem;
 }
 
-.impact h2 {
+.mission-impact h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #141414;
+  color: #fff;
   margin-bottom: 2.5rem;
 }
 
-.impact-grid {
+.mission-impact-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
 
-.impact-number {
+.mission-impact-number {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #141414;
+  color: #fff;
 }
 
 /* Testimonials */
-.testimonials {
+.mission-testimonials {
   max-width: 900px;
   margin: 0 auto 5rem;
   text-align: center;
 }
 
-.testimonials h2 {
+.mission-testimonials h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #141414;
+  color: #fff;
   margin-bottom: 2rem;
 }
 
-.testimonials blockquote {
-  background: rgb(217, 217, 217);
+.mission-testimonials blockquote {
+  background: #111;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 15px rgba(255,255,255,0.05);
   font-style: italic;
   margin-bottom: 2rem;
 }
 
-.testimonials footer {
+.mission-testimonials footer {
   margin-top: 1rem;
   font-weight: 600;
-  color: #141414;
+  color: #fff;
 }
 
-/* Call to Action */
-.cta {
-  background: rgb(217, 217, 217);
-  color: #000000;
+/* CTA */
+.mission-cta {
+  background: #111;
+  color: #fff;
   border-radius: 15px;
   padding: 3rem;
   text-align: center;
 }
 
-.cta h2 {
+.mission-cta h2 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.cta p {
+.mission-cta p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
-.cta button {
-  background: rgb(255, 255, 255);
-  color: #141414;
+.mission-cta button {
+  background: #fff;
+  color: #000;
   padding: 0.9rem 2rem;
   border-radius: 9999px;
   font-weight: 600;
@@ -264,71 +267,27 @@
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.cta button:hover {
+.mission-cta button:hover {
   transform: scale(1.05);
-
+  background: #e5e5e5;
 }
 
-
+/* Responsive */
 @media (min-width: 768px) {
   .mission-hero { flex-direction: row; }
-  .values-grid { grid-template-columns: repeat(3, 1fr); }
-  .impact-grid { grid-template-columns: repeat(4, 1fr); }
+  .mission-values-grid { grid-template-columns: repeat(3, 1fr); }
+  .mission-impact-grid { grid-template-columns: repeat(4, 1fr); }
 }
-
 
 @media (min-width: 600px) {
-  .hero-text h1 {
-    font-size: 2.2rem;
-  }
-  .hero-text p {
-    font-size: 1rem;
-  }
-  .values-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .impact-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .mission-hero-text h1 { font-size: 2.2rem; }
+  .mission-hero-text p { font-size: 1rem; }
+  .mission-values-grid { grid-template-columns: repeat(2, 1fr); }
+  .mission-impact-grid { grid-template-columns: repeat(2, 1fr); }
 }
-
-
-@media (min-width: 768px) {
-  .mission-hero {
-    flex-direction: row;
-    align-items: center;
-  }
-  .hero-text {
-    padding: 3rem;
-  }
-  .values-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .impact-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-
-@media (min-width: 1024px) {
-  .hero-text h1 {
-    font-size: 3rem;
-  }
-  .approach, .testimonials {
-    padding: 3rem 4rem;
-  }
-}
-
 
 @media (min-width: 1280px) {
-  .mission-container {
-    padding: 4rem 6rem;
-  }
-  .hero-text h1 {
-    font-size: 3.5rem;
-  }
-  .cta {
-    padding: 4rem 6rem;
-  }
+  .mission-container { padding: 4rem 6rem; }
+  .mission-hero-text h1 { font-size: 3.5rem; }
+  .mission-cta { padding: 4rem 6rem; }
 }
-

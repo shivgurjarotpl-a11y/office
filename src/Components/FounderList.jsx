@@ -57,11 +57,12 @@ const FounderList = () => {
   ];
 
   return (
-    <div>
-      {founders.map((founder, index) => (
-        <FounderCard key={index} {...founder} />
-      ))}
-    </div>
+ <div className="founder-section">
+  {founders.map((founder, index) => (
+    <FounderCard key={index} {...founder} />
+  ))}
+</div>
+
   );
 };
 

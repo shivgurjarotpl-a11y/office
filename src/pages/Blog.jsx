@@ -8,12 +8,13 @@ import BlogPage from '../Components/BlogPage';
 
 const Blog = () => {
   return (
-    <div>
-    {/* <BlogImg/> */}
-    {/* <BlogSection/>
-    <Footer/> */}
-    <BlogPage/>
+    <>
+      <BlogImg/>
+      <div className='Blog-Contanior'>
+   <BlogSection/>
+    {/* <Footer/>  */}
     </div>
+    </>
   )
 }
 

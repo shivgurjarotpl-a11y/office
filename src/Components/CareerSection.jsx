@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/CareerSection.css";
-import { TrendingUp, Gift, Handshake } from "lucide-react"; // ✅ icons import
+import { TrendingUp, Gift, Handshake } from "lucide-react"; 
 
 const CareerSection = () => {
   return (

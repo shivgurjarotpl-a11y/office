@@ -1,64 +1,141 @@
+/* ===============================
+   GLOBAL CARD WRAPPER
+=============================== */
 .founder-card {
   width: 100%;
-  padding: 20px;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  color: white;
-
-  /* Initial hidden state */
-  opacity: 1;
-  /* transform: translateY(50px);
-  transition: all 0.8s ease-out; */
+  background: #0d0d0d;
+  border: 1px solid #1f1f1f;
+  padding: 40px 30px;
+  margin: 40px 0;
+  border-radius: 18px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
 }
 
+/* Fade-in when visible */
 .founder-card.show {
   opacity: 1;
-  /* transform: translateY(0); */
+  transform: translateY(0);
 }
 
-
+/* ===============================
+   HEADING
+=============================== */
 .founder-heading {
-  font-size: 22px;
-  font-weight: bold;
-  color: #b22222;
-  border-bottom: 2px solid #313131;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
+/* ===============================
+   CONTENT WRAPPER
+=============================== */
 .founder-content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 35px;
+  align-items: flex-start;
 }
 
+/* ===============================
+   IMAGE
+=============================== */
 .founder-image img {
-  width: 320px;
-  border-radius: 10px;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #222;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  transition: scale 0.4s ease;
 }
 
+.founder-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ===============================
+   INFO SECTION
+=============================== */
 .founder-info {
   flex: 1;
-  min-width: 300px;
 }
 
 .founder-name {
-  font-size: 24px;
-  color: #000000;
-  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .founder-position {
-  font-weight: 600;
-  color: #1f1f1f;
-  margin-bottom: 15px;
-  line-height: 1.4;
+  font-size: 1.1rem;
+  color: #c2c2c2;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .founder-desc {
-  font-size: 15px;
-  color: #1f1f1f;
-  margin-bottom: 12px;
-  line-height: 1.6;
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  background: #111;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border-left: 3px solid #333;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=============================== */
+@media (max-width: 900px) {
+  .founder-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-image img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .founder-info {
+    text-align: center;
+  }
+
+  .founder-desc {
+    text-align: left;
+  }
+}
+
+@media (max-width: 550px) {
+  .founder-card {
+    padding: 25px 20px;
+  }
+
+  .founder-heading {
+    font-size: 1.6rem;
+  }
+
+  .founder-name {
+    font-size: 1.5rem;
+  }
+
+  .founder-image img {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+
+
+.founder-section {
+  width: 100%;
+  padding: 60px 40px;
+  background: #000;     /* black background */
 }

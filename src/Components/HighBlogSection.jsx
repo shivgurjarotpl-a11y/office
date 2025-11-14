@@ -1,9 +1,7 @@
-// HighBlogSection.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/HighBlogSection.css";
 
-// Sample static data (replace with API fetch)
 const cardsData = [
   {
     id: 1,
@@ -44,7 +42,6 @@ const cardsData = [
 ];
 
 const HighBlogSection = ({ limit = 3, loading = false }) => {
-  // Format date helper
   const formatDate = (isoDate) =>
     new Date(isoDate).toLocaleDateString("en-US", {
       year: "numeric",
@@ -52,63 +49,61 @@ const HighBlogSection = ({ limit = 3, loading = false }) => {
       day: "numeric",
     });
 
-  // Handle click (you can connect analytics later)
   const handleCardClick = (slug) => {
     console.log(`Navigating to /blog/${slug}`);
   };
 
   return (
-    <section className="highblog-container" aria-label="Blog preview">
-      <div className="highblog-grid">
+    <section className="homeblog-container" aria-label="Blog preview">
+      <div className="homeblog-grid">
         {loading
           ? Array.from({ length: limit }).map((_, index) => (
-              <article key={index} className="highblog-card skeleton">
+              <article key={index} className="homeblog-card skeleton">
                 <div className="skeleton-image"></div>
                 <div className="skeleton-title"></div>
                 <div className="skeleton-excerpt"></div>
               </article>
             ))
           : cardsData.slice(0, limit).map((card) => (
-              <article key={card.id} className="highblog-card">
+              <article key={card.id} className="homeblog-card">
                 <Link
-                  to={`/blog`}
-                  onClick={() => handleCardClick(card.slug)}
+                  to={`/blog/${card.slug}`}
                   aria-label={`Read full post: ${card.title}`}
                 >
                   <img
                     src={card.imageUrl}
                     alt={card.title}
-                    className="highblog-card-image"
+                    className="homeblog-card-image"
                     loading="lazy"
                   />
 
-                  <header className="highblog-card-header">
-                    <h3 className="highblog-card-title">{card.title}</h3>
+                  <header className="homeblog-card-header">
+                    <h3 className="homeblog-card-title">{card.title}</h3>
                   </header>
 
-                  <p className="highblog-card-excerpt">{card.excerpt}</p>
+                  <p className="homeblog-card-excerpt">{card.excerpt}</p>
 
-                  <div className="highblog-card-meta">
+                  <div className="homeblog-card-meta">
                     <span>{card.author}</span>
                     <time dateTime={card.date}>{formatDate(card.date)}</time>
                   </div>
 
-                  <div className="highblog-card-tags">
+                  <div className="homeblog-card-tags">
                     {card.tags.map((tag, i) => (
-                      <span key={i} className="highblog-tag">
+                      <span key={i} className="homeblog-tag">
                         {tag}
                       </span>
                     ))}
                   </div>
 
-                  <span className="highblog-read-more">Read more →</span>
+                  <span className="homeblog-read-more">Read more →</span>
                 </Link>
               </article>
             ))}
       </div>
 
-      <div className="highblog-view-all">
-        <Link to="/blog" className="highblog-button">
+      <div className="homeblog-view-all">
+        <Link to="/blog" className="homeblog-button">
           View All Posts
         </Link>
       </div>

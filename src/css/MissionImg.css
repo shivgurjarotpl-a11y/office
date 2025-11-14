@@ -1,7 +1,7 @@
 .M-Container {
   height: 80vh; 
   width: 100%;
-  background-image: url("https://cspv.in/image/oxymora_imgs/image/work.jpg"); /* Image must be in public/image/work.jpg */
+  background-image: url("https://cspv.in/image/oxymora_imgs/image/companyvision.jpg"); /* Image must be in public/image/work.jpg */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@
   position: relative;
   z-index: 2; /* above overlay */
 
-  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 200%;
