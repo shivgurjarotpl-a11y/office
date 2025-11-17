@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/CategorySelector.css"; // external css import
+import "../css/CategorySelector.css";
 import { Globe, Smartphone, Monitor, LayoutDashboard } from "lucide-react";
 
 const CategorySelector = ({ active, setActive }) => {

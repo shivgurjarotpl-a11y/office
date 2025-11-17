@@ -34,12 +34,11 @@
 .dropbtn {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
   transition: color 0.18s ease, background 0.18s ease, padding-left 0.18s ease;
   background: transparent;
   border: none;
-  font: inherit;
 }
 
 .topbar-nav a:hover,
