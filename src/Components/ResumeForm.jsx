@@ -4,17 +4,6 @@ import "../css/ResumeForm.css";
 const ResumeForm = () => {
   return (
     <section className="resume-section">
-      {/* Left Side Content */}
-      <div className="resume-left">
-        <h2>
-          We Are On A <br /> Hunt For Talent!
-        </h2>
-        <p>
-          If you don’t see a suitable position here, you may write to us and get
-          answers to your specific queries for openings. We will soon get in
-          touch!
-        </p>
-      </div>
 
       {/* Right Side Form */}
       <div className="resume-right">
@@ -29,15 +18,16 @@ const ResumeForm = () => {
 
           <input type="tel" placeholder="Phone No.*" required />
 
-          <select>
-            <option>Select Professional</option>
-            <option>UI Designer</option>
-            <option>UX Developer</option>
-            <option>PHP Developer</option>
-            <option>Android Developer</option>
-            <option>iOS Developer</option>
-            <option>Quality Analyst</option>
-          </select>
+     <select required>
+  <option value="" disabled selected>Select Professional*</option>
+  <option value="ui-designer">UI Designer</option>
+  <option value="ux-developer">UX Developer</option>
+  <option value="php-developer">PHP Developer</option>
+  <option value="android-developer">Android Developer</option>
+  <option value="ios-developer">iOS Developer</option>
+  <option value="quality-analyst">Quality Analyst</option>
+</select>
+
 
           <input type="file" />
 
@@ -46,6 +36,18 @@ const ResumeForm = () => {
           <button type="submit">Send Now</button>
         </form>
       </div>
+
+            {/* Left Side Content */}
+      {/* <div className="resume-left">
+        <h2>
+          We Are On A <br /> Hunt For Talent!
+        </h2>
+        <p>
+          If you don’t see a suitable position here, you may write to us and get
+          answers to your specific queries for openings. We will soon get in
+          touch!
+        </p>
+      </div> */}
     </section>
   );
 };
