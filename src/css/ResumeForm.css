@@ -64,6 +64,12 @@
 }
 
 
+.resume-form select option {
+  background: #000 !important;   /* Dropdown list black */
+  color: #fff;
+}
+
+
 .resume-form input:focus,
 .resume-form select:focus,
 .resume-form textarea:focus {
