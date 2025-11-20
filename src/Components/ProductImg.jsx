@@ -3,9 +3,8 @@ import "../css/ProductImg.css";
 const ProductImg = () => {
   return (
         <div className="pro-Container">
-      <h1>IoT & M2M portfolio for every use case </h1>
-      <h2>Ever ready with pre-paid, tariffs & eSIM for your IoT products. <br />
-Plus myFUSION bonus.</h2>
+      <h1>Precision-Built IoT Solutions for Modern Industries </h1>
+      <h2>Discover devices engineered to meet today’s connectivity and automation needs. Each product is developed with a focus on quality, durability, and ease of integration.</h2>
     </div>
   )
 }

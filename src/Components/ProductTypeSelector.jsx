@@ -1,13 +1,13 @@
 import React from "react";
 import "../css/ProductTypeSelector.css";
-import { Globe, Smartphone, Monitor, LayoutDashboard } from "lucide-react";
+import { Server  , Gauge  , Refrigerator , Home   } from "lucide-react";
 
 const ProductTypeSelector = ({ active, setActive }) => {
   const categories = [
-    { id: "DataLoggers ", label: "Data Loggers ", icon: <Globe size={28} /> },
-    { id: "Controllers ", label: "Controllers ", icon: <Smartphone size={28} /> },
-    { id: "VendingMachines ", label: "Vending Machines ", icon: <Monitor size={28} /> },
-    { id: "HomeAutomations", label: "Home Automations", icon: <LayoutDashboard size={28} /> },
+    { id: "DataLoggers ", label: "Data Loggers ", icon: <Server   size={28} /> },
+    { id: "Controllers ", label: "Controllers ", icon: <Gauge   size={28} /> },
+    { id: "VendingMachines ", label: "Vending Machines ", icon: <Refrigerator  size={28} /> },
+    { id: "HomeAutomations", label: "Home Automations", icon: <Home   size={28} /> },
   ];
 
   return (

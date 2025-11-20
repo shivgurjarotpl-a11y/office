@@ -55,16 +55,18 @@ const Products = () => {
   };
 
   return (
-    <div>
+    <>
          <ProductImg/>
-      <div className='product-contanior'></div>
+      <div className='product-contanior'>
       <ProductTypeSelector active={active} setActive={setActive} />
-      <div style={{ marginTop: "30px" }}>
+      <div style={{ }}>
         {renderComponent()}
       </div>
          <Footer/>
-
-    </div>
+         </div>
+</>
+   
+ 
   );
 };
 

@@ -79,7 +79,7 @@
   position: absolute;
   left: 0;
   top: 12px;
-  color: #00d9ff;
+  color: #0059ff;
   font-size: 1.2rem;
   line-height: 0;
 }
@@ -88,7 +88,7 @@
 .datalogger-btn {
   padding: 12px 24px;
   border: none;
-  background: #00d9ff;
+  background: #0077ff;
   color: #000;
   font-weight: bold;
   border-radius: 8px;
@@ -115,7 +115,7 @@
   max-width: 350px;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.3));
+  filter: drop-shadow(0 0 20px rgba(0, 81, 255, 0.3));
 }
 
 .datalogger-image.animate-image {
