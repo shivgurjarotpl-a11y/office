@@ -56,7 +56,7 @@ const Products = () => {
 
   return (
     <div>
-         {/* <ProductImg/> */}
+         <ProductImg/>
       <div className='product-contanior'></div>
       <ProductTypeSelector active={active} setActive={setActive} />
       <div style={{ marginTop: "30px" }}>

@@ -1,7 +1,7 @@
 
 .datalogger-wrapper {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   padding: 40px 20px;
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: #000000;
   border-radius: 16px;
   padding: 40px;
   width: 100%;
