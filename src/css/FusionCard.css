@@ -1,14 +1,14 @@
-/* 🔹 Wrapper: full width background area */
+
 .fusion-wrapper {
   width: 100%;
-  background-color:#000; /* optional background */
+  background-color:#000; 
   display: flex;
-  justify-content: center; /* card ko center me laya */
-  padding: 30px 20px; /* top-bottom padding */
+  justify-content: center; 
+  padding: 30px 20px; 
   box-sizing: border-box;
 }
 
-/* 🔹 Actual card container (max width) */
+
 .fusion-container {
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@
   flex-wrap: wrap;
 }
 
-/* 🔹 Text Section */
+
 .fusion-text {
   flex: 1 1 400px;
   max-width: 500px;
@@ -70,7 +70,7 @@
   transform: scale(1.05);
 }
 
-/* 🔹 Image Section */
+
 .fusion-image {
   flex: 1 1 300px;
   text-align: center;
@@ -91,7 +91,7 @@
   animation: bounceIn 1.5s ease;
 }
 
-/* 🔹 Bounce Animation */
+
 @keyframes bounceIn {
   0% {
     transform: scale(0.5);
@@ -99,9 +99,7 @@
   }
 }
 
-/* 🔹 Responsive */
 
-/* Tablet */
 @media (max-width: 992px) {
   .fusion-container {
     flex-direction: column;
@@ -124,7 +122,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
   .fusion-wrapper {
     padding: 40px 15px;

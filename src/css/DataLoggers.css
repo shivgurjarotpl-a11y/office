@@ -1,0 +1,195 @@
+
+.datalogger-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 0px;
+}
+
+
+.datalogger-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 400px;
+  gap: 60px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.datalogger-container.reverse {
+  flex-direction: row-reverse;
+}
+
+/* 🔹 Text Section */
+.datalogger-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.datalogger-text.animate-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.datalogger-text h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* 🔹 Features List */
+.datalogger-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.datalogger-features li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #d1d1d1;
+  line-height: 1.5;
+}
+
+/* Bullet styling */
+.datalogger-features li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  color: #00d9ff;
+  font-size: 1.2rem;
+  line-height: 0;
+}
+
+/* 🔹 Button */
+.datalogger-btn {
+  padding: 12px 24px;
+  border: none;
+  background: #00d9ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  align-self: flex-start;
+}
+
+.datalogger-btn:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 Image Section */
+.datalogger-image {
+  flex: 1 1 300px;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.datalogger-image img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.3));
+}
+
+.datalogger-image.animate-image {
+  opacity: 1;
+  animation: dataloggerBounce 1.2s ease;
+}
+
+/* 🔹 Bounce Animation */
+@keyframes dataloggerBounce {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 🔹 Responsive */
+@media (max-width: 992px) {
+  .datalogger-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 40px;
+  }
+
+  .datalogger-container.reverse {
+    flex-direction: column;
+  }
+
+  .datalogger-text {
+    text-align: center;
+    transform: translateY(50px);
+  }
+
+  .datalogger-text.animate-text {
+    transform: translateY(0);
+  }
+
+  .datalogger-btn {
+    align-self: center;
+  }
+
+  .datalogger-features li {
+    padding-left: 0;
+  }
+
+  .datalogger-features li::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .datalogger-wrapper {
+    padding: 40px 15px;
+  }
+
+  .datalogger-container {
+    padding: 20px;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .datalogger-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .datalogger-features li {
+    font-size: 0.9rem;
+  }
+
+  .datalogger-image img {
+    max-width: 250px;
+  }
+}
