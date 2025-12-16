@@ -16,8 +16,8 @@ const Topbar = () => {
     };
   }, [isNavOpen]);
 
-  const isMobile = () =>
-    typeof window !== "undefined" && window.innerWidth <= 768;
+  // const isMobile = () =>
+  //   typeof window !== "undefined" && window.innerWidth <= 768;
 
   // Toggle drawer (hamburger). Also ensure dropdown closed when toggling.
   const toggleNav = () => {
@@ -26,11 +26,14 @@ const Topbar = () => {
   };
 
   // Toggle dropdown — only enable click-toggle on mobile.
-  const toggleDropdown = (name) => {
-    if (!isMobile()) return; // on desktop rely on hover, don't toggle on click
-    setActiveDropdown((prev) => (prev === name ? null : name));
-  };
+  // const toggleDropdown = (name) => {
+  //   if (!isMobile()) return; // on desktop rely on hover, don't toggle on click
+  //   setActiveDropdown((prev) => (prev === name ? null : name));
+  // };
 
+
+
+  
   // Use this for all links so:
   // - if drawer was open, it closes
   // - dropdown closes
@@ -63,13 +66,18 @@ const Topbar = () => {
 
           <div className={`dropdown ${activeDropdown === "about" ? "active" : ""}`}>
             {/* button so it's keyboard accessible */}
-            <button
+            {/* <button
               className="dropbtn"
               onClick={() => toggleDropdown("about")}
               aria-expanded={activeDropdown === "about"}
             >
               About Us
-            </button>
+            </button> */}
+
+             <Link to="/about" onClick={handleLinkClick}>
+            About Us
+          </Link>
+
 
             <div className="dropdown-content" onClick={(e) => e.stopPropagation()}>
               <div className="submenu">
@@ -80,9 +88,9 @@ const Topbar = () => {
                 <Link to="/about/vision" onClick={handleLinkClick}>
                   Vision
                 </Link>
-                <Link to="/about/core-team" onClick={handleLinkClick}>
+                {/* <Link to="/about/core-team" onClick={handleLinkClick}>
                   Core Team
-                </Link>
+                </Link> */}
               </div>
               <div className="submenu">
                 <span>Media</span>

@@ -9,7 +9,7 @@ const VisionPage = () => {
       {/* Vision Hero */}
       <section className="vision-hero vision-animate">
         <div className="vision-hero-image">
-          <img src="/image/img1.jpg" alt="Vision Illustration" />
+          <img src="https://cspv.in/image/oxymora_imgs/image/img1.jpg" alt="Vision Illustration" />
         </div>
 
         <div className="vision-hero-text">

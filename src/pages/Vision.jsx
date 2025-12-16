@@ -10,12 +10,12 @@ import VisionPage from '../Components/VisionPage';
 const Vision = () => {
   return (
     <div>
-      <VisionImg/>
-      <div className='viision-Contanior'>
+      {/* <VisionImg/>
+      <div className='viision-Contanior'> */}
           <VisionPage/>
-          <Footer/>
+          {/* <Footer/>
           <FloatingButtons/>
-      </div>
+      </div> */}
     </div>
   )
 }

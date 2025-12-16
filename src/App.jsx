@@ -16,6 +16,7 @@ import Vision from "./pages/Vision";
 import CoreTeam from "./pages/CoreTeam";
 import GalleryPage from "./Components/GalleryPage";
 import ScrollToTop from "./Components/ScrollToTop";
+import AboutOverview from "./Components/AboutOverview"
 import Blog from "./pages/Blog";
 
 import ServicesSection from "./Components/ServicesSection";
@@ -41,10 +42,10 @@ const App = () => {
         {/* About with nested routes — About must include <Outlet /> */}
         <Route path="/about" element={<About />}>
           {/* optional default /about content */}
-          {/* <Route index element={<AboutOverview />} /> */}
+          <Route index element={<AboutOverview />} />
           <Route path="mission" element={<Mission />} />
           <Route path="vision" element={<Vision />} />
-          <Route path="core-team" element={<CoreTeam />} />
+          {/* <Route path="core-team" element={<CoreTeam />} /> */}
           <Route path="office-gallery" element={<OfficeGallery />} />
         </Route>
 

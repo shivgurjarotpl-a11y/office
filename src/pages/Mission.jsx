@@ -8,12 +8,12 @@ import FloatingButtons from '../Components/FloatingButtons';
 const Mission = () => {
   return (
     <div>
-       <MissionImg/>
-       <div className='messeon'>
+       {/* <MissionImg/>
+       <div className='messeon'> */}
       <MissionPage/>
-      <Footer/>
-      <FloatingButtons/>
-      </div>
+      {/* <Footer/>
+      <FloatingButtons/> */}
+      {/* </div> */}
     </div>
   )
 }

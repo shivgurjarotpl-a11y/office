@@ -11,15 +11,15 @@ const OfficeGallery = () => {
   return (
     <>
       {/* Top gallery image */}
-      <GalleryImg />
+      {/* <GalleryImg />
 
-      <div className="office-contanior">
+      <div className="office-contanior"> */}
         {/* Category Cards */}
         <CategoryCards setSelectedCategory={setSelectedCategory} />
 
-        <Footer />
+        {/* <Footer />
         <FloatingButtons />
-      </div>
+      </div> */}
     </>
   );
 };
