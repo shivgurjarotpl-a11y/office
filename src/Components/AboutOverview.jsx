@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "../css/MissionPage.css";
 import { FaHandsHelping, FaStar, FaBalanceScale, FaAngleDown, FaAngleUp } from "react-icons/fa";
+import "../css/OfficeGallery.css";
+import { useNavigate } from "react-router-dom";
+
 
 const AboutOverview = () => {
+  const navigation = useNavigate();
+
   const [showFullContent, setShowFullContent] = useState(true);
 
   const pageSummary = `EmpowerOrg is dedicated to empowering individuals and communities globally through innovative solutions and committed service, focusing on integrity, collaboration, and excellence to foster sustainable growth and positive impact. Key initiatives include community engagement, innovative solutions, capacity building, and impact measurement, reaching millions of individuals across over 50 countries.`;
@@ -58,7 +63,7 @@ const AboutOverview = () => {
                 Our mission is to create a positive impact that drives progress and enriches lives globally, building a future where everyone has the opportunity to thrive.
               </p>
               <blockquote>"Together, we build a better future."</blockquote>
-              <button className="cta-button">Join Our Mission</button>
+              <button className="cta-button" onClick={() => navigation("/about/mission")}>More Details</button>
             </div>
           </section>
 
@@ -74,12 +79,14 @@ const AboutOverview = () => {
                 We aim to inspire sustainable progress, foster inclusivity, and nurture growth that benefits both people and the planet.
               </p>
               <blockquote>"Envisioning a brighter, empowered tomorrow."</blockquote>
-              <button className="cta-button">Join Our Vision</button>
+              <button className="cta-button" onClick={() => navigation("/about/vision")}>More Details</button>
             </div>
              <div className="vision-hero-image">
               <img src="https://cspv.in/image/oxymora_imgs/image/img1.jpg" alt="Vision Illustration" />
             </div>
           </section>
+
+
 
           {/* Impact Statistics */}
           <section className="mission-impact mission-animate">
@@ -104,20 +111,26 @@ const AboutOverview = () => {
             </div>
           </section>
 
-          {/* Office Space Section */}
-          {/* {sections.map((section, idx) => (
-            <div key={idx} className="category-section">
-              <h2 className="category-section-heading">{section.title}</h2>
-              <div className="category-cards-grid">
+
+       <section className="mission-impact mission-animate">
+              {/* Office Space Section */}
+          {sections.map((section, idx) => (
+            <div key={idx} className="category-section" >
+              <h2 >{section.title}</h2>
+              <div className="mission-impact-grid">
                 {section.cards.map((card, i) => (
-                  <div key={i} className="category-card">
+                  <div key={i} className="impact-item">
                     <img src={card.image} alt={card.name} className="category-card-image" />
                     <h3 className="category-card-title">{card.name}</h3>
                   </div>
                 ))}
               </div>
             </div>
-          ))} */}
+          ))}
+          </section>
+
+
+        
         </>
       )}
     </main>
