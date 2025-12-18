@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../css/JobOpenings.css";
 import { FaPaintBrush, FaUserAlt, FaPhp, FaMagento, FaApple, FaAndroid, FaAngular, FaClipboardCheck } from "react-icons/fa";
+import axios from "axios";
 
 const JobOpenings = () => {
-  const jobs = [
+  const [jobs,setjobs] = useState([
     { title: "UI DESIGNER", exp: "2-4 yrs", vacancies: 1, icon: <FaPaintBrush />, color: "#ff5722" },
     { title: "UX DEVELOPER", exp: "2-4 yrs", vacancies: 1, icon: <FaUserAlt />, color: "#4caf50" },
     { title: "PHP DEVELOPER", exp: "2-4 yrs", vacancies: 1, icon: <FaPhp />, color: "#9c27b0" },
@@ -12,9 +13,22 @@ const JobOpenings = () => {
     { title: "ANDROID DEVELOPER", exp: "2-4 yrs", vacancies: 1, icon: <FaAndroid />, color: "#3ddc84" },
     { title: "ANGULAR JS", exp: "2-4 yrs", vacancies: 1, icon: <FaAngular />, color: "#dd0031" },
     { title: "QUALITY ANALYST", exp: "2-4 yrs", vacancies: 1, icon: <FaClipboardCheck />, color: "#03a9f4" },
-  ];
+  ]);
 
   const cardRefs = useRef([]);
+
+  useEffect( () => {
+    const apidata = async () => {
+      
+    const api = await axios.post(" https://cspv.in/hpotpl/oxymora-web/apis/fetch_career.php",{id : "all"},{
+      headers : {"Content-Type":"application/json"}
+    });
+
+    console.log(api.data);
+    setjobs(api.data);
+    }
+    apidata();
+  },[]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -58,11 +72,12 @@ const JobOpenings = () => {
             className="job-card"
           >
             <div className="job-icon" style={{ color: job.color }}>
-              {job.icon}
+              <img src={`https://cspv.in/hpotpl/oxymora-web/apis/career_image/${job.image}`} alt="img"  height={60} />
+              
             </div>
-            <h3>{job.title}</h3>
-            <p>Exp. {job.exp}</p>
-            <p>No. of Vacancies: {job.vacancies}</p>
+            <h3>{job.heading}</h3>
+            <p>Exp. {job.exprience}</p>
+            <p>No. of Vacancies: {job.vacancy}</p>
             <button className="apply-btn">
               Apply Now
             </button>
