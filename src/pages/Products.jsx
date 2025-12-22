@@ -26,14 +26,11 @@
 
 // export default Products
 
-
-
-
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "../css/Products.css";
-import ProductImg from '../Components/ProductImg'
-import Footer from '../Components/Footer'
-
+import ProductImg from "../Components/ProductImg";
+import Footer from "../Components/Footer";
+import axios from "axios";
 import ProductTypeSelector from "../Components/ProductTypeSelector";
 import DataLoggers from "../Components/DataLoggers";
 import Controllers from "../Components/Controllers";
@@ -41,32 +38,57 @@ import Controllers from "../Components/Controllers";
 const Products = () => {
   const [active, setActive] = useState("all");
 
-  const renderComponent = () => {
-    switch (active) {
-      case "DataLoggers ":
-        return <DataLoggers />;
-      case "Controllers ":
-        return <Controllers />;
-      case "VendingMachines ":
-        return <DataLoggers />;
-      default:
-        return <DataLoggers />;
-    }
-  };
+  // const renderComponent = () => {
+  //   switch (active) {
+  //     case "DataLoggers ":
+  //       return <DataLoggers />;
+  //     case "Controllers ":
+  //       return <Controllers />;
+  //     case "VendingMachines ":
+  //       return <DataLoggers />;
+  //     default:
+  //       return <DataLoggers />;
+  //   }
+  // };
+
+  
+const [Data,setData] = useState([]);
+  
+async function detailfetch(){
+  
+    const res = await axios.post('https://cspv.in/hpotpl/oxymora-web/apis/fetch_products.php',{
+        type :active || 'all'
+    },{
+        headers : {"Content-Type":"application/json"}
+    });
+    
+    
+    console.log(res.data,"data");
+    setData(res.data);
+    // res.data.forEach((ele,idx) => {
+
+    // });
+    
+}
+
+useEffect(() => {
+  
+detailfetch();
+
+},[active]);
 
   return (
     <>
-         <ProductImg/>
-      <div className='product-contanior'>
-      <ProductTypeSelector active={active} setActive={setActive} />
-      <div style={{ }}>
-        {renderComponent()}
+      <ProductImg />
+      <div className="product-contanior">
+        <ProductTypeSelector active={active} setActive={setActive} />
+        {/* <div style={{}}>{renderComponent()}</div> */}
+        {/* {Data.map((ele,index) => { */}
+          <DataLoggers Data={Data} /> 
+        {/* // })} */}
+        <Footer />
       </div>
-         <Footer/>
-         </div>
-</>
-   
- 
+    </>
   );
 };
 

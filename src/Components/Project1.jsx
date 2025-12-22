@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "../css/Project1.css";
 
-const Project1 = () => {
+const Project1 = ({Data}) => {
+  console.log(Data,"data")
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
@@ -34,32 +35,28 @@ const Project1 = () => {
     <section className="project1-wrapper">
       {/* Left Text Section */}
       <div ref={leftRef} className="project1-left project1-hidden-left">
-        <div className="project1-logo-circle">
-          <img src="https://cspv.in/image/oxymora_imgs/image/Homy-logo.png" alt="App Mockup" />
-        </div>
-        <h2>Homey-Robo</h2>
+        {Data.type !== "Project"  && <div className="project1-logo-circle">
+          <img src={Data.image_url || "https://cspv.in/image/oxymora_imgs/image/Homy-logo.png"} alt="App Mockup" />
+        </div>}
+        <h2>{Data.heading}</h2>
         <p>
-          Homey-Robo is a simple and powerful app where you can add, manage
-          Bluetooth and MQTT devices through user friendly process. Currently we
-          are coming with 2 devices. 1) Flaunt:- It's for controlling BLE
-          enabled neon lights 2) Fan:- It's for controlling BLE and MQTT enabled
-          fans.
+          {Data.contents}
         </p>
 
-        <div className="project1-stats">
+        {Data.type === "Applications" && <div className="project1-stats">
           <div>
-            <h3>14k</h3>
+            <h3>{Data.download_no || "40"}k</h3>
             <p>Downloads</p>
           </div>
           <div>
-            <h3>4.9/5</h3>
+            <h3>{Data.rating || "4.5"}/5</h3>
             <p>Avg. Rating</p>
           </div>
           <div>
-            <h3>$400k+</h3>
+            <h3>${Data.funding || "400"}k+</h3>
             <p>Funding Raised</p>
           </div>
-        </div>
+        </div>}
 
         <div className="project1-actions">
           <button className="project1-btn-primary">View Case Study</button>
@@ -69,7 +66,9 @@ const Project1 = () => {
 
       {/* Right https://cspv.in/image/oxymora_imgs/image Section */}
       <div ref={rightRef} className="project1-right project1-hidden-bottom">
-        <img src="https://cspv.in/image/oxymora_imgs/image/Homy2.png" alt="App Mockup" className="project1-phone-img" />
+        <img src={Data.logo_url || "https://cspv.in/image/oxymora_imgs/image/Homy2.png"} alt="App Mockup" 
+          className={Data.type === "Dashboard"?"project10-phone-img" : "project1-phone-img"}
+         />
       </div>
     </section>
   );

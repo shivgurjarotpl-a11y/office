@@ -4,10 +4,10 @@ import { Server  , Gauge  , Refrigerator , Home   } from "lucide-react";
 
 const ProductTypeSelector = ({ active, setActive }) => {
   const categories = [
-    { id: "DataLoggers ", label: "Data Loggers ", icon: <Server   size={28} /> },
-    { id: "Controllers ", label: "Controllers ", icon: <Gauge   size={28} /> },
-    { id: "VendingMachines ", label: "Vending Machines ", icon: <Refrigerator  size={28} /> },
-    { id: "HomeAutomations", label: "Home Automations", icon: <Home   size={28} /> },
+    { id: "Data Loggers", label: "Data Loggers ", icon: <Server   size={28} /> },
+    { id: "Controllers", label: "Controllers ", icon: <Gauge   size={28} /> },
+    { id: "Vending Machines ", label: "Vending Machines ", icon: <Refrigerator  size={28} /> },
+    { id: "Home Automations", label: "Home Automations", icon: <Home   size={28} /> },
   ];
 
   return (

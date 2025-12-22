@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../css/DataLoggers.css";
 
-const DataLoggerCard = ({ title, features = [], image, btnText = "Learn More", reverse }) => {
+const DataLoggerCard = ({ heading, point, image, btnText = "Learn More", reverse }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -29,11 +29,11 @@ const DataLoggerCard = ({ title, features = [], image, btnText = "Learn More", r
       >
         {/* TEXT SIDE */}
         <div className={`datalogger-text ${isVisible ? "animate-text" : ""}`}>
-          <h3>{title}</h3>
+          <h3>{heading}</h3>
 
           <ul className="datalogger-features">
-            {features.map((f, i) => (
-              <li key={i}>{f}</li>
+            {point?.split("E#").map((f, i) => (
+              <li key={i}>{f.replace(","," ")}</li>
             ))}
           </ul>
 
@@ -42,7 +42,7 @@ const DataLoggerCard = ({ title, features = [], image, btnText = "Learn More", r
 
         {/* IMAGE SIDE */}
         <div className={`datalogger-image ${isVisible ? "animate-image" : ""}`}>
-          <img src={image} alt={title} />
+          <img src={`https://cspv.in/hpotpl/oxymora-web/apis/product_image/${image || "1766379917_oxymora-fusion1.png"}`} alt={"img"} />
         </div>
       </div>
     </div>
