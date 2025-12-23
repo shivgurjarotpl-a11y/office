@@ -4,42 +4,42 @@ import "../css/HighvisionProjectSlider.css";
 const projectSlides = [
   {
     id: 1,
-    image: "https://cspv.in/image/oxymora_imgs/image/homeautomation.jpg",
-    title: "Home Automation elevates everyday living",
+    image: "/home/1.png",
+    title: "Oxymora AgriTech",
     description:
-      "Experience the future of living with smart home automation that simplifies daily routines, enhances comfort, and connects every corner of your home with intelligent control.",
+      "IoT-based precision farming solution enabling real-time soil monitoring, automated irrigation, AI-driven crop insights, and remote farm management to increase yield, reduce water usage, and lower operational costs.",
     link: "#",
   },
   {
     id: 2,
-    image: "https://cspv.in/image/oxymora_imgs/image/vendingmachin.jpg",
-    title: "Next-Gen Vending Technology",
+    image: "/home/2.png",
+    title: "Oxymora Industrial IoT",
     description:
-      "Empowering businesses with smart vending systems that optimize operations, reduce downtime, and enhance customer satisfaction through connected, efficient automation.",
+      "An intelligent industrial IoT system that monitors machine health, predicts failures using AI analytics, reduces downtime, improves productivity, and enables data-driven maintenance for manufacturing and MSME industries.",
     link: "#",
   },
   {
     id: 3,
-    image: "https://cspv.in/image/oxymora_imgs/image/vehicle.jpg",
-    title: "Smart Vehicle Tracking System",
+    image: "/home/3.png",
+    title: "Oxymora Smart Vending",
     description:
-      "Monitor your vehicle’s performance, health, and location in real time—empowering smarter fleet management and safer journeys.",
+      "A connected vending ecosystem with digital payments, real-time inventory tracking, AI-based demand forecasting, and remote machine management for efficient, scalable, and automated retail operations.",
     link: "#",
   },
   {
     id: 4,
-    image: "https://cspv.in/image/oxymora_imgs/image/datalogger.jpg",
-    title: "Universal Machine Data Logger",
+    image: "/home/4.png",
+    title: "Oxymora Fleet Intelligence",
     description:
-      "Capture, analyze, and store critical data from any machine in real time. Our data logger ensures seamless monitoring, improved efficiency, and predictive maintenance through accurate insights and IoT connectivity.",
+      " An advanced telematics solution providing real-time vehicle tracking, fuel monitoring, driver behaviour analysis, and predictive insights to improve fleet efficiency, safety, and operational control.",
     link: "#",
   },
     {
     id: 5,
-    image: "https://cspv.in/image/oxymora_imgs/image/pixel.jpg",
-    title: "Advanced Pixel Lighting Controller",
+    image: "/home/5.png",
+    title: "Oxymora Smart Infrastructure",
     description:
-      "Control and automate any lighting system with precision. From single-color LEDs to addressable pixel arrays, our controller delivers smooth transitions, adaptive brightness, and seamless integration with IoT and automation systems.",
+      "IoT-enabled smart infrastructure platform for monitoring public utilities, energy usage, water systems, and environmental conditions, enabling efficient operations, reduced costs, and data-driven urban management.",
     link: "#",
   },
 ];
@@ -75,9 +75,9 @@ const HighvisionProjectSlider = () => {
         <div className="highvision-project-content">
           <h2>{title}</h2>
           <p>{description}</p>
-          <a href={link} className="highvision-project-link">
+          {/* <a href={link} className="highvision-project-link">
             Read more <span>→</span>
-          </a>
+          </a> */}
         </div>
       </div>
 

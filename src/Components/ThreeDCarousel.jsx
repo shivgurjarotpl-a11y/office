@@ -10,42 +10,42 @@
 //       id: 1,
 //       category: "Hardware Development",
 //       title: "Redefining Performance with Intelligent Hardware",
-//       img: "https://cspv.in/image/oxymora_imgs/image/sarvice5.jpg",
+//       img: "sarvice5.jpg",
 //       desc: "Empower your systems with ultra-fast computing, intelligent memory optimization, and dynamic architecture crafted for innovation.",
 //     },
 //     {
 //       id: 2,
 //       category: "Firmware Development",
 //       title: "Empowering Devices with Intelligent Firmware",
-//       img: "https://cspv.in/image/oxymora_imgs/image/sarvice6.jpg",
+//       img: "sarvice6.jpg",
 //       desc: "Build smarter, faster, and more secure devices through optimized firmware that unites hardware and software in perfect harmony.",
 //     },
 //     {
 //       id: 3,
 //       category: "Software Development",
 //       title: "Engineering the Future of Intelligent Software",
-//       img: "https://cspv.in/image/oxymora_imgs/image/sarvice7.jpg",
+//       img: "sarvice7.jpg",
 //       desc: "We design and develop robust software ecosystems that merge performance, usability, and innovation.",
 //     },
 //     {
 //       id: 4,
 //       category: "Prototyping Development",
 //       title: "Accelerating Innovation Through Smart Prototyping",
-//       img: "https://cspv.in/image/oxymora_imgs/image/sarvice8.jpg",
+//       img: "sarvice8.jpg",
 //       desc: "Bring your visions to life with agile prototype development that ensures precision, performance, and efficiency.",
 //     },
 //     {
 //       id: 5,
 //       category: "Manufacturing Services",
 //       title: "Transforming Industries Through Smart Manufacturing",
-//       img: "https://cspv.in/image/oxymora_imgs/image/sarvice9.jpg",
+//       img: "sarvice9.jpg",
 //       desc: "We combine advanced technologies and data-driven intelligence to revolutionize modern manufacturing.",
 //     },
 //     {
 //       id: 6,
 //       category: "Cloud Services",
 //       title: "Empowering Businesses with Smart Cloud Platforms",
-//       img: "https://cspv.in/image/oxymora_imgs/image/sarvice12.jpg",
+//       img: "sarvice12.jpg",
 //       desc: "Adopt cloud-native architectures that unify scalability, flexibility, and intelligence.",
 //     },
 //   ];
@@ -163,42 +163,42 @@ const cardsData = [
       id: 1,
       category: "Hardware Development",
       title: "Redefining Performance with Intelligent Hardware",
-      image: "https://cspv.in/image/oxymora_imgs/image/sarvice5.jpg",
+      image: "/home/15.png",
       desc: "We engineer high-performance systems built on speed, intelligent memory design, and modular architecture—perfect for mission-critical applications.",
     },
     {
       id: 2,
       category: "Firmware Development",
       title: "Empowering Devices with Intelligent Firmware",
-      image: "https://cspv.in/image/oxymora_imgs/image/sarvice6.jpg",
+      image: "/home/14.png",
       desc: "Our optimised firmware bridges hardware and software, delivering secure, efficient, and reliable device performance.",
     },
     {
       id: 3,
       category: "Software Development",
       title: "Engineering the Future of Intelligent Software",
-      image: "https://cspv.in/image/oxymora_imgs/image/sarvice7.jpg",
+      image: "/home/9.png",
       desc: "From embedded software to cloud dashboards, we build scalable digital ecosystems focused on performance and usability.",
     },
     {
       id: 4,
       category: "Prototyping Development",
       title: "Accelerating Innovation Through Smart Prototyping",
-      image: "https://cspv.in/image/oxymora_imgs/image/sarvice8.jpg",
+      image: "/home/67.png",
       desc: "Transform ideas into functional prototypes with speed, precision, and iterative engineering.",
     },
     {
       id: 5,
       category: "Manufacturing Services",
       title: "Transforming Industries Through Smart Manufacturing",
-      image: "https://cspv.in/image/oxymora_imgs/image/sarvice9.jpg",
+      image: "/home/12.png",
       desc: "We bring ideas to life with mass-manufacturing capabilities powered by automation, quality control, and advanced testing systems.",
     },
     {
       id: 6,
       category: "Cloud Services",
       title: "Empowering Businesses with Smart Cloud Platforms",
-      image: "https://cspv.in/image/oxymora_imgs/image/sarvice12.jpg",
+      image: "/home/8.png",
       desc: "Unlock scalability, flexibility, and intelligence with secure cloud-native solutions.",
     },
   ];
@@ -217,8 +217,8 @@ export default function ThreeDCarousel() {
           >
             <div className="high-overlay"></div>
             <div className="high-content">
-              <h4 className="high-category">{card.category}</h4>
-              <h2 className="high-title">{card.title}</h2>
+              {/* <h4 className="high-category">{card.category}</h4> */}
+              {/* <h2 className="high-title">{card.title}</h2> */}
               <p className="high-desc">{card.desc}</p>
               <button className="high-expand-btn" onClick={() => navigate("/services")}> More →</button>
             </div>

@@ -207,45 +207,45 @@ const ServicesSection = () => {
   const services = [
     {
       name: "IoT Product Development",
-      title: "Intelligent IoT Solutions",
+      title: "From concept to connected products",
       description:
-        "Combining AI and IoT, we create connected ecosystems that think, learn, and respond — enabling smarter products and better user experiences.",
-      img: "https://cspv.in/image/oxymora_imgs/image/iot.webp",
+        "End-to-end IoT product engineering covering hardware design, embedded firmware, connectivity, cloud integration, manufacturing support, and lifecycle management to build secure, scalable, production-ready connected products.",
+      img: "/home/16.png",
     },
     {
       name: "Embedded Software Development",
-      title: "Smarter decisions with AI",
+      title: "Powering intelligence at the device level",
       description:
-        "Data and AI empower organizations to turn insights into actions and deliver intelligent solutions that transform industries.",
-      img: "https://cspv.in/image/oxymora_imgs/image/iot2.webp",
+        "High-performance embedded software development for microcontrollers and processors, including RTOS, device drivers, communication protocols, OTA updates, and hardware optimisation for reliable, real-time system performance.",
+      img: "/home/17.png",
     },
     {
       name: "Digital & User Experience Design",
-      title: "Protect what matters most",
+      title: "Designing experiences users trust and love",
       description:
-        "Our cybersecurity solutions safeguard your business from evolving digital threats with proactive and adaptive protection.",
-      img: "https://cspv.in/image/oxymora_imgs/image/img18.jpg",
+        "User-centric digital experience design combining UI/UX strategy, interaction design, and usability engineering to create intuitive, responsive, and engaging interfaces across web, mobile, and connected devices.",
+      img: "/home/10.png",
     },
     {
       name: "Software & Application Development",
-      title: "Modernize your applications",
+      title: "Building scalable software for modern businesses",
       description:
-        "Transform legacy applications into agile, cloud-native experiences that accelerate innovation and scalability.",
-      img: "https://cspv.in/image/oxymora_imgs/image/manufactur.jpg",
+        "Custom software application development delivering scalable web, mobile, and enterprise solutions using modern architectures, secure APIs, and cloud-native technologies to support business growth and digital transformation.",
+      img: "/home/9.png",
     },
     {
       name: "Data & Cloud Services",
-      title: "Take the world by cloud",
+      title: "Turning data into actionable intelligence",
       description:
-        "Every day, cloud computing becomes more integral in driving reinvention and meeting the ever-changing needs of people around the world.",
-      img: "https://cspv.in/image/oxymora_imgs/image/mb.webp",
+        "Data-driven cloud services enabling secure data ingestion, analytics, AI integration, and scalable cloud infrastructure to deliver real-time insights, high availability, and optimised operational performance.",
+      img: "/home/8.png",
     },
     {
       name: "Consulting & Support",
-      title: "Reimagine technology for the future",
+      title: "Guiding technology decisions with confidence",
       description:
-        "Harness cutting-edge technologies to reinvent business models and stay ahead in a digital-first world.",
-      img: "https://cspv.in/image/oxymora_imgs/image/img17.jpg",
+        "Strategic technology consulting and long-term support services helping organisations define product roadmaps, optimise systems, reduce risk, and accelerate innovation from concept to deployment.",
+      img: "/home/7.png",
     },
   ];
 
