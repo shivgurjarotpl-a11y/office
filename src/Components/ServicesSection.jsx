@@ -210,42 +210,42 @@ const ServicesSection = () => {
       title: "From concept to connected products",
       description:
         "End-to-end IoT product engineering covering hardware design, embedded firmware, connectivity, cloud integration, manufacturing support, and lifecycle management to build secure, scalable, production-ready connected products.",
-      img: "/home/16.png",
+      img: "/web_img/16.png",
     },
     {
       name: "Embedded Software Development",
       title: "Powering intelligence at the device level",
       description:
         "High-performance embedded software development for microcontrollers and processors, including RTOS, device drivers, communication protocols, OTA updates, and hardware optimisation for reliable, real-time system performance.",
-      img: "/home/17.png",
+      img: "/web_img/17.png",
     },
     {
       name: "Digital & User Experience Design",
       title: "Designing experiences users trust and love",
       description:
         "User-centric digital experience design combining UI/UX strategy, interaction design, and usability engineering to create intuitive, responsive, and engaging interfaces across web, mobile, and connected devices.",
-      img: "/home/10.png",
+      img: "/web_img/10.png",
     },
     {
       name: "Software & Application Development",
       title: "Building scalable software for modern businesses",
       description:
         "Custom software application development delivering scalable web, mobile, and enterprise solutions using modern architectures, secure APIs, and cloud-native technologies to support business growth and digital transformation.",
-      img: "/home/9.png",
+      img: "/web_img/9.png",
     },
     {
       name: "Data & Cloud Services",
       title: "Turning data into actionable intelligence",
       description:
         "Data-driven cloud services enabling secure data ingestion, analytics, AI integration, and scalable cloud infrastructure to deliver real-time insights, high availability, and optimised operational performance.",
-      img: "/home/8.png",
+      img: "/web_img/8.png",
     },
     {
       name: "Consulting & Support",
       title: "Guiding technology decisions with confidence",
       description:
         "Strategic technology consulting and long-term support services helping organisations define product roadmaps, optimise systems, reduce risk, and accelerate innovation from concept to deployment.",
-      img: "/home/7.png",
+      img: "/web_img/7.png",
     },
   ];
 

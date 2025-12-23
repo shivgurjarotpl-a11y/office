@@ -4,7 +4,7 @@ import "../css/HighvisionProjectSlider.css";
 const projectSlides = [
   {
     id: 1,
-    image: "/home/1.png",
+    image: "/web_img/1.png",
     title: "Oxymora AgriTech",
     description:
       "IoT-based precision farming solution enabling real-time soil monitoring, automated irrigation, AI-driven crop insights, and remote farm management to increase yield, reduce water usage, and lower operational costs.",
@@ -12,7 +12,7 @@ const projectSlides = [
   },
   {
     id: 2,
-    image: "/home/2.png",
+    image: "/web_img/2.png",
     title: "Oxymora Industrial IoT",
     description:
       "An intelligent industrial IoT system that monitors machine health, predicts failures using AI analytics, reduces downtime, improves productivity, and enables data-driven maintenance for manufacturing and MSME industries.",
@@ -20,7 +20,7 @@ const projectSlides = [
   },
   {
     id: 3,
-    image: "/home/3.png",
+    image: "/web_img/3.png",
     title: "Oxymora Smart Vending",
     description:
       "A connected vending ecosystem with digital payments, real-time inventory tracking, AI-based demand forecasting, and remote machine management for efficient, scalable, and automated retail operations.",
@@ -28,7 +28,7 @@ const projectSlides = [
   },
   {
     id: 4,
-    image: "/home/4.png",
+    image: "/web_img/4.png",
     title: "Oxymora Fleet Intelligence",
     description:
       " An advanced telematics solution providing real-time vehicle tracking, fuel monitoring, driver behaviour analysis, and predictive insights to improve fleet efficiency, safety, and operational control.",
@@ -36,7 +36,7 @@ const projectSlides = [
   },
     {
     id: 5,
-    image: "/home/5.png",
+    image: "/web_img/5.png",
     title: "Oxymora Smart Infrastructure",
     description:
       "IoT-enabled smart infrastructure platform for monitoring public utilities, energy usage, water systems, and environmental conditions, enabling efficient operations, reduced costs, and data-driven urban management.",
