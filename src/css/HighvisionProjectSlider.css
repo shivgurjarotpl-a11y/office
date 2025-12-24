@@ -6,17 +6,20 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 3rem 5rem 3rem 5rem; 
+  padding: 4rem 8rem; 
   position: relative;
   overflow: hidden;
+  box-shadow: 0 8px 20px 0px #add8e630;
+  margin: 2rem 0;
+
 }
 
 .highvision-project-slide {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-star;
   gap: 1rem;
-  width: 100%;
+  width: 90%;
   transition: transform 0.8s ease, opacity 0.8s ease;
   opacity: 1;
   
@@ -65,8 +68,8 @@
 }
 
 .highvision-project-image img {
-  width: 25rem;        
-  height: 320px;       
+  width: 40rem;        
+  height: 25rem;       
   border-radius: 12px;
   object-fit: cover;   
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
@@ -84,13 +87,13 @@
 }
 
 .highvision-project-content h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .highvision-project-content p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #fff;
   margin-bottom: 1.5rem;
   line-height: 1.6;
