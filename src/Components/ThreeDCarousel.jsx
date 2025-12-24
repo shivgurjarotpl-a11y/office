@@ -217,8 +217,8 @@ export default function ThreeDCarousel() {
           >
             <div className="high-overlay"></div>
             <div className="high-content">
-              {/* <h4 className="high-category">{card.category}</h4> */}
-              {/* <h2 className="high-title">{card.title}</h2> */}
+              <h4 className="high-category">{card.category}</h4>
+              <h2 className="high-title">{card.title}</h2>
               <p className="high-desc">{card.desc}</p>
               <button className="high-expand-btn" onClick={() => navigate("/services")}> More →</button>
             </div>
