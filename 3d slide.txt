@@ -1,0 +1,190 @@
+new 3d slide 
+
+
+
+
+import React, { useEffect } from "react";
+import "../css/ThreeDCarousel.css";
+
+const ThreeDCarousel = () => {
+  useEffect(() => {
+    const carousel = document.querySelector(".threeD-carousel");
+    let angle = 0;
+
+    const rotate = () => {
+      angle += 0.3; // rotation speed
+      carousel.style.transform = `translateZ(-350px) rotateY(${angle}deg)`;
+      requestAnimationFrame(rotate);
+    };
+    rotate();
+  }, []);
+
+  const cardsData = [
+    {
+      id: 1,
+      category: "Hardware Development",
+      title: "Redefining Performance with Intelligent Hardware",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice5.jpg",
+      desc: "Empower your systems with ultra-fast computing, intelligent memory optimization, and dynamic architecture crafted for innovation. Achieve flawless performance, real-time analytics, and adaptive control for every modern application.",
+    },
+    {
+      id: 2,
+      category: "Firmware Development",
+      title: "Empowering Devices with Intelligent Firmware",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice6.jpg",
+      desc: "Build smarter, faster, and more secure devices through optimized firmware that unites hardware and software in perfect harmony. Achieve seamless communication, real-time responsiveness, and reliability engineered for the connected world.",
+    },
+    {
+      id: 3,
+      category: "Software Development",
+      title: "Engineering the Future of Intelligent Software",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice7.jpg",
+      desc: "We design and develop robust software ecosystems that merge performance, usability, and innovation. Empowering organizations to achieve seamless digital transformation through scalable, secure, and intelligent solutions.",
+    },
+    {
+      id: 4,
+      category: "Prototyping Development",
+      title: "Accelerating Innovation Through Smart Prototyping",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice8.jpg",
+      desc: "Bring your visions to life with agile prototype development that ensures precision, performance, and efficiency. Transform concepts into tangible innovations with rapid iteration, seamless validation, and design accuracy at every stage.",
+    },
+    {
+      id: 5,
+      category: "Manufacturing Services",
+      title: "Transforming Industries Through Smart Manufacturing",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice9.jpg",
+      desc: "We combine advanced technologies and data-driven intelligence to revolutionize modern manufacturing. Delivering faster production cycles, cleaner operations, and superior efficiency across every stage of development.",
+    },
+    {
+      id: 6,
+      category: "IoT Dashboard Development",
+      title: "Transforming Data into Decisions with IoT Dashboards",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice10.jpg",
+      desc: "Unlock the power of your connected ecosystem through interactive dashboards that bring clarity to complexity. Simplify monitoring, uncover deeper insights, and enhance operational intelligence with data that drives smarter decisions.",
+    },
+    {
+      id: 7,
+      category: "IoT Web/App Development",
+      title: "Smart Interfaces for Smarter Devices",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice11.jpg",
+      desc: "See how human–AI collaboration is reshaping the future of learning, creativity, and productivity. Empower teams with intelligent tools that enhance innovation, streamline workflows, and drive smarter outcomes across industries.",
+    },
+    {
+      id: 8,
+      category: "Cloud Services",
+      title: "Empowering Businesses with Smart Cloud Platforms",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice12.jpg",
+      desc: "Adopt cloud-native architectures that unify scalability, flexibility, and intelligence. Simplify complex operations, boost agility, and drive innovation across every layer of your digital infrastructure.",
+    },
+  ];
+
+  return (
+    <div className="threeD-carousel-wrapper">
+      <div className="threeD-carousel">
+        {cardsData.map((card, index) => (
+          <div key={card.id} className="threeD-carousel-card">
+            <img src={card.img} alt={card.title} className="threeD-carousel-img" />
+            <h4 className="threeD-carousel-category">{card.category}</h4>
+            <h3 className="threeD-carousel-title">{card.title}</h3>
+            <p className="threeD-carousel-text">{card.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ThreeDCarousel;
+
+
+
+
+
+
+
+css
+
+
+
+.threeD-carousel-wrapper {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 2000px;
+  background: #000;
+  overflow: hidden;
+}
+
+.threeD-carousel {
+  position: relative;
+  width: 400px;
+  height: 520px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.threeD-carousel-card {
+  position: absolute;
+  width: 300px;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.threeD-carousel-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.threeD-carousel-category {
+  font-size: 14px;
+  color: #00c3ff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.threeD-carousel-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.threeD-carousel-text {
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Position each card in a circle */
+.threeD-carousel-card:nth-child(1) { transform: rotateY(0deg) translateZ(350px); }
+.threeD-carousel-card:nth-child(2) { transform: rotateY(45deg) translateZ(350px); }
+.threeD-carousel-card:nth-child(3) { transform: rotateY(90deg) translateZ(350px); }
+.threeD-carousel-card:nth-child(4) { transform: rotateY(135deg) translateZ(350px); }
+.threeD-carousel-card:nth-child(5) { transform: rotateY(180deg) translateZ(350px); }
+.threeD-carousel-card:nth-child(6) { transform: rotateY(225deg) translateZ(350px); }
+.threeD-carousel-card:nth-child(7) { transform: rotateY(270deg) translateZ(350px); }
+.threeD-carousel-card:nth-child(8) { transform: rotateY(315deg) translateZ(350px); }
+
+/* Add depth blur for distant cards */
+.threeD-carousel-card {
+  opacity: 0.7;
+}
+.threeD-carousel-card:hover {
+  /* transform: scale(1.05) translateZ(350px); */
+  opacity: 1;
+  z-index: 10;
+}
+
+

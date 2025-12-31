@@ -1,0 +1,163 @@
+auto slide simple 
+
+
+import React, { useEffect, useRef } from "react";
+import "../css/ThreeDCarousel.css";
+
+const ThreeDCarousel = () => {
+  const cardsData = [
+    {
+      id: 1,
+      category: "Hardware Development",
+      title: "Redefining Performance with Intelligent Hardware",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice5.jpg",
+      desc: "Empower your systems with ultra-fast computing, intelligent memory optimization, and dynamic architecture crafted for innovation.",
+    },
+    {
+      id: 2,
+      category: "Firmware Development",
+      title: "Empowering Devices with Intelligent Firmware",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice6.jpg",
+      desc: "Build smarter, faster, and more secure devices through optimized firmware that unites hardware and software in perfect harmony.",
+    },
+    {
+      id: 3,
+      category: "Software Development",
+      title: "Engineering the Future of Intelligent Software",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice7.jpg",
+      desc: "We design and develop robust software ecosystems that merge performance, usability, and innovation.",
+    },
+    {
+      id: 4,
+      category: "Prototyping Development",
+      title: "Accelerating Innovation Through Smart Prototyping",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice8.jpg",
+      desc: "Bring your visions to life with agile prototype development that ensures precision, performance, and efficiency.",
+    },
+    {
+      id: 5,
+      category: "Manufacturing Services",
+      title: "Transforming Industries Through Smart Manufacturing",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice9.jpg",
+      desc: "We combine advanced technologies and data-driven intelligence to revolutionize modern manufacturing.",
+    },
+    {
+      id: 6,
+      category: "Cloud Services",
+      title: "Empowering Businesses with Smart Cloud Platforms",
+      img: "https://cspv.in/image/oxymora_imgs/image/sarvice12.jpg",
+      desc: "Adopt cloud-native architectures that unify scalability, flexibility, and intelligence.",
+    },
+  ];
+
+  const trackRef = useRef(null);
+
+
+  const allCards = [...cardsData, ...cardsData];
+
+  useEffect(() => {
+    const track = trackRef.current;
+    let position = 0;
+
+    const animate = () => {
+      position -= 0.8; 
+      if (Math.abs(position) >= track.scrollWidth / 2) {
+        position = 0; 
+      }
+      track.style.transform = `translateX(${position}px)`;
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+  }, []);
+
+  return (
+    <div className="slide-carousel-wrapper">
+      <div className="slide-track" ref={trackRef}>
+        {allCards.map((card, index) => (
+          <div key={index} className="slide-card">
+            <img src={card.img} alt={card.title} />
+            <div className="slide-category">{card.category}</div>
+            <div className="slide-title">{card.title}</div>
+            <div className="slide-desc">{card.desc}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ThreeDCarousel;
+
+
+
+		
+
+
+css 
+
+.slide-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding: 60px 0;
+}
+
+.slide-track {
+  display: flex;
+  gap: 20px;
+  will-change: transform;
+}
+
+.slide-card {
+  min-width: 320px;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 200, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.slide-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.slide-category {
+  color: #00d4ff;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.slide-title {
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00d4ff, #008cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.slide-desc {
+  font-size: 14px;
+  color: #cce7ff;
+  line-height: 1.4;
+}
+
+.slide-card:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.5);
+}

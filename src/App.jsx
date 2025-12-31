@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Topbar from "./Components/Topbar";
 
 // Pages
@@ -16,7 +21,7 @@ import Vision from "./pages/Vision";
 import CoreTeam from "./pages/CoreTeam";
 import GalleryPage from "./Components/GalleryPage";
 import ScrollToTop from "./Components/ScrollToTop";
-import AboutOverview from "./Components/AboutOverview"
+import AboutOverview from "./Components/AboutOverview";
 import Blog from "./pages/Blog";
 
 import ServicesSection from "./Components/ServicesSection";
@@ -26,15 +31,13 @@ import Design from "./Components/Design";
 import Software from "./Components/Software";
 import Cloud from "./Components/Cloud";
 import Consulting from "./Components/Consulting";
-
-
-
+import Project2 from "./Components/Project2";
 
 const App = () => {
   return (
     <Router>
       <Topbar />
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
@@ -57,23 +60,17 @@ const App = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/Project" element={ <Project2 />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<ContactUs />} />
-        
+
         <Route path="/" element={<ServicesSection />} />
-        <Route path="/iot" element={<IoTServices />} /> 
-        <Route path="/embedded" element={<EmbeddedServices />} /> 
-        <Route path="/design" element={<Design />} /> 
-        <Route path="/software & application" element={<Software />} /> 
-        <Route path="/cloud" element={<Cloud />} /> 
-        <Route path="/Consulting & Support" element={<Consulting />} /> 
-
-
-
-
-
-    
-       
+        <Route path="/iot" element={<IoTServices />} />
+        <Route path="/embedded" element={<EmbeddedServices />} />
+        <Route path="/design" element={<Design />} />
+        <Route path="/software & application" element={<Software />} />
+        <Route path="/cloud" element={<Cloud />} />
+        <Route path="/Consulting & Support" element={<Consulting />} />
       </Routes>
     </Router>
   );
