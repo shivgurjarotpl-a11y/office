@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "../css/Project1.css";
+import { useNavigate } from "react-router-dom";
+import { encryptData } from "../utills/crypto";
 
 const Project1 = ({ Data }) => {
-  console.log(Data, "data");
+  // console.log(Data, "data");
   const leftRef = useRef(null);
   const rightRef = useRef(null);
+  const Navigate = useNavigate();
 
   useEffect(() => {
     const elements = [leftRef.current, rightRef.current];
@@ -67,8 +70,11 @@ const Project1 = ({ Data }) => {
         )}
 
         <div className="project1-actions">
-          <button className="project1-btn-primary">View Case Study</button>
-          <button className="project1-btn-secondary">Get In Touch</button>
+          {Data.type === "Project" && <button 
+          // className="project1-btn-primary"
+          className="project1-btn-secondary"
+           onClick={() => Navigate(`/Details/${encryptData(Data.heading)}`)}>View Case Study</button>}
+          {Data.type !== "Project" && <button className="project1-btn-secondary">Get In Touch</button>}
         </div>
       </div>
 

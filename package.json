@@ -17,6 +17,7 @@
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "axios": "^1.13.2",
+    "crypto-js": "^4.2.0",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.541.0",
     "react": "^19.1.0",

@@ -36,17 +36,25 @@ const Slideshow = () => {
   return (
     <div className="slideshow-container">
      
-      <video
+      {/* <video
         src="https://cspv.in/image/oxymora_imgs/videos/video7.mp4"
         autoPlay
         muted
         loop
         playsInline
         className="video-bg"
-      />
+      /> */}
+      <div className="video-bg"  style={{
+        backgroundImage : "url(https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+        backgroundSize : "cover",
+        backgroundRepeat : "no-repeat",
+        backgroundPosition : "center"
+      }}>
+
+      </div>
 
    
-      <div className="overlay">
+      <div className="overlay" >
         {texts.map((item, index) => (
           <div
             key={index}
@@ -64,7 +72,7 @@ const Slideshow = () => {
       </div>
 
    
-      <div className="dots">
+      {/* <div className="dots">
         {texts.map((_, i) => (
           <span
             key={i}
@@ -72,7 +80,7 @@ const Slideshow = () => {
             onClick={() => setCurrentText(i)}
           ></span>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
