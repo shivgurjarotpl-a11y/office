@@ -1135,7 +1135,7 @@ The requirement was to design a robust BLDC motor speed controller that provides
 ];
 
 
-const Project1 = () => {
+const Project2 = () => {
 //   const data = {
 //   id: 1,
 //   title: "Project 1: Sound & Magnetic Field Detector (Pinpoint)",
@@ -1180,10 +1180,11 @@ const Project1 = () => {
 
   const location = useParams();
   const titledata = decryptData(location.name);
+  const url = decryptData(location.url);
   // console.log(decryptData(location.name));
 
   const data = projectData.find(id => id.title.includes(titledata));
-  console.log(data,titledata,"hii");
+  console.log(data,url,"hii");
 
   return (
     <section className="case-study-wrapper">
@@ -1193,9 +1194,12 @@ const Project1 = () => {
 
         <div>
           <img
-            src={data.image}
+            // // src={imgs}
+            // src={`https://cspv.in/hpotpl/oxymora-web/apis/portfolio_images/${url}`}
+            src={`${url}`}
             alt="App Mockup"
             height={"500"}
+            style={{marginBottom:'10px'}}
           />
         </div>
 
@@ -1293,4 +1297,4 @@ const Project1 = () => {
   );
 };
 
-export default Project1;
+export default Project2;

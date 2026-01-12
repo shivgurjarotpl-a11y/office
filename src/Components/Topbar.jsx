@@ -31,9 +31,6 @@ const Topbar = () => {
   //   setActiveDropdown((prev) => (prev === name ? null : name));
   // };
 
-
-
-  
   // Use this for all links so:
   // - if drawer was open, it closes
   // - dropdown closes
@@ -64,7 +61,9 @@ const Topbar = () => {
             Home
           </Link>
 
-          <div className={`dropdown ${activeDropdown === "about" ? "active" : ""}`}>
+          <div
+            className={`dropdown ${activeDropdown === "about" ? "active" : ""}`}
+          >
             {/* button so it's keyboard accessible */}
             {/* <button
               className="dropbtn"
@@ -74,12 +73,14 @@ const Topbar = () => {
               About Us
             </button> */}
 
-             <Link to="/about" onClick={handleLinkClick}>
-            About Us
-          </Link>
+            <Link to="/about" onClick={handleLinkClick}>
+              About Us
+            </Link>
 
-
-            <div className="dropdown-content" onClick={(e) => e.stopPropagation()}>
+            <div
+              className="dropdown-content"
+              onClick={(e) => e.stopPropagation()}
+            >
               <div className="submenu">
                 <span>About</span>
                 <Link to="/about/mission" onClick={handleLinkClick}>

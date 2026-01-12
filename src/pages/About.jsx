@@ -1,30 +1,33 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-import MissionPage from '../Components/AboutOverview'
-import MissionImg from '../Components/MissionImg'
+import { Outlet, useLocation } from "react-router-dom";
+// import MissionPage from "../Components/AboutOverview";
+import VisionImg from '../Components/VisionImg'
+import GalleryImg from "../Components/GalleryImg"
+import MissionImg from "../Components/MissionImg"
+import FounderImg from '../Components/FounderImg'
 // import "../css/Mission.css";
-import Footer from '../Components/Footer';
-import FloatingButtons from '../Components/FloatingButtons';
+import Footer from "../Components/Footer";
+import FloatingButtons from "../Components/FloatingButtons"
 
 const About = () => {
+  const location = useLocation();
+  let path = location.pathname.split("/");
+  console.log(path[2] );
+
+  
   return (
     <div className="about-container">
-   
-    
-       <MissionImg/>
-       <div className='messeon'>
-      {/* <MissionPage/> */}
-      <Outlet />
-      <Footer/>
-      <FloatingButtons/>
+      {path[2] === "vision" ? <VisionImg /> : path[2] ==="office-gallery" ? <GalleryImg /> : <MissionImg />}
+      <div className="messeon">
+        <Outlet />
+        <Footer />
+        <FloatingButtons />
       </div>
     </div>
   );
 };
 
 export default About;
-
-
 
 // import React from 'react'
 // import MissionPage from '../Components/AboutOverview'
@@ -47,5 +50,3 @@ export default About;
 // }
 
 // export default About
-
-

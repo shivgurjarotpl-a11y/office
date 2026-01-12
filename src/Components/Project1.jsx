@@ -73,7 +73,11 @@ const Project1 = ({ Data }) => {
           {Data.type === "Project" && <button 
           // className="project1-btn-primary"
           className="project1-btn-secondary"
-           onClick={() => Navigate(`/Details/${encryptData(Data.heading)}`)}>View Case Study</button>}
+          //  onClick={() => Navigate(`/Details/${encryptData(Data.heading,Data.logo_url)}`)}
+          // Encrypt each individually or pass as is
+          onClick={() => Navigate(`/Details/${encryptData(Data.heading)}/${encryptData(Data.logo_url)}`)}
+           
+           >View Case Study</button>}
           {Data.type !== "Project" && <button className="project1-btn-secondary">Get In Touch</button>}
         </div>
       </div>
